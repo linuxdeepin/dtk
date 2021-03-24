@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkwidget/plugin/dtkuiplugin/dcustomerplugins.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dcustomerplugins_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dcustomerplugins.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2020 ~ 2020 Deepin Technology Co., Ltd.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Author:     alex &lt;wangpenga@uniontech.com&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Maintainer: alex &lt;wangpenga@uniontech.com&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * any later version.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;dcustomerplugins.h&quot;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;DCustomWidgets::DCustomWidgets(<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *parent)</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        : <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a>(parent)</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_frame_plugin.html">DFramePlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_arrow_line_drawer_plugin.html">DArrowLineDrawerPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_button_box_plugin.html">DButtonBoxPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_colored_progress_bar_plugin.html">DColoredProgressBarPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_crumb_edit_plugin.html">DCrumbEditPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_double_spin_box_plugin.html">DDoubleSpinBoxPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_file_chooser_edit_plugin.html">DFileChooserEditPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_floating_button_plugin.html">DFloatingButtonPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_ipv4_line_edit_plugin.html">DIpv4LineEditPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_key_sequence_edit_plugin.html">DKeySequenceEditPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_label_plugin.html">DLabelPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_line_edit_plugin.html">DLineEditPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_page_indicator_plugin.html">DPageIndicatorPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_password_edit_plugin.html">DPasswordEditPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_tab_bar_plugin.html">DTabBarPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_water_progress_plugin.html">DWaterProgressPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_text_edit_plugin.html">DTextEditPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_search_combo_box_plugin.html">DSearchComboBoxPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_spin_box_plugin.html">DSpinBoxPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_spinner_plugin.html">DSpinnerPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_tool_button_plugin.html">DToolButtonPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_suggest_button_plugin.html">DSuggestButtonPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_switch_button_plugin.html">DSwitchButtonPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_warning_button_plugin.html">DWarningButtonPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    widgets.append(<span class="keyword">new</span> <a class="code" href="class_d_search_edit_plugin.html">DSearchEditPlugin</a>(<span class="keyword">this</span>));</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList&lt;QDesignerCustomWidgetInterface*&gt;</a> DCustomWidgets::customWidgets()<span class="keyword"> const</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> widgets;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="ttc" id="class_d_floating_button_plugin_html"><div class="ttname"><a href="class_d_floating_button_plugin.html">DFloatingButtonPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00233">dcustomermacrowidget.h:233</a></div></div>
+<div class="ttc" id="class_d_colored_progress_bar_plugin_html"><div class="ttname"><a href="class_d_colored_progress_bar_plugin.html">DColoredProgressBarPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00248">dcustomermacrowidget.h:248</a></div></div>
+<div class="ttc" id="class_d_tab_bar_plugin_html"><div class="ttname"><a href="class_d_tab_bar_plugin.html">DTabBarPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00251">dcustomermacrowidget.h:251</a></div></div>
+<div class="ttc" id="class_d_crumb_edit_plugin_html"><div class="ttname"><a href="class_d_crumb_edit_plugin.html">DCrumbEditPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00230">dcustomermacrowidget.h:230</a></div></div>
+<div class="ttc" id="class_d_water_progress_plugin_html"><div class="ttname"><a href="class_d_water_progress_plugin.html">DWaterProgressPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00252">dcustomermacrowidget.h:252</a></div></div>
+<div class="ttc" id="class_d_search_combo_box_plugin_html"><div class="ttname"><a href="class_d_search_combo_box_plugin.html">DSearchComboBoxPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00253">dcustomermacrowidget.h:253</a></div></div>
+<div class="ttc" id="class_d_label_plugin_html"><div class="ttname"><a href="class_d_label_plugin.html">DLabelPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00244">dcustomermacrowidget.h:244</a></div></div>
+<div class="ttc" id="class_d_double_spin_box_plugin_html"><div class="ttname"><a href="class_d_double_spin_box_plugin.html">DDoubleSpinBoxPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00237">dcustomermacrowidget.h:237</a></div></div>
+<div class="ttc" id="class_d_text_edit_plugin_html"><div class="ttname"><a href="class_d_text_edit_plugin.html">DTextEditPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00231">dcustomermacrowidget.h:231</a></div></div>
+<div class="ttc" id="qobject_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="class_d_switch_button_plugin_html"><div class="ttname"><a href="class_d_switch_button_plugin.html">DSwitchButtonPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00258">dcustomermacrowidget.h:258</a></div></div>
+<div class="ttc" id="class_d_key_sequence_edit_plugin_html"><div class="ttname"><a href="class_d_key_sequence_edit_plugin.html">DKeySequenceEditPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00241">dcustomermacrowidget.h:241</a></div></div>
+<div class="ttc" id="qlist_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlist.html">QList</a></div></div>
+<div class="ttc" id="class_d_arrow_line_drawer_plugin_html"><div class="ttname"><a href="class_d_arrow_line_drawer_plugin.html">DArrowLineDrawerPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00227">dcustomermacrowidget.h:227</a></div></div>
+<div class="ttc" id="class_d_frame_plugin_html"><div class="ttname"><a href="class_d_frame_plugin.html">DFramePlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00225">dcustomermacrowidget.h:225</a></div></div>
+<div class="ttc" id="class_d_ipv4_line_edit_plugin_html"><div class="ttname"><a href="class_d_ipv4_line_edit_plugin.html">DIpv4LineEditPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00242">dcustomermacrowidget.h:242</a></div></div>
+<div class="ttc" id="class_d_file_chooser_edit_plugin_html"><div class="ttname"><a href="class_d_file_chooser_edit_plugin.html">DFileChooserEditPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00240">dcustomermacrowidget.h:240</a></div></div>
+<div class="ttc" id="class_d_search_edit_plugin_html"><div class="ttname"><a href="class_d_search_edit_plugin.html">DSearchEditPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00259">dcustomermacrowidget.h:259</a></div></div>
+<div class="ttc" id="class_d_warning_button_plugin_html"><div class="ttname"><a href="class_d_warning_button_plugin.html">DWarningButtonPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00257">dcustomermacrowidget.h:257</a></div></div>
+<div class="ttc" id="class_d_suggest_button_plugin_html"><div class="ttname"><a href="class_d_suggest_button_plugin.html">DSuggestButtonPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00256">dcustomermacrowidget.h:256</a></div></div>
+<div class="ttc" id="class_d_tool_button_plugin_html"><div class="ttname"><a href="class_d_tool_button_plugin.html">DToolButtonPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00255">dcustomermacrowidget.h:255</a></div></div>
+<div class="ttc" id="class_d_password_edit_plugin_html"><div class="ttname"><a href="class_d_password_edit_plugin.html">DPasswordEditPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00250">dcustomermacrowidget.h:250</a></div></div>
+<div class="ttc" id="class_d_spin_box_plugin_html"><div class="ttname"><a href="class_d_spin_box_plugin.html">DSpinBoxPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00238">dcustomermacrowidget.h:238</a></div></div>
+<div class="ttc" id="class_d_page_indicator_plugin_html"><div class="ttname"><a href="class_d_page_indicator_plugin.html">DPageIndicatorPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00235">dcustomermacrowidget.h:235</a></div></div>
+<div class="ttc" id="class_d_spinner_plugin_html"><div class="ttname"><a href="class_d_spinner_plugin.html">DSpinnerPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00254">dcustomermacrowidget.h:254</a></div></div>
+<div class="ttc" id="class_d_button_box_plugin_html"><div class="ttname"><a href="class_d_button_box_plugin.html">DButtonBoxPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00228">dcustomermacrowidget.h:228</a></div></div>
+<div class="ttc" id="class_d_line_edit_plugin_html"><div class="ttname"><a href="class_d_line_edit_plugin.html">DLineEditPlugin</a></div><div class="ttdef"><b>Definition:</b> <a href="dcustomermacrowidget_8h_source.html#l00245">dcustomermacrowidget.h:245</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_5b85ec66ca48145185243108af5ea8fb.html">plugin</a></li><li class="navelem"><a class="el" href="dir_ffcde37709a7a794205fcc6ca0de1db5.html">dtkuiplugin</a></li><li class="navelem"><b>dcustomerplugins.cpp</b></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:17 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

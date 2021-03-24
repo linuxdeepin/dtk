@@ -1,0 +1,4 @@
+<map id="Dtk::Core::DAbstractUnitFormatter" name="Dtk::Core::DAbstractUnitFormatter">
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_d_disk_size_formatter.html" title="DDiskSizeFormatter 是用来获取磁盘容量单位的类, 通过枚举值 获取不同类型磁盘容量的单位 ..." alt="" coords="5,95,212,121"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_d_time_unit_formatter.html" title="DTimeUnitFormatter是用来获取时间单位的类, 通过枚举值 获取不同类型时间单位的进制 " alt="" coords="236,95,443,121"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="ut_DAlertcontrol" name="ut_DAlertcontrol">
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_alert_control.html" title="Dtk::Widget::DAlertControl" alt="" coords="99,171,278,197"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="268,5,339,32"/>
+<area shape="rect" id="node8" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="385,95,459,121"/>
+<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="227,95,361,121"/>
+<area shape="rect" id="node7" href="$class_dtk_1_1_widget_1_1_d_line_edit.html" title="DLineEdit一个聚合 QLineEdit 的输入框 " alt="" coords="302,171,459,197"/>
+<area shape="rect" id="node9" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="371,5,473,32"/>
+</map>

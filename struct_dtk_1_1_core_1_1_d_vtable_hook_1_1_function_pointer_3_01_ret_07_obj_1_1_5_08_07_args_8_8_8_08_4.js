@@ -1,0 +1,4 @@
+var struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_function_pointer_3_01_ret_07_obj_1_1_5_08_07_args_8_8_8_08_4 =
+[
+    [ "Arguments", "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_function_pointer_3_01_ret_07_obj_1_1_5_08_07_args_8_8_8_08_4.html#ac9fd60f6365a275d4be2b2c802386f32", null ]
+];

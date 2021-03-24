@@ -1,0 +1,1911 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Widget::DAnchorsBase类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dtk_1_1_widget_1_1_d_anchors_base.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="class_dtk_1_1_widget_1_1_d_anchors_base-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Widget::DAnchorsBase类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 提供了一种指定 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> 与其它 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> 之间的关系来确定 其位置的方法  
+ <a href="class_dtk_1_1_widget_1_1_d_anchors_base.html#details">更多...</a></p>
+<div class="dynheader">
+类 Dtk::Widget::DAnchorsBase 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_widget_1_1_d_anchors_base__inherit__graph.png" border="0" usemap="#_dtk_1_1_widget_1_1_d_anchors_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dtk_1_1_widget_1_1_d_anchors_base_inherit__map" id="_dtk_1_1_widget_1_1_d_anchors_base_inherit__map">
+<area shape="rect" id="node3" href="class_dtk_1_1_widget_1_1_d_anchors.html" title="DAnchors 是一个模板类，在 DAnchorsBase 的基础上保存了一个控件指针， 将控件和锚定绑定在一起使用，相当�º..." alt="" coords="5,155,196,181"/>
+<area shape="rect" id="node2" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html" title="QObject" alt="" coords="65,5,136,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Dtk::Widget::DAnchorsBase 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_widget_1_1_d_anchors_base__coll__graph.png" border="0" usemap="#_dtk_1_1_widget_1_1_d_anchors_base_coll__map" alt="Collaboration graph"/></div>
+<map name="_dtk_1_1_widget_1_1_d_anchors_base_coll__map" id="_dtk_1_1_widget_1_1_d_anchors_base_coll__map">
+<area shape="rect" id="node2" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html" title="QObject" alt="" coords="64,5,135,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ab48f5b39f0e6a0e3693a00235e3a0272"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab48f5b39f0e6a0e3693a00235e3a0272">AnchorError</a> { <br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab48f5b39f0e6a0e3693a00235e3a0272a9258397432f2e65211e5d0c480c2fa92">NoError</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab48f5b39f0e6a0e3693a00235e3a0272a7fb3e871416865f8f22ae8e30b3bcf29">Conflict</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab48f5b39f0e6a0e3693a00235e3a0272a2653d5d6cb67e4732c9de1e6af3d0308">TargetInvalid</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab48f5b39f0e6a0e3693a00235e3a0272a8660c7debe35ad3cc9c22b35eff09314">PointInvalid</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab48f5b39f0e6a0e3693a00235e3a0272a0b563ad72ee49b50d42b050b3f6ef5ad">LoopBind</a>
+<br />
+ }</td></tr>
+<tr class="separator:ab48f5b39f0e6a0e3693a00235e3a0272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:aed0a3eb8a8b2a29842a0196ca10b4ef0"><td class="memItemLeft" align="right" valign="top"><a id="aed0a3eb8a8b2a29842a0196ca10b4ef0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnabled</b> (bool <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#af39612a5ff93e7b3cd08134b03fe68d5">enabled</a>)</td></tr>
+<tr class="separator:aed0a3eb8a8b2a29842a0196ca10b4ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761b21b91107717d8f66f7c0be4b2945"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a761b21b91107717d8f66f7c0be4b2945">setAnchor</a> (const Qt::AnchorPoint &amp;p, <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ad0bfa648cb6405c7841c4dc4e299d0d3">target</a>, const Qt::AnchorPoint &amp;point)</td></tr>
+<tr class="memdesc:a761b21b91107717d8f66f7c0be4b2945"><td class="mdescLeft">&#160;</td><td class="mdescRight">为 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ad0bfa648cb6405c7841c4dc4e299d0d3" title="绑定了锚定功能的控件对象 ">DAnchorsBase::target</a> 对象设置锚定规则  <a href="#a761b21b91107717d8f66f7c0be4b2945">更多...</a><br /></td></tr>
+<tr class="separator:a761b21b91107717d8f66f7c0be4b2945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa661918567bd5ee76db2dfd7d4da4e4b"><td class="memItemLeft" align="right" valign="top"><a id="aa661918567bd5ee76db2dfd7d4da4e4b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setTop</b> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a827c0033e7d81adcf8b103d7a9ffad94">top</a>)</td></tr>
+<tr class="separator:aa661918567bd5ee76db2dfd7d4da4e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5eb2b735350ac8c33ec9cc7e66ff26"><td class="memItemLeft" align="right" valign="top"><a id="aab5eb2b735350ac8c33ec9cc7e66ff26"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setBottom</b> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#adce1b38f069d5ad688aafe7781b4a0b2">bottom</a>)</td></tr>
+<tr class="separator:aab5eb2b735350ac8c33ec9cc7e66ff26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f64ae72a16432efd3d27f7e341bdac"><td class="memItemLeft" align="right" valign="top"><a id="a91f64ae72a16432efd3d27f7e341bdac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setLeft</b> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3b9c0ae9041fdcb292cf24ef69bdea2e">left</a>)</td></tr>
+<tr class="separator:a91f64ae72a16432efd3d27f7e341bdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcac1e06f0a63018e9b1e707c788104"><td class="memItemLeft" align="right" valign="top"><a id="affcac1e06f0a63018e9b1e707c788104"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setRight</b> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a7faf48ccbbb329eb9b063df706973d31">right</a>)</td></tr>
+<tr class="separator:affcac1e06f0a63018e9b1e707c788104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652b5b7187ac6e0ac24661f959607b59"><td class="memItemLeft" align="right" valign="top"><a id="a652b5b7187ac6e0ac24661f959607b59"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setHorizontalCenter</b> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a990c6e9474d5cae4ecf80b4f09b9f6d0">horizontalCenter</a>)</td></tr>
+<tr class="separator:a652b5b7187ac6e0ac24661f959607b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03408dd23efd6b36d5739496e253b95d"><td class="memItemLeft" align="right" valign="top"><a id="a03408dd23efd6b36d5739496e253b95d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setVerticalCenter</b> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#adc17e88f7f778b928afe4e2e96178224">verticalCenter</a>)</td></tr>
+<tr class="separator:a03408dd23efd6b36d5739496e253b95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57be9dc62e9abbd66c8d924c0e221359"><td class="memItemLeft" align="right" valign="top"><a id="a57be9dc62e9abbd66c8d924c0e221359"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setFill</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#abcbef4fd78655a22a1b53137ea0ccd6a">fill</a>)</td></tr>
+<tr class="separator:a57be9dc62e9abbd66c8d924c0e221359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5214879e1a9f73c75face8bdbdcce8"><td class="memItemLeft" align="right" valign="top"><a id="acb5214879e1a9f73c75face8bdbdcce8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setCenterIn</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a5979862cbf0935ffab7e5d2b21b44174">centerIn</a>)</td></tr>
+<tr class="separator:acb5214879e1a9f73c75face8bdbdcce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144b458e7845ad26f2dce5e7ea934e1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a144b458e7845ad26f2dce5e7ea934e1a">setFill</a> (<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#abcbef4fd78655a22a1b53137ea0ccd6a">fill</a>)</td></tr>
+<tr class="memdesc:a144b458e7845ad26f2dce5e7ea934e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 fill 中的target()作为参数调用其它重载函数  <a href="#a144b458e7845ad26f2dce5e7ea934e1a">更多...</a><br /></td></tr>
+<tr class="separator:a144b458e7845ad26f2dce5e7ea934e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40af4c5920cb13f892b0ed04eee8c256"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a40af4c5920cb13f892b0ed04eee8c256">setCenterIn</a> (<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a5979862cbf0935ffab7e5d2b21b44174">centerIn</a>)</td></tr>
+<tr class="memdesc:a40af4c5920cb13f892b0ed04eee8c256"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 centerIn 中的target()作为参数调用其它重载函数  <a href="#a40af4c5920cb13f892b0ed04eee8c256">更多...</a><br /></td></tr>
+<tr class="separator:a40af4c5920cb13f892b0ed04eee8c256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a723db85b26458431a41045bd03f48895"><td class="memItemLeft" align="right" valign="top"><a id="a723db85b26458431a41045bd03f48895"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMargins</b> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a607a39664bd1300d9d715333cf00d34d">margins</a>)</td></tr>
+<tr class="separator:a723db85b26458431a41045bd03f48895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14ee18f52a579a382ba15cee5e836b9e"><td class="memItemLeft" align="right" valign="top"><a id="a14ee18f52a579a382ba15cee5e836b9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTopMargin</b> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#afb17520011f702ec7b2f70102685d95d">topMargin</a>)</td></tr>
+<tr class="separator:a14ee18f52a579a382ba15cee5e836b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b118c8f7a6d6d7b076203bddded6c7"><td class="memItemLeft" align="right" valign="top"><a id="ac8b118c8f7a6d6d7b076203bddded6c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBottomMargin</b> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aea3b7cc86a3263798f81368b7de5a94e">bottomMargin</a>)</td></tr>
+<tr class="separator:ac8b118c8f7a6d6d7b076203bddded6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893c2ce6eea12916d584977f0855bc40"><td class="memItemLeft" align="right" valign="top"><a id="a893c2ce6eea12916d584977f0855bc40"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLeftMargin</b> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aa266c6810dbb1cf0a9668646a5858dcd">leftMargin</a>)</td></tr>
+<tr class="separator:a893c2ce6eea12916d584977f0855bc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6f0a36badd0dcc4f1b8c1ea0a148e8"><td class="memItemLeft" align="right" valign="top"><a id="a9d6f0a36badd0dcc4f1b8c1ea0a148e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRightMargin</b> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3c2f80a8f38249ee0f41e8815b23dd2b">rightMargin</a>)</td></tr>
+<tr class="separator:a9d6f0a36badd0dcc4f1b8c1ea0a148e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f31f2678e1957f857b1d066ec30e4c"><td class="memItemLeft" align="right" valign="top"><a id="a85f31f2678e1957f857b1d066ec30e4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHorizontalCenterOffset</b> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a2b52884009ded8a7812f030d71d3a80b">horizontalCenterOffset</a>)</td></tr>
+<tr class="separator:a85f31f2678e1957f857b1d066ec30e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98fac15c5fcc87115b5a9657a1c64534"><td class="memItemLeft" align="right" valign="top"><a id="a98fac15c5fcc87115b5a9657a1c64534"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVerticalCenterOffset</b> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a75b8c96b681d1dd4368ad48b34cef159">verticalCenterOffset</a>)</td></tr>
+<tr class="separator:a98fac15c5fcc87115b5a9657a1c64534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c9b03b640aeb412f36fe6c338b74cc"><td class="memItemLeft" align="right" valign="top"><a id="ac2c9b03b640aeb412f36fe6c338b74cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlignWhenCentered</b> (bool alignWhenCentered)</td></tr>
+<tr class="separator:ac2c9b03b640aeb412f36fe6c338b74cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc5fb1a87f2abdae581467a297e68cad"><td class="memItemLeft" align="right" valign="top"><a id="afc5fb1a87f2abdae581467a297e68cad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTop</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:afc5fb1a87f2abdae581467a297e68cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff05d750a56b5016f013731f63f8c97c"><td class="memItemLeft" align="right" valign="top"><a id="aff05d750a56b5016f013731f63f8c97c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBottom</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:aff05d750a56b5016f013731f63f8c97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2ffca5dbaa643505b1e78699f7a140"><td class="memItemLeft" align="right" valign="top"><a id="a6c2ffca5dbaa643505b1e78699f7a140"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLeft</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:a6c2ffca5dbaa643505b1e78699f7a140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57dfc896f938efc0eb84b7e95ee803b"><td class="memItemLeft" align="right" valign="top"><a id="ab57dfc896f938efc0eb84b7e95ee803b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRight</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:ab57dfc896f938efc0eb84b7e95ee803b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cb7335028f92cd56f377d24fa9fedb"><td class="memItemLeft" align="right" valign="top"><a id="ab0cb7335028f92cd56f377d24fa9fedb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHorizontalCenter</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:ab0cb7335028f92cd56f377d24fa9fedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25983a23707bdd92cbc9adac61e6b6b8"><td class="memItemLeft" align="right" valign="top"><a id="a25983a23707bdd92cbc9adac61e6b6b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVerticalCenter</b> (int arg, Qt::AnchorPoint point)</td></tr>
+<tr class="separator:a25983a23707bdd92cbc9adac61e6b6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3318614538095d2b4abe42f9bd1cd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a5a3318614538095d2b4abe42f9bd1cd7">moveTop</a> (int arg)</td></tr>
+<tr class="memdesc:a5a3318614538095d2b4abe42f9bd1cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的上边界到 arg 这个位置  <a href="#a5a3318614538095d2b4abe42f9bd1cd7">更多...</a><br /></td></tr>
+<tr class="separator:a5a3318614538095d2b4abe42f9bd1cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a6c67f40dda61b4e1831b7ed419575b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3a6c67f40dda61b4e1831b7ed419575b">moveBottom</a> (int arg)</td></tr>
+<tr class="memdesc:a3a6c67f40dda61b4e1831b7ed419575b"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的下边界到 arg 这个位置  <a href="#a3a6c67f40dda61b4e1831b7ed419575b">更多...</a><br /></td></tr>
+<tr class="separator:a3a6c67f40dda61b4e1831b7ed419575b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab8450a4aa012624925f78731fea48e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aeab8450a4aa012624925f78731fea48e">moveLeft</a> (int arg)</td></tr>
+<tr class="memdesc:aeab8450a4aa012624925f78731fea48e"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的左边界到 arg 这个位置  <a href="#aeab8450a4aa012624925f78731fea48e">更多...</a><br /></td></tr>
+<tr class="separator:aeab8450a4aa012624925f78731fea48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1605da9726b0b50ba2042cfd9c36e575"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a1605da9726b0b50ba2042cfd9c36e575">moveRight</a> (int arg)</td></tr>
+<tr class="memdesc:a1605da9726b0b50ba2042cfd9c36e575"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的右边界到 arg 这个位置  <a href="#a1605da9726b0b50ba2042cfd9c36e575">更多...</a><br /></td></tr>
+<tr class="separator:a1605da9726b0b50ba2042cfd9c36e575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8bf8c611aad9f8a60628ac0e458f30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a7b8bf8c611aad9f8a60628ac0e458f30">moveHorizontalCenter</a> (int arg)</td></tr>
+<tr class="memdesc:a7b8bf8c611aad9f8a60628ac0e458f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的水平中线到 arg 这个位置  <a href="#a7b8bf8c611aad9f8a60628ac0e458f30">更多...</a><br /></td></tr>
+<tr class="separator:a7b8bf8c611aad9f8a60628ac0e458f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6024e1dfe9252aab03a10a2cd4e59dae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a6024e1dfe9252aab03a10a2cd4e59dae">moveVerticalCenter</a> (int arg)</td></tr>
+<tr class="memdesc:a6024e1dfe9252aab03a10a2cd4e59dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的竖直中线到 arg 这个位置  <a href="#a6024e1dfe9252aab03a10a2cd4e59dae">更多...</a><br /></td></tr>
+<tr class="separator:a6024e1dfe9252aab03a10a2cd4e59dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a8df45cb455d0890a8c11790ea0ca0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a03a8df45cb455d0890a8c11790ea0ca0">moveCenter</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;arg)</td></tr>
+<tr class="memdesc:a03a8df45cb455d0890a8c11790ea0ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动 target 控件的上边界到 arg 这个位置  <a href="#a03a8df45cb455d0890a8c11790ea0ca0">更多...</a><br /></td></tr>
+<tr class="separator:a03a8df45cb455d0890a8c11790ea0ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:aa4409f3520758bc7d0b6fd97439633c1"><td class="memItemLeft" align="right" valign="top"><a id="aa4409f3520758bc7d0b6fd97439633c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aa4409f3520758bc7d0b6fd97439633c1">enabledChanged</a> (bool <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#af39612a5ff93e7b3cd08134b03fe68d5">enabled</a>)</td></tr>
+<tr class="memdesc:aa4409f3520758bc7d0b6fd97439633c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 enabled 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:aa4409f3520758bc7d0b6fd97439633c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7872e608258ed0e989c49ae0a5d33b"><td class="memItemLeft" align="right" valign="top"><a id="add7872e608258ed0e989c49ae0a5d33b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#add7872e608258ed0e989c49ae0a5d33b">topChanged</a> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a827c0033e7d81adcf8b103d7a9ffad94">top</a>)</td></tr>
+<tr class="memdesc:add7872e608258ed0e989c49ae0a5d33b"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 top 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:add7872e608258ed0e989c49ae0a5d33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68df626a37f4c0091ada9d7b7a591e2"><td class="memItemLeft" align="right" valign="top"><a id="ad68df626a37f4c0091ada9d7b7a591e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ad68df626a37f4c0091ada9d7b7a591e2">bottomChanged</a> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#adce1b38f069d5ad688aafe7781b4a0b2">bottom</a>)</td></tr>
+<tr class="memdesc:ad68df626a37f4c0091ada9d7b7a591e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 bottom 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:ad68df626a37f4c0091ada9d7b7a591e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83154157857e3e1c17062aa3487b1ab"><td class="memItemLeft" align="right" valign="top"><a id="ac83154157857e3e1c17062aa3487b1ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ac83154157857e3e1c17062aa3487b1ab">leftChanged</a> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3b9c0ae9041fdcb292cf24ef69bdea2e">left</a>)</td></tr>
+<tr class="memdesc:ac83154157857e3e1c17062aa3487b1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 left 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:ac83154157857e3e1c17062aa3487b1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69a2a822216cf5a325b19a6a2ed5fe2"><td class="memItemLeft" align="right" valign="top"><a id="af69a2a822216cf5a325b19a6a2ed5fe2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#af69a2a822216cf5a325b19a6a2ed5fe2">rightChanged</a> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a7faf48ccbbb329eb9b063df706973d31">right</a>)</td></tr>
+<tr class="memdesc:af69a2a822216cf5a325b19a6a2ed5fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 right 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:af69a2a822216cf5a325b19a6a2ed5fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33897a8c093a348ae066ac4031c00e89"><td class="memItemLeft" align="right" valign="top"><a id="a33897a8c093a348ae066ac4031c00e89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a33897a8c093a348ae066ac4031c00e89">horizontalCenterChanged</a> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a990c6e9474d5cae4ecf80b4f09b9f6d0">horizontalCenter</a>)</td></tr>
+<tr class="memdesc:a33897a8c093a348ae066ac4031c00e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 horizontalCenter 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a33897a8c093a348ae066ac4031c00e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100f10f12cde07214dbd3b86b9b125e0"><td class="memItemLeft" align="right" valign="top"><a id="a100f10f12cde07214dbd3b86b9b125e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a100f10f12cde07214dbd3b86b9b125e0">verticalCenterChanged</a> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#adc17e88f7f778b928afe4e2e96178224">verticalCenter</a>)</td></tr>
+<tr class="memdesc:a100f10f12cde07214dbd3b86b9b125e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 verticalCenter 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a100f10f12cde07214dbd3b86b9b125e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e4ded86bdebe5a58ca617f9282ce6f"><td class="memItemLeft" align="right" valign="top"><a id="a38e4ded86bdebe5a58ca617f9282ce6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a38e4ded86bdebe5a58ca617f9282ce6f">fillChanged</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#abcbef4fd78655a22a1b53137ea0ccd6a">fill</a>)</td></tr>
+<tr class="memdesc:a38e4ded86bdebe5a58ca617f9282ce6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 fill 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a38e4ded86bdebe5a58ca617f9282ce6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bd396faa4ee21276be4b776e52ba3b"><td class="memItemLeft" align="right" valign="top"><a id="a04bd396faa4ee21276be4b776e52ba3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a04bd396faa4ee21276be4b776e52ba3b">centerInChanged</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a5979862cbf0935ffab7e5d2b21b44174">centerIn</a>)</td></tr>
+<tr class="memdesc:a04bd396faa4ee21276be4b776e52ba3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 centerIn 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a04bd396faa4ee21276be4b776e52ba3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae214b81fb95dec40b48f068eaefa8010"><td class="memItemLeft" align="right" valign="top"><a id="ae214b81fb95dec40b48f068eaefa8010"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ae214b81fb95dec40b48f068eaefa8010">marginsChanged</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a607a39664bd1300d9d715333cf00d34d">margins</a>)</td></tr>
+<tr class="memdesc:ae214b81fb95dec40b48f068eaefa8010"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 margins 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:ae214b81fb95dec40b48f068eaefa8010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0dae41e8f7b24badc594bbd11b2844"><td class="memItemLeft" align="right" valign="top"><a id="afc0dae41e8f7b24badc594bbd11b2844"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#afc0dae41e8f7b24badc594bbd11b2844">topMarginChanged</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#afb17520011f702ec7b2f70102685d95d">topMargin</a>)</td></tr>
+<tr class="memdesc:afc0dae41e8f7b24badc594bbd11b2844"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 topMargin 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:afc0dae41e8f7b24badc594bbd11b2844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef797ce45a158735775e2318d5d981d5"><td class="memItemLeft" align="right" valign="top"><a id="aef797ce45a158735775e2318d5d981d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aef797ce45a158735775e2318d5d981d5">bottomMarginChanged</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aea3b7cc86a3263798f81368b7de5a94e">bottomMargin</a>)</td></tr>
+<tr class="memdesc:aef797ce45a158735775e2318d5d981d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 bottomMargin 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:aef797ce45a158735775e2318d5d981d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa477fe656fcbb8ed58db6298156cbf4f"><td class="memItemLeft" align="right" valign="top"><a id="aa477fe656fcbb8ed58db6298156cbf4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aa477fe656fcbb8ed58db6298156cbf4f">leftMarginChanged</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aa266c6810dbb1cf0a9668646a5858dcd">leftMargin</a>)</td></tr>
+<tr class="memdesc:aa477fe656fcbb8ed58db6298156cbf4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 leftMargin 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:aa477fe656fcbb8ed58db6298156cbf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e3f150a7964039c67faf5c69e086b3"><td class="memItemLeft" align="right" valign="top"><a id="a82e3f150a7964039c67faf5c69e086b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a82e3f150a7964039c67faf5c69e086b3">rightMarginChanged</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3c2f80a8f38249ee0f41e8815b23dd2b">rightMargin</a>)</td></tr>
+<tr class="memdesc:a82e3f150a7964039c67faf5c69e086b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 rightMargin 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a82e3f150a7964039c67faf5c69e086b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3014c9f5e05275902a99b49508114d2b"><td class="memItemLeft" align="right" valign="top"><a id="a3014c9f5e05275902a99b49508114d2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3014c9f5e05275902a99b49508114d2b">horizontalCenterOffsetChanged</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a2b52884009ded8a7812f030d71d3a80b">horizontalCenterOffset</a>)</td></tr>
+<tr class="memdesc:a3014c9f5e05275902a99b49508114d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 horizontalCenterOffset 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a3014c9f5e05275902a99b49508114d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab510b4c4835b6ee6afb0dd53a157ef30"><td class="memItemLeft" align="right" valign="top"><a id="ab510b4c4835b6ee6afb0dd53a157ef30"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab510b4c4835b6ee6afb0dd53a157ef30">verticalCenterOffsetChanged</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a75b8c96b681d1dd4368ad48b34cef159">verticalCenterOffset</a>)</td></tr>
+<tr class="memdesc:ab510b4c4835b6ee6afb0dd53a157ef30"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 verticalCenterOffset 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:ab510b4c4835b6ee6afb0dd53a157ef30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355b46462c42ebea45ab36fd3ff7b6c2"><td class="memItemLeft" align="right" valign="top"><a id="a355b46462c42ebea45ab36fd3ff7b6c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>alignWhenCenteredChanged</b> (bool alignWhenCentered)</td></tr>
+<tr class="separator:a355b46462c42ebea45ab36fd3ff7b6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa36c167c8f8821e1fe0561c50694a267"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aa36c167c8f8821e1fe0561c50694a267">DAnchorsBase</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *w)</td></tr>
+<tr class="memdesc:aa36c167c8f8821e1fe0561c50694a267"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象，传入的 w 对象会和一个新的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象 绑定到一起  <a href="#aa36c167c8f8821e1fe0561c50694a267">更多...</a><br /></td></tr>
+<tr class="separator:aa36c167c8f8821e1fe0561c50694a267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6666779696f18c2de0503ee48615a01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aa6666779696f18c2de0503ee48615a01">~DAnchorsBase</a> ()</td></tr>
+<tr class="memdesc:aa6666779696f18c2de0503ee48615a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">在析构时会判断此 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象是否和 target 存在绑定关系，如果是 则从映射表中移除绑定  <a href="#aa6666779696f18c2de0503ee48615a01">更多...</a><br /></td></tr>
+<tr class="separator:aa6666779696f18c2de0503ee48615a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1666699d9717a87adb8c5b7f1b9bcbf0"><td class="memItemLeft" align="right" valign="top"><a id="a1666699d9717a87adb8c5b7f1b9bcbf0"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>target</b> () const</td></tr>
+<tr class="separator:a1666699d9717a87adb8c5b7f1b9bcbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05c1c4276ab9ae355a92f302b1379b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dtk_1_1_widget_1_1_d_enhanced_widget.html">DEnhancedWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ad05c1c4276ab9ae355a92f302b1379b6">enhancedWidget</a> () const</td></tr>
+<tr class="memdesc:ad05c1c4276ab9ae355a92f302b1379b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回 target 控件的扩展对象。此对象为 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> 对象额外提供了和控件大小、 位置相关的变化信号  <a href="#ad05c1c4276ab9ae355a92f302b1379b6">更多...</a><br /></td></tr>
+<tr class="separator:ad05c1c4276ab9ae355a92f302b1379b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206d56cffae02e52c4bbda495c4f5d0f"><td class="memItemLeft" align="right" valign="top"><a id="a206d56cffae02e52c4bbda495c4f5d0f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enabled</b> () const</td></tr>
+<tr class="separator:a206d56cffae02e52c4bbda495c4f5d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83a56fac058fab5b6cf18b807937f3b"><td class="memItemLeft" align="right" valign="top"><a id="af83a56fac058fab5b6cf18b807937f3b"></a>
+const <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>anchors</b> () const</td></tr>
+<tr class="separator:af83a56fac058fab5b6cf18b807937f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969d54785837bd8f0921a9830d2a13fb"><td class="memItemLeft" align="right" valign="top"><a id="a969d54785837bd8f0921a9830d2a13fb"></a>
+const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>top</b> () const</td></tr>
+<tr class="separator:a969d54785837bd8f0921a9830d2a13fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0597abc6876aedc5986f67dacaa144cd"><td class="memItemLeft" align="right" valign="top"><a id="a0597abc6876aedc5986f67dacaa144cd"></a>
+const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>bottom</b> () const</td></tr>
+<tr class="separator:a0597abc6876aedc5986f67dacaa144cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a8cf6ef50b74f35bf5d97838969129"><td class="memItemLeft" align="right" valign="top"><a id="a79a8cf6ef50b74f35bf5d97838969129"></a>
+const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>left</b> () const</td></tr>
+<tr class="separator:a79a8cf6ef50b74f35bf5d97838969129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8f2239f3707ad95920968fb5b7c261"><td class="memItemLeft" align="right" valign="top"><a id="a9d8f2239f3707ad95920968fb5b7c261"></a>
+const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>right</b> () const</td></tr>
+<tr class="separator:a9d8f2239f3707ad95920968fb5b7c261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f0fa547d09211b964d06800639ae7a"><td class="memItemLeft" align="right" valign="top"><a id="a39f0fa547d09211b964d06800639ae7a"></a>
+const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>horizontalCenter</b> () const</td></tr>
+<tr class="separator:a39f0fa547d09211b964d06800639ae7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b7d15dfc6a90c7de13663f8d3c932a"><td class="memItemLeft" align="right" valign="top"><a id="a15b7d15dfc6a90c7de13663f8d3c932a"></a>
+const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>verticalCenter</b> () const</td></tr>
+<tr class="separator:a15b7d15dfc6a90c7de13663f8d3c932a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578121073cc37183c96f1a67f284c1f5"><td class="memItemLeft" align="right" valign="top"><a id="a578121073cc37183c96f1a67f284c1f5"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>fill</b> () const</td></tr>
+<tr class="separator:a578121073cc37183c96f1a67f284c1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f1f63888bca56f758da5a719f4ae2d"><td class="memItemLeft" align="right" valign="top"><a id="a99f1f63888bca56f758da5a719f4ae2d"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>centerIn</b> () const</td></tr>
+<tr class="separator:a99f1f63888bca56f758da5a719f4ae2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941bcd315cf6b13debe3a129c26ad279"><td class="memItemLeft" align="right" valign="top"><a id="a941bcd315cf6b13debe3a129c26ad279"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>margins</b> () const</td></tr>
+<tr class="separator:a941bcd315cf6b13debe3a129c26ad279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5c8764fe4ba82a139f5771d7f5f37a"><td class="memItemLeft" align="right" valign="top"><a id="a8c5c8764fe4ba82a139f5771d7f5f37a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>topMargin</b> () const</td></tr>
+<tr class="separator:a8c5c8764fe4ba82a139f5771d7f5f37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf9608b145402ad0faffbf728e03005"><td class="memItemLeft" align="right" valign="top"><a id="a4bf9608b145402ad0faffbf728e03005"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>bottomMargin</b> () const</td></tr>
+<tr class="separator:a4bf9608b145402ad0faffbf728e03005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa98e9faff2707048dd99628d0e09f92"><td class="memItemLeft" align="right" valign="top"><a id="aaa98e9faff2707048dd99628d0e09f92"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>leftMargin</b> () const</td></tr>
+<tr class="separator:aaa98e9faff2707048dd99628d0e09f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8c89ecf48641521e1a7a8860bc5760"><td class="memItemLeft" align="right" valign="top"><a id="ade8c89ecf48641521e1a7a8860bc5760"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rightMargin</b> () const</td></tr>
+<tr class="separator:ade8c89ecf48641521e1a7a8860bc5760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5631a3055795282c6efa72ef8817f92"><td class="memItemLeft" align="right" valign="top"><a id="af5631a3055795282c6efa72ef8817f92"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>horizontalCenterOffset</b> () const</td></tr>
+<tr class="separator:af5631a3055795282c6efa72ef8817f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d545274ec0d47ca6bb05ee9b0534d5"><td class="memItemLeft" align="right" valign="top"><a id="a13d545274ec0d47ca6bb05ee9b0534d5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>verticalCenterOffset</b> () const</td></tr>
+<tr class="separator:a13d545274ec0d47ca6bb05ee9b0534d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22d1493498670b3c65e3ed9c8d912c9"><td class="memItemLeft" align="right" valign="top"><a id="ae22d1493498670b3c65e3ed9c8d912c9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>alignWhenCentered</b> () const</td></tr>
+<tr class="separator:ae22d1493498670b3c65e3ed9c8d912c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7599856089b7f02c6dcc6a59e5c5c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab48f5b39f0e6a0e3693a00235e3a0272">AnchorError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a4b7599856089b7f02c6dcc6a59e5c5c0">errorCode</a> () const</td></tr>
+<tr class="memdesc:a4b7599856089b7f02c6dcc6a59e5c5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">锚定过程中产生的错误，在一个新的锚定函数被调用之前会清空此错误状态，每次 调用锚定函数后，可以通过此函数的返回值来判断锚定设置是否成功  <a href="#a4b7599856089b7f02c6dcc6a59e5c5c0">更多...</a><br /></td></tr>
+<tr class="separator:a4b7599856089b7f02c6dcc6a59e5c5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aca6ac09913a03e2ab90a9ea37eba06"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3aca6ac09913a03e2ab90a9ea37eba06">errorString</a> () const</td></tr>
+<tr class="memdesc:a3aca6ac09913a03e2ab90a9ea37eba06"><td class="mdescLeft">&#160;</td><td class="mdescRight">对 errorCode 的文本描述信息  <a href="#a3aca6ac09913a03e2ab90a9ea37eba06">更多...</a><br /></td></tr>
+<tr class="separator:a3aca6ac09913a03e2ab90a9ea37eba06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2e9b6d35944946274b43518a42a7d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#adc2e9b6d35944946274b43518a42a7d5">isBinding</a> (const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *info) const</td></tr>
+<tr class="memdesc:adc2e9b6d35944946274b43518a42a7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果此 info 设置了锚定对象，则返回 true ，否则返回 false  <a href="#adc2e9b6d35944946274b43518a42a7d5">更多...</a><br /></td></tr>
+<tr class="separator:adc2e9b6d35944946274b43518a42a7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qt_metacast inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacast"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#qt_metacast">qt_metacast</a> (const char *)</td></tr>
+<tr class="separator:qt_metacast inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qt_metacall inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacall"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#qt_metacall">qt_metacall</a> (QMetaObject::Call, int, void **)</td></tr>
+<tr class="separator:qt_metacall inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:event inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</td></tr>
+<tr class="separator:event inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="eventFilter"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:eventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWidgetType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWidgetType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
+<tr class="separator:isWidgetType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWindowType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWindowType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
+<tr class="separator:isWindowType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:signalsBlocked inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="signalsBlocked"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
+<tr class="separator:signalsBlocked inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:blockSignals inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="blockSignals"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
+<tr class="separator:blockSignals inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:thread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="thread"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
+<tr class="separator:thread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:moveToThread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="moveToThread"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
+<tr class="separator:moveToThread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, Qt::TimerType timerType)</td></tr>
+<tr class="separator:startTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, Qt::TimerType timerType)</td></tr>
+<tr class="separator:startTimer-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:killTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="killTimer"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
+<tr class="separator:killTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-1"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChildren-1">findChildren</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-2"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:children inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="children"></a>
+const QObjectList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
+<tr class="separator:children inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setParent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:setParent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:installEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="installEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
+<tr class="separator:installEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:removeEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="removeEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:removeEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-2"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, Qt::ConnectionType type) const const</td></tr>
+<tr class="separator:connect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-3 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-3 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
+<tr class="separator:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
+<tr class="separator:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
+<tr class="separator:dumpObjectTree inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
+<tr class="separator:dumpObjectInfo inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProperty inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setProperty"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
+<tr class="separator:setProperty inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:property inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="property"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
+<tr class="separator:property inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dynamicPropertyNames inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dynamicPropertyNames"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
+<tr class="separator:dynamicPropertyNames inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:destroyed inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="destroyed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:destroyed inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectNameChanged inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectNameChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
+<tr class="separator:objectNameChanged inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
+<tr class="separator:parent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:inherits inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="inherits"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
+<tr class="separator:inherits inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="deleteLater"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
+<tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aa5721db7c761395ccd0ce5f42fad3214"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aa5721db7c761395ccd0ce5f42fad3214">setAnchor</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *w, const Qt::AnchorPoint &amp;p, <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ad0bfa648cb6405c7841c4dc4e299d0d3">target</a>, const Qt::AnchorPoint &amp;point)</td></tr>
+<tr class="memdesc:aa5721db7c761395ccd0ce5f42fad3214"><td class="mdescLeft">&#160;</td><td class="mdescRight">方便用户直接设置两个对象之间锚定关系的静态函数，调用此函数可能会隐式创建 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象  <a href="#aa5721db7c761395ccd0ce5f42fad3214">更多...</a><br /></td></tr>
+<tr class="separator:aa5721db7c761395ccd0ce5f42fad3214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b6609619dac153fce00bc62e4cbf02"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a26b6609619dac153fce00bc62e4cbf02">clearAnchors</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *w)</td></tr>
+<tr class="memdesc:a26b6609619dac153fce00bc62e4cbf02"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除和控件 w 相关的所有锚定关系，包括锚定w或者被w锚定的任何关联。会直接 销毁 w 对应的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象  <a href="#a26b6609619dac153fce00bc62e4cbf02">更多...</a><br /></td></tr>
+<tr class="separator:a26b6609619dac153fce00bc62e4cbf02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c965bf0ae2bb81138c5a6da1526639"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ad7c965bf0ae2bb81138c5a6da1526639">getAnchorBaseByWidget</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *w)</td></tr>
+<tr class="memdesc:ad7c965bf0ae2bb81138c5a6da1526639"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回与 w 绑定的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象  <a href="#ad7c965bf0ae2bb81138c5a6da1526639">更多...</a><br /></td></tr>
+<tr class="separator:ad7c965bf0ae2bb81138c5a6da1526639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a4dae33b4246966ced38531e0e54e7878"><td class="memItemLeft" align="right" valign="top"><a id="a4dae33b4246966ced38531e0e54e7878"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *w)</td></tr>
+<tr class="separator:a4dae33b4246966ced38531e0e54e7878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="sender"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
+<tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:senderSignalIndex inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="senderSignalIndex"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
+<tr class="separator:senderSignalIndex inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:receivers inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="receivers"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
+<tr class="separator:receivers inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
+<tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:customEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="customEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:customEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:connectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ad0bfa648cb6405c7841c4dc4e299d0d3"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ad0bfa648cb6405c7841c4dc4e299d0d3">target</a></td></tr>
+<tr class="memdesc:ad0bfa648cb6405c7841c4dc4e299d0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定了锚定功能的控件对象  <a href="#ad0bfa648cb6405c7841c4dc4e299d0d3">更多...</a><br /></td></tr>
+<tr class="separator:ad0bfa648cb6405c7841c4dc4e299d0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39612a5ff93e7b3cd08134b03fe68d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#af39612a5ff93e7b3cd08134b03fe68d5">enabled</a></td></tr>
+<tr class="memdesc:af39612a5ff93e7b3cd08134b03fe68d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制锚定功能是否开启，为 false 时仅仅表示不会根据控件各种属性的变化来 来更新它的位置，但锚定关系并没有被解除  <a href="#af39612a5ff93e7b3cd08134b03fe68d5">更多...</a><br /></td></tr>
+<tr class="separator:af39612a5ff93e7b3cd08134b03fe68d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae2f2884c7399a042e8fe64a3a586969"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aae2f2884c7399a042e8fe64a3a586969">anchors</a></td></tr>
+<tr class="memdesc:aae2f2884c7399a042e8fe64a3a586969"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个指向自己的指针  <a href="#aae2f2884c7399a042e8fe64a3a586969">更多...</a><br /></td></tr>
+<tr class="separator:aae2f2884c7399a042e8fe64a3a586969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827c0033e7d81adcf8b103d7a9ffad94"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a827c0033e7d81adcf8b103d7a9ffad94">top</a></td></tr>
+<tr class="memdesc:a827c0033e7d81adcf8b103d7a9ffad94"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件上边界锚线的信息  <a href="#a827c0033e7d81adcf8b103d7a9ffad94">更多...</a><br /></td></tr>
+<tr class="separator:a827c0033e7d81adcf8b103d7a9ffad94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce1b38f069d5ad688aafe7781b4a0b2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#adce1b38f069d5ad688aafe7781b4a0b2">bottom</a></td></tr>
+<tr class="memdesc:adce1b38f069d5ad688aafe7781b4a0b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件下边界锚线的信息  <a href="#adce1b38f069d5ad688aafe7781b4a0b2">更多...</a><br /></td></tr>
+<tr class="separator:adce1b38f069d5ad688aafe7781b4a0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9c0ae9041fdcb292cf24ef69bdea2e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3b9c0ae9041fdcb292cf24ef69bdea2e">left</a></td></tr>
+<tr class="memdesc:a3b9c0ae9041fdcb292cf24ef69bdea2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件左边界锚线的信息  <a href="#a3b9c0ae9041fdcb292cf24ef69bdea2e">更多...</a><br /></td></tr>
+<tr class="separator:a3b9c0ae9041fdcb292cf24ef69bdea2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7faf48ccbbb329eb9b063df706973d31"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a7faf48ccbbb329eb9b063df706973d31">right</a></td></tr>
+<tr class="memdesc:a7faf48ccbbb329eb9b063df706973d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件右边界锚线的信息  <a href="#a7faf48ccbbb329eb9b063df706973d31">更多...</a><br /></td></tr>
+<tr class="separator:a7faf48ccbbb329eb9b063df706973d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990c6e9474d5cae4ecf80b4f09b9f6d0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a990c6e9474d5cae4ecf80b4f09b9f6d0">horizontalCenter</a></td></tr>
+<tr class="memdesc:a990c6e9474d5cae4ecf80b4f09b9f6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件水平锚线的信息  <a href="#a990c6e9474d5cae4ecf80b4f09b9f6d0">更多...</a><br /></td></tr>
+<tr class="separator:a990c6e9474d5cae4ecf80b4f09b9f6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc17e88f7f778b928afe4e2e96178224"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#adc17e88f7f778b928afe4e2e96178224">verticalCenter</a></td></tr>
+<tr class="memdesc:adc17e88f7f778b928afe4e2e96178224"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件竖直锚线的信息  <a href="#adc17e88f7f778b928afe4e2e96178224">更多...</a><br /></td></tr>
+<tr class="separator:adc17e88f7f778b928afe4e2e96178224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbef4fd78655a22a1b53137ea0ccd6a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#abcbef4fd78655a22a1b53137ea0ccd6a">fill</a></td></tr>
+<tr class="memdesc:abcbef4fd78655a22a1b53137ea0ccd6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件的填充目标对象  <a href="#abcbef4fd78655a22a1b53137ea0ccd6a">更多...</a><br /></td></tr>
+<tr class="separator:abcbef4fd78655a22a1b53137ea0ccd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5979862cbf0935ffab7e5d2b21b44174"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a5979862cbf0935ffab7e5d2b21b44174">centerIn</a></td></tr>
+<tr class="memdesc:a5979862cbf0935ffab7e5d2b21b44174"><td class="mdescLeft">&#160;</td><td class="mdescRight">target 控件的居中目标对象  <a href="#a5979862cbf0935ffab7e5d2b21b44174">更多...</a><br /></td></tr>
+<tr class="separator:a5979862cbf0935ffab7e5d2b21b44174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a607a39664bd1300d9d715333cf00d34d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a607a39664bd1300d9d715333cf00d34d">margins</a></td></tr>
+<tr class="memdesc:a607a39664bd1300d9d715333cf00d34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">上下左右四条“锚线”的边距，此值的优先级低于每条“锚线”特定的 margin 值  <a href="#a607a39664bd1300d9d715333cf00d34d">更多...</a><br /></td></tr>
+<tr class="separator:a607a39664bd1300d9d715333cf00d34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb17520011f702ec7b2f70102685d95d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#afb17520011f702ec7b2f70102685d95d">topMargin</a></td></tr>
+<tr class="memdesc:afb17520011f702ec7b2f70102685d95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">上“锚线”的边距，优先级高于 margins  <a href="#afb17520011f702ec7b2f70102685d95d">更多...</a><br /></td></tr>
+<tr class="separator:afb17520011f702ec7b2f70102685d95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3b7cc86a3263798f81368b7de5a94e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aea3b7cc86a3263798f81368b7de5a94e">bottomMargin</a></td></tr>
+<tr class="memdesc:aea3b7cc86a3263798f81368b7de5a94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">下“锚线”的边距，优先级高于 margins  <a href="#aea3b7cc86a3263798f81368b7de5a94e">更多...</a><br /></td></tr>
+<tr class="separator:aea3b7cc86a3263798f81368b7de5a94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa266c6810dbb1cf0a9668646a5858dcd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aa266c6810dbb1cf0a9668646a5858dcd">leftMargin</a></td></tr>
+<tr class="memdesc:aa266c6810dbb1cf0a9668646a5858dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">左“锚线”的边距，优先级高于 margins  <a href="#aa266c6810dbb1cf0a9668646a5858dcd">更多...</a><br /></td></tr>
+<tr class="separator:aa266c6810dbb1cf0a9668646a5858dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2f80a8f38249ee0f41e8815b23dd2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3c2f80a8f38249ee0f41e8815b23dd2b">rightMargin</a></td></tr>
+<tr class="memdesc:a3c2f80a8f38249ee0f41e8815b23dd2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">右“锚线”的边距，优先级高于 margins  <a href="#a3c2f80a8f38249ee0f41e8815b23dd2b">更多...</a><br /></td></tr>
+<tr class="separator:a3c2f80a8f38249ee0f41e8815b23dd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b52884009ded8a7812f030d71d3a80b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a2b52884009ded8a7812f030d71d3a80b">horizontalCenterOffset</a></td></tr>
+<tr class="memdesc:a2b52884009ded8a7812f030d71d3a80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">水平“锚线”的偏移量  <a href="#a2b52884009ded8a7812f030d71d3a80b">更多...</a><br /></td></tr>
+<tr class="separator:a2b52884009ded8a7812f030d71d3a80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b8c96b681d1dd4368ad48b34cef159"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a75b8c96b681d1dd4368ad48b34cef159">verticalCenterOffset</a></td></tr>
+<tr class="memdesc:a75b8c96b681d1dd4368ad48b34cef159"><td class="mdescLeft">&#160;</td><td class="mdescRight">竖直“锚线”的偏移量  <a href="#a75b8c96b681d1dd4368ad48b34cef159">更多...</a><br /></td></tr>
+<tr class="separator:a75b8c96b681d1dd4368ad48b34cef159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9f174f51ca75ea7ed4490fdf089d0d"><td class="memItemLeft" align="right" valign="top"><a id="a0f9f174f51ca75ea7ed4490fdf089d0d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>alignWhenCentered</b></td></tr>
+<tr class="separator:a0f9f174f51ca75ea7ed4490fdf089d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
+<tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 提供了一种指定 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> 与其它 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> 之间的关系来确定 其位置的方法 </p>
+<p>除了比较传统的布局方式之外，DtkWidget 还提供了一种使用锚定概念布局控件的方法（ 类似于 QQuickItem 中的 anchors 属性），可以认为每个控件具有一组6个不可见的“锚 线”：left，horizontalCenter，right，top，verticalCenter和bottom，如图所示： </p><div class="image">
+<img src="edges_anchors.png" alt="edges_anchors.png"/>
+</div>
+<p> 使用 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors.html" title="DAnchors 是一个模板类，在 DAnchorsBase 的基础上保存了一个控件指针， 将控件和锚定绑定在一起使用，相当�...">DAnchors</a> 可以让 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> 基于这些“锚线”来确定相互间的关系，如： </p><div class="fragment"><div class="line">DAnchors&lt;QLabel&gt; rect1(<span class="keyword">new</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlabel.html">QLabel</a>(<span class="stringliteral">&quot;rect1&quot;</span>));</div><div class="line">DAnchors&lt;QLabel&gt; rect2(<span class="keyword">new</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlabel.html">QLabel</a>(<span class="stringliteral">&quot;rect2&quot;</span>));</div><div class="line"></div><div class="line">rect2.setLeft(rect1.right());</div></div><!-- fragment --><p> 这样 rect2 的左边界就会和 rect1 的右边界对齐： </p><div class="image">
+<img src="edge1.png" alt="edge1.png"/>
+</div>
+<p> 另外还可以同时设置多个“锚线”： </p><div class="fragment"><div class="line">DAnchors&lt;QLabel&gt; rect1(<span class="keyword">new</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlabel.html">QLabel</a>(<span class="stringliteral">&quot;rect1&quot;</span>));</div><div class="line">DAnchors&lt;QLabel&gt; rect2(<span class="keyword">new</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlabel.html">QLabel</a>(<span class="stringliteral">&quot;rect2&quot;</span>));</div><div class="line"></div><div class="line">rect2.setTop(rect1.bottom());</div><div class="line">rect2.setLeft(rect1.right());</div></div><!-- fragment --> <div class="image">
+<img src="edge3.png" alt="edge3.png"/>
+</div>
+<p> 锚定布局同时在多个控件中使用，控件之间只需要满足以下条件： </p><ul>
+<li><code>控件之间为兄弟关系，或被锚定控件为父控件</code> </li>
+<li><code>锚定关系不能循环绑定</code> </li>
+</ul>
+<h1><a class="anchor" id="margin_offset"></a>
+锚定的间隔和偏移</h1>
+<p>锚定系统允许设置“锚线”之间的间距，和“锚线”一一对应，每个控件都有一组4个 margin： leftMargin, rightMargin, topMargin 和 bottomMargin 以及两个 offset：  horizontalCenterOffset 和 verticalCenterOffset。 </p><div class="image">
+<img src="margins_anchors.png" alt="margins_anchors.png"/>
+</div>
+<p> 下面是左margin的例子： </p><div class="fragment"><div class="line">DAnchors&lt;QLabel&gt; rect1(<span class="keyword">new</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlabel.html">QLabel</a>(<span class="stringliteral">&quot;rect1&quot;</span>));</div><div class="line">DAnchors&lt;QLabel&gt; rect2(<span class="keyword">new</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlabel.html">QLabel</a>(<span class="stringliteral">&quot;rect2&quot;</span>));</div><div class="line"></div><div class="line">rect2.setLeftMargin(5);</div><div class="line">rect2.setLeft(rect1.right());</div></div><!-- fragment --><p> rect2 的左边界相距 rect1 的右边界5个像素： </p><div class="image">
+<img src="edge2.png" alt="edge2.png"/>
+</div>
+ <dl class="section note"><dt>注解</dt><dd>margin 仅仅是对设置的锚点生效，并不是让控件本身增加了边距，如果设置了 margin，但并没有设置相应的锚点，对控件本身而已是没有任何影响的。margin 的值可以 为负数，通过值的正负来决定margin的方向（内 margin 还是外 margin）</dd></dl>
+<p>除了基于“锚线”来设置锚定外，另外还有 setCenterIn 和 setFill 这两个比较特殊的 的实现。</p>
+<h1><a class="anchor" id="loop_anchor"></a>
+判断循环锚定的方式</h1>
+<p>假设 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> a1, a2; a1.setRight(a2.left()); 则判断 a1 和 a2 之间 会不会存在循环绑定的逻辑为: 尝试更改 a1 右边界的值，更新后如果 a2 左边界的值产出了变化，则认为会导致循环绑 定，否则认为不存在 </p>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00076">76</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="ab48f5b39f0e6a0e3693a00235e3a0272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab48f5b39f0e6a0e3693a00235e3a0272">&#9670;&nbsp;</a></span>AnchorError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab48f5b39f0e6a0e3693a00235e3a0272">Dtk::Widget::DAnchorsBase::AnchorError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab48f5b39f0e6a0e3693a00235e3a0272">DAnchorsBase::AnchorError</a> 设置锚定信息的过程中可能出现的错误类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ab48f5b39f0e6a0e3693a00235e3a0272a9258397432f2e65211e5d0c480c2fa92"></a>NoError&#160;</td><td class="fielddoc"><p>设置锚定的过程中没有任何错误发生 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab48f5b39f0e6a0e3693a00235e3a0272a7fb3e871416865f8f22ae8e30b3bcf29"></a>Conflict&#160;</td><td class="fielddoc"><p>表示设置的锚定关系跟已有关系存在冲突，如 fill 和 centerIn 不能同时设置 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab48f5b39f0e6a0e3693a00235e3a0272a2653d5d6cb67e4732c9de1e6af3d0308"></a>TargetInvalid&#160;</td><td class="fielddoc"><p>表示设置锚定关系时的目标控件无效 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab48f5b39f0e6a0e3693a00235e3a0272a8660c7debe35ad3cc9c22b35eff09314"></a>PointInvalid&#160;</td><td class="fielddoc"><p>表示设置锚定关系时的“锚线”信息错误，如把 Qt::AnchorLeft 设置到了 Qt::AnchorTop 上 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab48f5b39f0e6a0e3693a00235e3a0272a0b563ad72ee49b50d42b050b3f6ef5ad"></a>LoopBind&#160;</td><td class="fielddoc"><p>表示设置的锚定关系和已有关系形成了循环绑定 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa36c167c8f8821e1fe0561c50694a267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa36c167c8f8821e1fe0561c50694a267">&#9670;&nbsp;</a></span>DAnchorsBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dtk::Widget::DAnchorsBase::DAnchorsBase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象，传入的 w 对象会和一个新的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象 绑定到一起 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>需要使用锚定关系的控件 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>对 w 设置的锚定关系不会随着本次构造的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象的销毁而消失。 此构造函数可能会隐式的构造一个新 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象用于真正的功能实现，函数执行 时会先检查当前是否已经有和 w 对象绑定的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象，如果没有则会创建一 个新的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象与之绑定，否则使用已有的对象。隐式创建的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象会在对应的 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> 对象被销毁时自动销毁。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ad0bfa648cb6405c7841c4dc4e299d0d3" title="绑定了锚定功能的控件对象 ">target()</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a26b6609619dac153fce00bc62e4cbf02" title="清除和控件 w 相关的所有锚定关系，包括锚定w或者被w锚定的任何关联。会直接 销毁 w 对应的 DAnchorsBase 对...">clearAnchors()</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ad7c965bf0ae2bb81138c5a6da1526639" title="返回与 w 绑定的 DAnchorsBase 对象 ">getAnchorBaseByWidget()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l00593">593</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa6666779696f18c2de0503ee48615a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6666779696f18c2de0503ee48615a01">&#9670;&nbsp;</a></span>~DAnchorsBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dtk::Widget::DAnchorsBase::~DAnchorsBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在析构时会判断此 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象是否和 target 存在绑定关系，如果是 则从映射表中移除绑定 </p>
+<dl class="section warning"><dt>警告</dt><dd>DAnchorsBasePrivate 对象可能是在多个 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象之间显式 共享的，所以在销毁 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 后，对应的 DAnchorsBasePrivate 对象不一定 会被销毁 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qexplicitlyshareddatapointer.html">QExplicitlySharedDataPointer</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l00607">607</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a26b6609619dac153fce00bc62e4cbf02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b6609619dac153fce00bc62e4cbf02">&#9670;&nbsp;</a></span>clearAnchors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DAnchorsBase::clearAnchors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清除和控件 w 相关的所有锚定关系，包括锚定w或者被w锚定的任何关联。会直接 销毁 w 对应的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l00842">842</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad05c1c4276ab9ae355a92f302b1379b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05c1c4276ab9ae355a92f302b1379b6">&#9670;&nbsp;</a></span>enhancedWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dtk_1_1_widget_1_1_d_enhanced_widget.html">DEnhancedWidget</a> * Dtk::Widget::DAnchorsBase::enhancedWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回 target 控件的扩展对象。此对象为 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> 对象额外提供了和控件大小、 位置相关的变化信号 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_enhanced_widget.html">DEnhancedWidget</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l00628">628</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4b7599856089b7f02c6dcc6a59e5c5c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b7599856089b7f02c6dcc6a59e5c5c0">&#9670;&nbsp;</a></span>errorCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ab48f5b39f0e6a0e3693a00235e3a0272">DAnchorsBase::AnchorError</a> Dtk::Widget::DAnchorsBase::errorCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>锚定过程中产生的错误，在一个新的锚定函数被调用之前会清空此错误状态，每次 调用锚定函数后，可以通过此函数的返回值来判断锚定设置是否成功 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3aca6ac09913a03e2ab90a9ea37eba06" title="对 errorCode 的文本描述信息 ">errorString()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l00776">776</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3aca6ac09913a03e2ab90a9ea37eba06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aca6ac09913a03e2ab90a9ea37eba06">&#9670;&nbsp;</a></span>errorString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Widget::DAnchorsBase::errorString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>对 errorCode 的文本描述信息 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a4b7599856089b7f02c6dcc6a59e5c5c0" title="锚定过程中产生的错误，在一个新的锚定函数被调用之前会清空此错误状态，每次 调用锚定函数后，可以通过此函...">errorCode</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l00788">788</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad7c965bf0ae2bb81138c5a6da1526639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c965bf0ae2bb81138c5a6da1526639">&#9670;&nbsp;</a></span>getAnchorBaseByWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a> * Dtk::Widget::DAnchorsBase::getAnchorBaseByWidget </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回与 w 绑定的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果 w 没有对应的锚定对象，则返回空 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l00855">855</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adc2e9b6d35944946274b43518a42a7d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc2e9b6d35944946274b43518a42a7d5">&#9670;&nbsp;</a></span>isBinding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Widget::DAnchorsBase::isBinding </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果此 info 设置了锚定对象，则返回 true ，否则返回 false </p>
+<div class="fragment"><div class="line">DAnchors&lt;QWidget&gt; w1;</div><div class="line">DAnchors&lt;QWidget&gt; w2;</div><div class="line"></div><div class="line">w1.setLeft(w2.right());</div><div class="line"></div><div class="line">qDebug() &lt;&lt; w1.isBinding(w1.left()) &lt;&lt; w2.isBinding(w2.right());</div></div><!-- fragment --><p> 打印内容为：ture false </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l00809">809</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3a6c67f40dda61b4e1831b7ed419575b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a6c67f40dda61b4e1831b7ed419575b">&#9670;&nbsp;</a></span>moveBottom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DAnchorsBase::moveBottom </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动 target 控件的下边界到 arg 这个位置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>要移动到的位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l01330">1330</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a03a8df45cb455d0890a8c11790ea0ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a8df45cb455d0890a8c11790ea0ca0">&#9670;&nbsp;</a></span>moveCenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DAnchorsBase::moveCenter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动 target 控件的上边界到 arg 这个位置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>要移动到的位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l01375">1375</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7b8bf8c611aad9f8a60628ac0e458f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8bf8c611aad9f8a60628ac0e458f30">&#9670;&nbsp;</a></span>moveHorizontalCenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DAnchorsBase::moveHorizontalCenter </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动 target 控件的水平中线到 arg 这个位置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>要移动到的位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l01357">1357</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aeab8450a4aa012624925f78731fea48e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeab8450a4aa012624925f78731fea48e">&#9670;&nbsp;</a></span>moveLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DAnchorsBase::moveLeft </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动 target 控件的左边界到 arg 这个位置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>要移动到的位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l01339">1339</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1605da9726b0b50ba2042cfd9c36e575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1605da9726b0b50ba2042cfd9c36e575">&#9670;&nbsp;</a></span>moveRight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DAnchorsBase::moveRight </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动 target 控件的右边界到 arg 这个位置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>要移动到的位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l01348">1348</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5a3318614538095d2b4abe42f9bd1cd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a3318614538095d2b4abe42f9bd1cd7">&#9670;&nbsp;</a></span>moveTop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DAnchorsBase::moveTop </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动 target 控件的上边界到 arg 这个位置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>要移动到的位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l01321">1321</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6024e1dfe9252aab03a10a2cd4e59dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6024e1dfe9252aab03a10a2cd4e59dae">&#9670;&nbsp;</a></span>moveVerticalCenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DAnchorsBase::moveVerticalCenter </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动 target 控件的竖直中线到 arg 这个位置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>要移动到的位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l01366">1366</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa5721db7c761395ccd0ce5f42fad3214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5721db7c761395ccd0ce5f42fad3214">&#9670;&nbsp;</a></span>setAnchor() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Widget::DAnchorsBase::setAnchor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Qt::AnchorPoint &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Qt::AnchorPoint &amp;&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>方便用户直接设置两个对象之间锚定关系的静态函数，调用此函数可能会隐式创建 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>要锚定的控件对象 </td></tr>
+    <tr><td class="paramname">p</td><td>要锚定的锚线/锚点 </td></tr>
+    <tr><td class="paramname">target</td><td>锚定的目标对象 </td></tr>
+    <tr><td class="paramname">point</td><td>锚定的目标锚线/锚点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果锚定成功，则返回 true，否则返回 false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l00823">823</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a761b21b91107717d8f66f7c0be4b2945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a761b21b91107717d8f66f7c0be4b2945">&#9670;&nbsp;</a></span>setAnchor <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Widget::DAnchorsBase::setAnchor </td>
+          <td>(</td>
+          <td class="paramtype">const Qt::AnchorPoint &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Qt::AnchorPoint &amp;&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>为 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#ad0bfa648cb6405c7841c4dc4e299d0d3" title="绑定了锚定功能的控件对象 ">DAnchorsBase::target</a> 对象设置锚定规则 </p>
+<dl class="section note"><dt>注解</dt><dd>可能会为目标控件隐式创建其对应的 <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html" title="DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法 ">DAnchorsBase</a> 对象 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>为当前控件的哪个锚线/锚点设置锚定规则 </td></tr>
+    <tr><td class="paramname">target</td><td>锚定的目标控件 </td></tr>
+    <tr><td class="paramname">point</td><td>锚定的目标锚线/锚点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果设置成功，则返回 true，否则返回 false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l00878">878</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a40af4c5920cb13f892b0ed04eee8c256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40af4c5920cb13f892b0ed04eee8c256">&#9670;&nbsp;</a></span>setCenterIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Widget::DAnchorsBase::setCenterIn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a> *&#160;</td>
+          <td class="paramname"><em>centerIn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将 centerIn 中的target()作为参数调用其它重载函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">centerIn</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l01125">1125</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a144b458e7845ad26f2dce5e7ea934e1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a144b458e7845ad26f2dce5e7ea934e1a">&#9670;&nbsp;</a></span>setFill</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Widget::DAnchorsBase::setFill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a> *&#160;</td>
+          <td class="paramname"><em>fill</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将 fill 中的target()作为参数调用其它重载函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fill</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8cpp_source.html">danchors.cpp</a> 第 <a class="el" href="danchors_8cpp_source.html#l01115">1115</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="aae2f2884c7399a042e8fe64a3a586969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae2f2884c7399a042e8fe64a3a586969">&#9670;&nbsp;</a></span>anchors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a> * Dtk::Widget::DAnchorsBase::anchors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>一个指向自己的指针 </p>
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adce1b38f069d5ad688aafe7781b4a0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce1b38f069d5ad688aafe7781b4a0b2">&#9670;&nbsp;</a></span>bottom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> * Dtk::Widget::DAnchorsBase::bottom</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件下边界锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 top verticalCenter bottom 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00084">84</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aea3b7cc86a3263798f81368b7de5a94e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3b7cc86a3263798f81368b7de5a94e">&#9670;&nbsp;</a></span>bottomMargin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DAnchorsBase::bottomMargin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>下“锚线”的边距，优先级高于 margins </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00093">93</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5979862cbf0935ffab7e5d2b21b44174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5979862cbf0935ffab7e5d2b21b44174">&#9670;&nbsp;</a></span>centerIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> * Dtk::Widget::DAnchorsBase::centerIn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件的居中目标对象 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af39612a5ff93e7b3cd08134b03fe68d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af39612a5ff93e7b3cd08134b03fe68d5">&#9670;&nbsp;</a></span>enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Widget::DAnchorsBase::enabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>控制锚定功能是否开启，为 false 时仅仅表示不会根据控件各种属性的变化来 来更新它的位置，但锚定关系并没有被解除 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00081">81</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abcbef4fd78655a22a1b53137ea0ccd6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbef4fd78655a22a1b53137ea0ccd6a">&#9670;&nbsp;</a></span>fill</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> * Dtk::Widget::DAnchorsBase::fill</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件的填充目标对象 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00089">89</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a990c6e9474d5cae4ecf80b4f09b9f6d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990c6e9474d5cae4ecf80b4f09b9f6d0">&#9670;&nbsp;</a></span>horizontalCenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> * Dtk::Widget::DAnchorsBase::horizontalCenter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件水平锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 left horizontalCenter right 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2b52884009ded8a7812f030d71d3a80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b52884009ded8a7812f030d71d3a80b">&#9670;&nbsp;</a></span>horizontalCenterOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DAnchorsBase::horizontalCenterOffset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>水平“锚线”的偏移量 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3b9c0ae9041fdcb292cf24ef69bdea2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9c0ae9041fdcb292cf24ef69bdea2e">&#9670;&nbsp;</a></span>left</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> * Dtk::Widget::DAnchorsBase::left</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件左边界锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 left horizontalCenter right 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00085">85</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa266c6810dbb1cf0a9668646a5858dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa266c6810dbb1cf0a9668646a5858dcd">&#9670;&nbsp;</a></span>leftMargin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DAnchorsBase::leftMargin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>左“锚线”的边距，优先级高于 margins </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a607a39664bd1300d9d715333cf00d34d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a607a39664bd1300d9d715333cf00d34d">&#9670;&nbsp;</a></span>margins</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DAnchorsBase::margins</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>上下左右四条“锚线”的边距，此值的优先级低于每条“锚线”特定的 margin 值 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00091">91</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7faf48ccbbb329eb9b063df706973d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7faf48ccbbb329eb9b063df706973d31">&#9670;&nbsp;</a></span>right</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> * Dtk::Widget::DAnchorsBase::right</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件右边界锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 left horizontalCenter right 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3c2f80a8f38249ee0f41e8815b23dd2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c2f80a8f38249ee0f41e8815b23dd2b">&#9670;&nbsp;</a></span>rightMargin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DAnchorsBase::rightMargin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>右“锚线”的边距，优先级高于 margins </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00095">95</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad0bfa648cb6405c7841c4dc4e299d0d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0bfa648cb6405c7841c4dc4e299d0d3">&#9670;&nbsp;</a></span>target</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> * Dtk::Widget::DAnchorsBase::target</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绑定了锚定功能的控件对象 </p>
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00080">80</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a827c0033e7d81adcf8b103d7a9ffad94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a827c0033e7d81adcf8b103d7a9ffad94">&#9670;&nbsp;</a></span>top</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> * Dtk::Widget::DAnchorsBase::top</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件上边界锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 top verticalCenter bottom 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00083">83</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afb17520011f702ec7b2f70102685d95d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb17520011f702ec7b2f70102685d95d">&#9670;&nbsp;</a></span>topMargin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DAnchorsBase::topMargin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>上“锚线”的边距，优先级高于 margins </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00092">92</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adc17e88f7f778b928afe4e2e96178224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc17e88f7f778b928afe4e2e96178224">&#9670;&nbsp;</a></span>verticalCenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_dtk_1_1_widget_1_1_d_anchor_info.html">DAnchorInfo</a> * Dtk::Widget::DAnchorsBase::verticalCenter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>target 控件竖直锚线的信息 </p>
+<dl class="section note"><dt>注解</dt><dd>只能和 top verticalCenter bottom 绑定 </dd>
+<dd>
+对属性赋值不会更改它自身的值，而是对此锚线设置绑定关系 </dd>
+<dd>
+可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a75b8c96b681d1dd4368ad48b34cef159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b8c96b681d1dd4368ad48b34cef159">&#9670;&nbsp;</a></span>verticalCenterOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DAnchorsBase::verticalCenterOffset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>竖直“锚线”的偏移量 </p>
+<dl class="section note"><dt>注解</dt><dd>可读可写 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="danchors_8h_source.html">danchors.h</a> 第 <a class="el" href="danchors_8h_source.html#l00097">97</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/src/widgets/<a class="el" href="danchors_8h_source.html">danchors.h</a></li>
+<li>dtkwidget/src/widgets/<a class="el" href="danchors_8cpp_source.html">danchors.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:19 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

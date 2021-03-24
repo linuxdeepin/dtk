@@ -1,0 +1,1031 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: DForeignWindow类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_d_foreign_window.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="class_d_foreign_window-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DForeignWindow类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>一个用于获取本地窗口信息的类，继承于 QWindow，支持 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#geometry">QWindow::geometry</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#x-prop">QWindow::x</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#y-prop">QWindow::y</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#width-prop">QWindow::width</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#height-prop">QWindow::height</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">QWindow::title</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#flags-prop">QWindow::flags</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visibility-prop">QWindow::visibility</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#type">QWindow::type</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#windowStates">QWindow::windowStates</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#windowState">QWindow::windowState</a> 等接口的使用，另外扩展 增加了一部分接口，方面更加详细的获取窗口信息。依赖于 dxcb 插件，在未加载 dxcb 插件的应用中使用时结果未知  
+ <a href="class_d_foreign_window.html#details">更多...</a></p>
+<div class="dynheader">
+类 DForeignWindow 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_foreign_window__inherit__graph.png" border="0" usemap="#_d_foreign_window_inherit__map" alt="Inheritance graph"/></div>
+<map name="_d_foreign_window_inherit__map" id="_d_foreign_window_inherit__map">
+<area shape="rect" id="node2" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html" title="QWindow" alt="" coords="51,80,129,107"/>
+<area shape="rect" id="node3" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html" title="QObject" alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node4" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsurface.html" title="QSurface" alt="" coords="101,5,178,32"/>
+<area shape="rect" id="node5" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="153,80,288,107"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+DForeignWindow 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_d_foreign_window__coll__graph.png" border="0" usemap="#_d_foreign_window_coll__map" alt="Collaboration graph"/></div>
+<map name="_d_foreign_window_coll__map" id="_d_foreign_window_coll__map">
+<area shape="rect" id="node2" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html" title="QWindow" alt="" coords="100,95,179,121"/>
+<area shape="rect" id="node3" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html" title="QObject" alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node4" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsurface.html" title="QSurface" alt="" coords="101,5,178,32"/>
+<area shape="rect" id="node5" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="232,95,367,121"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a728635fd59d5ec1e007b6d6064dd56d4"><td class="memItemLeft" align="right" valign="top"><a id="a728635fd59d5ec1e007b6d6064dd56d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_foreign_window.html#a728635fd59d5ec1e007b6d6064dd56d4">wmClassChanged</a> ()</td></tr>
+<tr class="memdesc:a728635fd59d5ec1e007b6d6064dd56d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>wmClass</em> 属性改变时被发送 <br /></td></tr>
+<tr class="separator:a728635fd59d5ec1e007b6d6064dd56d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412d7b90948c7d01a2d57e83d6f77ece"><td class="memItemLeft" align="right" valign="top"><a id="a412d7b90948c7d01a2d57e83d6f77ece"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_foreign_window.html#a412d7b90948c7d01a2d57e83d6f77ece">pidChanged</a> ()</td></tr>
+<tr class="memdesc:a412d7b90948c7d01a2d57e83d6f77ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 <em>pid</em> 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a412d7b90948c7d01a2d57e83d6f77ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abe67965134550275b0cfc445872c4024"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_foreign_window.html#abe67965134550275b0cfc445872c4024">DForeignWindow</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#parent">parent</a>=0)</td></tr>
+<tr class="memdesc:abe67965134550275b0cfc445872c4024"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_foreign_window.html#abe67965134550275b0cfc445872c4024" title="DForeignWindow::DForeignWindow 直接构造一个 DForeignWindow 对象和使用 QWindow 对象没有区别 ...">DForeignWindow::DForeignWindow</a> 直接构造一个 <a class="el" href="class_d_foreign_window.html" title="一个用于获取本地窗口信息的类，继承于 QWindow，支持 QWindow::geometry QWindow::x QWindow::y QWindow::w...">DForeignWindow</a> 对象和使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> 对象没有区别  <a href="#abe67965134550275b0cfc445872c4024">更多...</a><br /></td></tr>
+<tr class="separator:abe67965134550275b0cfc445872c4024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f51b1cde9585369abf17a35225de5e6"><td class="memItemLeft" align="right" valign="top"><a id="a3f51b1cde9585369abf17a35225de5e6"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>wmClass</b> () const</td></tr>
+<tr class="separator:a3f51b1cde9585369abf17a35225de5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346fec427b4886fdb9ce525e87d6c781"><td class="memItemLeft" align="right" valign="top"><a id="a346fec427b4886fdb9ce525e87d6c781"></a>
+quint32&#160;</td><td class="memItemRight" valign="bottom"><b>pid</b> () const</td></tr>
+<tr class="separator:a346fec427b4886fdb9ce525e87d6c781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qwindow"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qwindow')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qt_metacast inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacast"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#qt_metacast">qt_metacast</a> (const char *)</td></tr>
+<tr class="separator:qt_metacast inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qt_metacall inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacall"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#qt_metacall">qt_metacall</a> (QMetaObject::Call, int, void **)</td></tr>
+<tr class="separator:qt_metacall inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QWindow inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="QWindow"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#QWindow">QWindow</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qscreen.html">QScreen</a> *targetScreen)</td></tr>
+<tr class="separator:QWindow inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QWindow-1 inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="QWindow-1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#QWindow-1">QWindow</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#parent">parent</a>)</td></tr>
+<tr class="separator:QWindow-1 inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setSurfaceType inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setSurfaceType"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setSurfaceType">setSurfaceType</a> (QSurface::SurfaceType <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#surfaceType">surfaceType</a>)</td></tr>
+<tr class="separator:setSurfaceType inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:surfaceType inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="surfaceType"></a>
+virtual QSurface::SurfaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#surfaceType">surfaceType</a> () const const override</td></tr>
+<tr class="separator:surfaceType inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:visible-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="visible-prop"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visible-prop">isVisible</a> () const const</td></tr>
+<tr class="separator:visible-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:visibility-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="visibility-prop"></a>
+QWindow::Visibility&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visibility-prop">visibility</a> () const const</td></tr>
+<tr class="separator:visibility-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:visibility-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="visibility-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visibility-prop">setVisibility</a> (QWindow::Visibility v)</td></tr>
+<tr class="separator:visibility-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:create inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="create"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#create">create</a> ()</td></tr>
+<tr class="separator:create inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:winId inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="winId"></a>
+WId&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#winId">winId</a> () const const</td></tr>
+<tr class="separator:winId inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#parent">parent</a> (QWindow::AncestorMode mode) const const</td></tr>
+<tr class="separator:parent inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent-1 inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="parent-1"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#parent-1">parent</a> () const const</td></tr>
+<tr class="separator:parent-1 inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setParent inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setParent">setParent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#parent">parent</a>)</td></tr>
+<tr class="separator:setParent inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isTopLevel inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="isTopLevel"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#isTopLevel">isTopLevel</a> () const const</td></tr>
+<tr class="separator:isTopLevel inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isModal inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="isModal"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#isModal">isModal</a> () const const</td></tr>
+<tr class="separator:isModal inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:modality-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="modality-prop"></a>
+Qt::WindowModality&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#modality-prop">modality</a> () const const</td></tr>
+<tr class="separator:modality-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:modality-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="modality-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#modality-prop">setModality</a> (Qt::WindowModality <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#modality-prop">modality</a>)</td></tr>
+<tr class="separator:modality-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setFormat inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setFormat"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setFormat">setFormat</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsurfaceformat.html">QSurfaceFormat</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#format">format</a>)</td></tr>
+<tr class="separator:setFormat inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:format inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="format"></a>
+virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsurfaceformat.html">QSurfaceFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#format">format</a> () const const override</td></tr>
+<tr class="separator:format inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:requestedFormat inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="requestedFormat"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsurfaceformat.html">QSurfaceFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#requestedFormat">requestedFormat</a> () const const</td></tr>
+<tr class="separator:requestedFormat inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:flags-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="flags-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#flags-prop">setFlags</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#flags-prop">flags</a>)</td></tr>
+<tr class="separator:flags-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:flags-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="flags-prop"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#flags-prop">flags</a> () const const</td></tr>
+<tr class="separator:flags-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setFlag inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setFlag"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setFlag">setFlag</a> (Qt::WindowType flag, bool on)</td></tr>
+<tr class="separator:setFlag inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:type inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="type"></a>
+Qt::WindowType&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#type">type</a> () const const</td></tr>
+<tr class="separator:type inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:title-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="title-prop"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">title</a> () const const</td></tr>
+<tr class="separator:title-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:opacity-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="opacity-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#opacity-prop">setOpacity</a> (qreal level)</td></tr>
+<tr class="separator:opacity-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:opacity-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="opacity-prop"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#opacity-prop">opacity</a> () const const</td></tr>
+<tr class="separator:opacity-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setMask inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setMask"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setMask">setMask</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregion.html">QRegion</a> &amp;region)</td></tr>
+<tr class="separator:setMask inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mask inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="mask"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregion.html">QRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#mask">mask</a> () const const</td></tr>
+<tr class="separator:mask inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isActive inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="isActive"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#isActive">isActive</a> () const const</td></tr>
+<tr class="separator:isActive inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:contentOrientation-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="contentOrientation-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#contentOrientation-prop">reportContentOrientationChange</a> (Qt::ScreenOrientation orientation)</td></tr>
+<tr class="separator:contentOrientation-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:contentOrientation-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="contentOrientation-prop"></a>
+Qt::ScreenOrientation&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#contentOrientation-prop">contentOrientation</a> () const const</td></tr>
+<tr class="separator:contentOrientation-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:devicePixelRatio inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="devicePixelRatio"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#devicePixelRatio">devicePixelRatio</a> () const const</td></tr>
+<tr class="separator:devicePixelRatio inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:windowState inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="windowState"></a>
+Qt::WindowState&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#windowState">windowState</a> () const const</td></tr>
+<tr class="separator:windowState inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:windowStates inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="windowStates"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#WindowState-enum">Qt::WindowStates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#windowStates">windowStates</a> () const const</td></tr>
+<tr class="separator:windowStates inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setWindowState inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setWindowState"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setWindowState">setWindowState</a> (Qt::WindowState state)</td></tr>
+<tr class="separator:setWindowState inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setWindowStates inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setWindowStates"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setWindowStates">setWindowStates</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#WindowState-enum">Qt::WindowStates</a> state)</td></tr>
+<tr class="separator:setWindowStates inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setTransientParent inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setTransientParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setTransientParent">setTransientParent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#parent">parent</a>)</td></tr>
+<tr class="separator:setTransientParent inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:transientParent inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="transientParent"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#transientParent">transientParent</a> () const const</td></tr>
+<tr class="separator:transientParent inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isAncestorOf inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="isAncestorOf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#isAncestorOf">isAncestorOf</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *child, QWindow::AncestorMode mode) const const</td></tr>
+<tr class="separator:isAncestorOf inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isExposed inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="isExposed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#isExposed">isExposed</a> () const const</td></tr>
+<tr class="separator:isExposed inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:minimumWidth-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="minimumWidth-prop"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#minimumWidth-prop">minimumWidth</a> () const const</td></tr>
+<tr class="separator:minimumWidth-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:minimumHeight-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="minimumHeight-prop"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#minimumHeight-prop">minimumHeight</a> () const const</td></tr>
+<tr class="separator:minimumHeight-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:maximumWidth-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="maximumWidth-prop"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#maximumWidth-prop">maximumWidth</a> () const const</td></tr>
+<tr class="separator:maximumWidth-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:maximumHeight-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="maximumHeight-prop"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#maximumHeight-prop">maximumHeight</a> () const const</td></tr>
+<tr class="separator:maximumHeight-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:minimumSize inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="minimumSize"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#minimumSize">minimumSize</a> () const const</td></tr>
+<tr class="separator:minimumSize inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:maximumSize inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="maximumSize"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#maximumSize">maximumSize</a> () const const</td></tr>
+<tr class="separator:maximumSize inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:baseSize inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="baseSize"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#baseSize">baseSize</a> () const const</td></tr>
+<tr class="separator:baseSize inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:sizeIncrement inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="sizeIncrement"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#sizeIncrement">sizeIncrement</a> () const const</td></tr>
+<tr class="separator:sizeIncrement inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setMinimumSize inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setMinimumSize"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setMinimumSize">setMinimumSize</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#size">size</a>)</td></tr>
+<tr class="separator:setMinimumSize inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setMaximumSize inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setMaximumSize"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setMaximumSize">setMaximumSize</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#size">size</a>)</td></tr>
+<tr class="separator:setMaximumSize inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setBaseSize inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setBaseSize"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setBaseSize">setBaseSize</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#size">size</a>)</td></tr>
+<tr class="separator:setBaseSize inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setSizeIncrement inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setSizeIncrement"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setSizeIncrement">setSizeIncrement</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#size">size</a>)</td></tr>
+<tr class="separator:setSizeIncrement inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:geometry inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="geometry"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#geometry">geometry</a> () const const</td></tr>
+<tr class="separator:geometry inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:frameMargins inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="frameMargins"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmargins.html">QMargins</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#frameMargins">frameMargins</a> () const const</td></tr>
+<tr class="separator:frameMargins inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:frameGeometry inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="frameGeometry"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#frameGeometry">frameGeometry</a> () const const</td></tr>
+<tr class="separator:frameGeometry inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:framePosition inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="framePosition"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#framePosition">framePosition</a> () const const</td></tr>
+<tr class="separator:framePosition inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setFramePosition inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setFramePosition"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setFramePosition">setFramePosition</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;point)</td></tr>
+<tr class="separator:setFramePosition inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:width-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="width-prop"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#width-prop">width</a> () const const</td></tr>
+<tr class="separator:width-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:height-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="height-prop"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#height-prop">height</a> () const const</td></tr>
+<tr class="separator:height-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:x-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="x-prop"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#x-prop">x</a> () const const</td></tr>
+<tr class="separator:x-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:y-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="y-prop"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#y-prop">y</a> () const const</td></tr>
+<tr class="separator:y-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:size inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="size"></a>
+virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#size">size</a> () const const override</td></tr>
+<tr class="separator:size inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:position inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="position"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#position">position</a> () const const</td></tr>
+<tr class="separator:position inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setPosition inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setPosition"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setPosition">setPosition</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;pt)</td></tr>
+<tr class="separator:setPosition inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setPosition-1 inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setPosition-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setPosition-1">setPosition</a> (int posx, int posy)</td></tr>
+<tr class="separator:setPosition-1 inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:resize inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="resize"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#resize">resize</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;newSize)</td></tr>
+<tr class="separator:resize inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:resize-1 inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="resize-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#resize-1">resize</a> (int w, int h)</td></tr>
+<tr class="separator:resize-1 inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setFilePath inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setFilePath"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setFilePath">setFilePath</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#filePath">filePath</a>)</td></tr>
+<tr class="separator:setFilePath inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:filePath inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="filePath"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#filePath">filePath</a> () const const</td></tr>
+<tr class="separator:filePath inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setIcon inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setIcon"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setIcon">setIcon</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qicon.html">QIcon</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#icon">icon</a>)</td></tr>
+<tr class="separator:setIcon inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:icon inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="icon"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qicon.html">QIcon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#icon">icon</a> () const const</td></tr>
+<tr class="separator:icon inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:destroy inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="destroy"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#destroy">destroy</a> ()</td></tr>
+<tr class="separator:destroy inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setKeyboardGrabEnabled inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setKeyboardGrabEnabled"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setKeyboardGrabEnabled">setKeyboardGrabEnabled</a> (bool grab)</td></tr>
+<tr class="separator:setKeyboardGrabEnabled inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setMouseGrabEnabled inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setMouseGrabEnabled"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setMouseGrabEnabled">setMouseGrabEnabled</a> (bool grab)</td></tr>
+<tr class="separator:setMouseGrabEnabled inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:screen inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="screen"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qscreen.html">QScreen</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#screen">screen</a> () const const</td></tr>
+<tr class="separator:screen inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setScreen inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setScreen"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setScreen">setScreen</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qscreen.html">QScreen</a> *newScreen)</td></tr>
+<tr class="separator:setScreen inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:focusObject inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="focusObject"></a>
+virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#focusObject">focusObject</a> () const const</td></tr>
+<tr class="separator:focusObject inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mapToGlobal inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="mapToGlobal"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#mapToGlobal">mapToGlobal</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;pos) const const</td></tr>
+<tr class="separator:mapToGlobal inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mapFromGlobal inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="mapFromGlobal"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#mapFromGlobal">mapFromGlobal</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;pos) const const</td></tr>
+<tr class="separator:mapFromGlobal inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:cursor inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="cursor"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcursor.html">QCursor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#cursor">cursor</a> () const const</td></tr>
+<tr class="separator:cursor inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setCursor inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setCursor"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setCursor">setCursor</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcursor.html">QCursor</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#cursor">cursor</a>)</td></tr>
+<tr class="separator:setCursor inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unsetCursor inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="unsetCursor"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#unsetCursor">unsetCursor</a> ()</td></tr>
+<tr class="separator:unsetCursor inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setVulkanInstance inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setVulkanInstance"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setVulkanInstance">setVulkanInstance</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvulkaninstance.html">QVulkanInstance</a> *instance)</td></tr>
+<tr class="separator:setVulkanInstance inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:vulkanInstance inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="vulkanInstance"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvulkaninstance.html">QVulkanInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#vulkanInstance">vulkanInstance</a> () const const</td></tr>
+<tr class="separator:vulkanInstance inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:requestActivate inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="requestActivate"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#requestActivate">requestActivate</a> ()</td></tr>
+<tr class="separator:requestActivate inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:visible-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="visible-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visible-prop">setVisible</a> (bool <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visible-prop">visible</a>)</td></tr>
+<tr class="separator:visible-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:show inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="show"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#show">show</a> ()</td></tr>
+<tr class="separator:show inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hide inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="hide"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#hide">hide</a> ()</td></tr>
+<tr class="separator:hide inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:showMinimized inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="showMinimized"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#showMinimized">showMinimized</a> ()</td></tr>
+<tr class="separator:showMinimized inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:showMaximized inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="showMaximized"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#showMaximized">showMaximized</a> ()</td></tr>
+<tr class="separator:showMaximized inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:showFullScreen inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="showFullScreen"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#showFullScreen">showFullScreen</a> ()</td></tr>
+<tr class="separator:showFullScreen inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:showNormal inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="showNormal"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#showNormal">showNormal</a> ()</td></tr>
+<tr class="separator:showNormal inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:close inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="close"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#close">close</a> ()</td></tr>
+<tr class="separator:close inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:raise inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="raise"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#raise">raise</a> ()</td></tr>
+<tr class="separator:raise inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:lower inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="lower"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#lower">lower</a> ()</td></tr>
+<tr class="separator:lower inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:title-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="title-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">setTitle</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;)</td></tr>
+<tr class="separator:title-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:x-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="x-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#x-prop">setX</a> (int arg)</td></tr>
+<tr class="separator:x-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:y-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="y-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#y-prop">setY</a> (int arg)</td></tr>
+<tr class="separator:y-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:width-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="width-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#width-prop">setWidth</a> (int arg)</td></tr>
+<tr class="separator:width-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:height-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="height-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#height-prop">setHeight</a> (int arg)</td></tr>
+<tr class="separator:height-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setGeometry inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setGeometry"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setGeometry">setGeometry</a> (int posx, int posy, int w, int h)</td></tr>
+<tr class="separator:setGeometry inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setGeometry-1 inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="setGeometry-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setGeometry-1">setGeometry</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rect)</td></tr>
+<tr class="separator:setGeometry-1 inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:minimumWidth-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="minimumWidth-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#minimumWidth-prop">setMinimumWidth</a> (int w)</td></tr>
+<tr class="separator:minimumWidth-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:minimumHeight-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="minimumHeight-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#minimumHeight-prop">setMinimumHeight</a> (int h)</td></tr>
+<tr class="separator:minimumHeight-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:maximumWidth-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="maximumWidth-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#maximumWidth-prop">setMaximumWidth</a> (int w)</td></tr>
+<tr class="separator:maximumWidth-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:maximumHeight-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="maximumHeight-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#maximumHeight-prop">setMaximumHeight</a> (int h)</td></tr>
+<tr class="separator:maximumHeight-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:alert inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="alert"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#alert">alert</a> (int msec)</td></tr>
+<tr class="separator:alert inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:requestUpdate inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="requestUpdate"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#requestUpdate">requestUpdate</a> ()</td></tr>
+<tr class="separator:requestUpdate inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:screenChanged inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="screenChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#screenChanged">screenChanged</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qscreen.html">QScreen</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#screen">screen</a>)</td></tr>
+<tr class="separator:screenChanged inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:modalityChanged inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="modalityChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#modalityChanged">modalityChanged</a> (Qt::WindowModality <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#modality-prop">modality</a>)</td></tr>
+<tr class="separator:modalityChanged inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:windowStateChanged inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="windowStateChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#windowStateChanged">windowStateChanged</a> (Qt::WindowState <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#windowState">windowState</a>)</td></tr>
+<tr class="separator:windowStateChanged inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:title-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="title-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">windowTitleChanged</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">title</a>)</td></tr>
+<tr class="separator:title-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:x-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="x-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#x-prop">xChanged</a> (int arg)</td></tr>
+<tr class="separator:x-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:y-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="y-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#y-prop">yChanged</a> (int arg)</td></tr>
+<tr class="separator:y-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:width-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="width-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#width-prop">widthChanged</a> (int arg)</td></tr>
+<tr class="separator:width-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:height-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="height-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#height-prop">heightChanged</a> (int arg)</td></tr>
+<tr class="separator:height-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:minimumWidth-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="minimumWidth-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#minimumWidth-prop">minimumWidthChanged</a> (int arg)</td></tr>
+<tr class="separator:minimumWidth-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:minimumHeight-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="minimumHeight-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#minimumHeight-prop">minimumHeightChanged</a> (int arg)</td></tr>
+<tr class="separator:minimumHeight-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:maximumWidth-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="maximumWidth-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#maximumWidth-prop">maximumWidthChanged</a> (int arg)</td></tr>
+<tr class="separator:maximumWidth-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:maximumHeight-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="maximumHeight-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#maximumHeight-prop">maximumHeightChanged</a> (int arg)</td></tr>
+<tr class="separator:maximumHeight-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:visible-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="visible-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visible-prop">visibleChanged</a> (bool arg)</td></tr>
+<tr class="separator:visible-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:visibility-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="visibility-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visibility-prop">visibilityChanged</a> (QWindow::Visibility <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visibility-prop">visibility</a>)</td></tr>
+<tr class="separator:visibility-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:active-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="active-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#active-prop">activeChanged</a> ()</td></tr>
+<tr class="separator:active-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:contentOrientation-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="contentOrientation-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#contentOrientation-prop">contentOrientationChanged</a> (Qt::ScreenOrientation orientation)</td></tr>
+<tr class="separator:contentOrientation-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:focusObjectChanged inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="focusObjectChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#focusObjectChanged">focusObjectChanged</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *object)</td></tr>
+<tr class="separator:focusObjectChanged inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:opacity-prop inherit pub_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="opacity-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#opacity-prop">opacityChanged</a> (qreal <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#opacity-prop">opacity</a>)</td></tr>
+<tr class="separator:opacity-prop inherit pub_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="eventFilter"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:eventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWidgetType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWidgetType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
+<tr class="separator:isWidgetType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWindowType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWindowType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
+<tr class="separator:isWindowType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:signalsBlocked inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="signalsBlocked"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
+<tr class="separator:signalsBlocked inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:blockSignals inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="blockSignals"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
+<tr class="separator:blockSignals inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:thread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="thread"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
+<tr class="separator:thread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:moveToThread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="moveToThread"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
+<tr class="separator:moveToThread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, Qt::TimerType timerType)</td></tr>
+<tr class="separator:startTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, Qt::TimerType timerType)</td></tr>
+<tr class="separator:startTimer-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:killTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="killTimer"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
+<tr class="separator:killTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-1"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChildren-1">findChildren</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-2"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:children inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="children"></a>
+const QObjectList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
+<tr class="separator:children inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setParent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:setParent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:installEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="installEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
+<tr class="separator:installEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:removeEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="removeEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:removeEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-2"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, Qt::ConnectionType type) const const</td></tr>
+<tr class="separator:connect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-3 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-3 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
+<tr class="separator:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
+<tr class="separator:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
+<tr class="separator:dumpObjectTree inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
+<tr class="separator:dumpObjectInfo inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProperty inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setProperty"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
+<tr class="separator:setProperty inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:property inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="property"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
+<tr class="separator:property inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dynamicPropertyNames inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dynamicPropertyNames"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
+<tr class="separator:dynamicPropertyNames inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:destroyed inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="destroyed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:destroyed inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectNameChanged inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectNameChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
+<tr class="separator:objectNameChanged inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
+<tr class="separator:parent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:inherits inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="inherits"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
+<tr class="separator:inherits inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="deleteLater"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
+<tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qsurface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qsurface')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qsurface.html">QSurface</a></td></tr>
+<tr class="memitem:surfaceClass inherit pub_methods_qsurface"><td class="memItemLeft" align="right" valign="top"><a id="surfaceClass"></a>
+QSurface::SurfaceClass&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsurface.html#surfaceClass">surfaceClass</a> () const const</td></tr>
+<tr class="separator:surfaceClass inherit pub_methods_qsurface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:surfaceHandle inherit pub_methods_qsurface"><td class="memItemLeft" align="right" valign="top"><a id="surfaceHandle"></a>
+virtual QPlatformSurface *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsurface.html#surfaceHandle">surfaceHandle</a> () const const=0</td></tr>
+<tr class="separator:surfaceHandle inherit pub_methods_qsurface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:supportsOpenGL inherit pub_methods_qsurface"><td class="memItemLeft" align="right" valign="top"><a id="supportsOpenGL"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsurface.html#supportsOpenGL">supportsOpenGL</a> () const const</td></tr>
+<tr class="separator:supportsOpenGL inherit pub_methods_qsurface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ab5416d7037a8dc71654db6c4386958d0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_d_foreign_window.html">DForeignWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_foreign_window.html#ab5416d7037a8dc71654db6c4386958d0">fromWinId</a> (WId id)</td></tr>
+<tr class="memdesc:ab5416d7037a8dc71654db6c4386958d0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_foreign_window.html#ab5416d7037a8dc71654db6c4386958d0" title="DForeignWindow::fromWinId 使用这个窗口id创建一个 DForeignWindow 对象，此对象不会被加到 QGuiApplicatio...">DForeignWindow::fromWinId</a> 使用这个窗口id创建一个 <a class="el" href="class_d_foreign_window.html" title="一个用于获取本地窗口信息的类，继承于 QWindow，支持 QWindow::geometry QWindow::x QWindow::y QWindow::w...">DForeignWindow</a> 对象，此对象不会被加到 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qguiapplication.html#allWindows">QGuiApplication::allWindows</a> 中。一般应用在需要获取一个本地窗口信息的场景。示例：  <a href="#ab5416d7037a8dc71654db6c4386958d0">更多...</a><br /></td></tr>
+<tr class="separator:ab5416d7037a8dc71654db6c4386958d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qwindow"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qwindow')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#tr">tr</a> (const char *s, const char *c, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#trUtf8">trUtf8</a> (const char *s, const char *c, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fromWinId inherit pub_static_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="fromWinId"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#fromWinId">fromWinId</a> (WId id)</td></tr>
+<tr class="separator:fromWinId inherit pub_static_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a3ce76e6aa32918c392240293664aafbe"><td class="memItemLeft" align="right" valign="top"><a id="a3ce76e6aa32918c392240293664aafbe"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *) Q_DECL_OVERRIDE</td></tr>
+<tr class="separator:a3ce76e6aa32918c392240293664aafbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qwindow"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qwindow')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a></td></tr>
+<tr class="memitem:exposeEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="exposeEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#exposeEvent">exposeEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qexposeevent.html">QExposeEvent</a> *ev)</td></tr>
+<tr class="separator:exposeEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:resizeEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="resizeEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#resizeEvent">resizeEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a> *ev)</td></tr>
+<tr class="separator:resizeEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:moveEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="moveEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#moveEvent">moveEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmoveevent.html">QMoveEvent</a> *ev)</td></tr>
+<tr class="separator:moveEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:focusInEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="focusInEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#focusInEvent">focusInEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfocusevent.html">QFocusEvent</a> *ev)</td></tr>
+<tr class="separator:focusInEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:focusOutEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="focusOutEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#focusOutEvent">focusOutEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfocusevent.html">QFocusEvent</a> *ev)</td></tr>
+<tr class="separator:focusOutEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:showEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="showEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#showEvent">showEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qshowevent.html">QShowEvent</a> *ev)</td></tr>
+<tr class="separator:showEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hideEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="hideEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#hideEvent">hideEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qhideevent.html">QHideEvent</a> *ev)</td></tr>
+<tr class="separator:hideEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:keyPressEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="keyPressEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#keyPressEvent">keyPressEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a> *ev)</td></tr>
+<tr class="separator:keyPressEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:keyReleaseEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="keyReleaseEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#keyReleaseEvent">keyReleaseEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a> *ev)</td></tr>
+<tr class="separator:keyReleaseEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mousePressEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="mousePressEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#mousePressEvent">mousePressEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *ev)</td></tr>
+<tr class="separator:mousePressEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mouseReleaseEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="mouseReleaseEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#mouseReleaseEvent">mouseReleaseEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *ev)</td></tr>
+<tr class="separator:mouseReleaseEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mouseDoubleClickEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="mouseDoubleClickEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#mouseDoubleClickEvent">mouseDoubleClickEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *ev)</td></tr>
+<tr class="separator:mouseDoubleClickEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mouseMoveEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="mouseMoveEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#mouseMoveEvent">mouseMoveEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *ev)</td></tr>
+<tr class="separator:mouseMoveEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:wheelEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="wheelEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#wheelEvent">wheelEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwheelevent.html">QWheelEvent</a> *ev)</td></tr>
+<tr class="separator:wheelEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:touchEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="touchEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#touchEvent">touchEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtouchevent.html">QTouchEvent</a> *ev)</td></tr>
+<tr class="separator:touchEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:tabletEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="tabletEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#tabletEvent">tabletEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtabletevent.html">QTabletEvent</a> *ev)</td></tr>
+<tr class="separator:tabletEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:nativeEvent inherit pro_methods_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="nativeEvent"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#nativeEvent">nativeEvent</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;eventType, void *message, long *result)</td></tr>
+<tr class="separator:nativeEvent inherit pro_methods_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="sender"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
+<tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:senderSignalIndex inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="senderSignalIndex"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
+<tr class="separator:senderSignalIndex inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:receivers inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="receivers"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
+<tr class="separator:receivers inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
+<tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:customEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="customEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:customEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:connectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qsurface"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qsurface')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qsurface.html">QSurface</a></td></tr>
+<tr class="memitem:QSurface inherit pro_methods_qsurface"><td class="memItemLeft" align="right" valign="top"><a id="QSurface"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsurface.html#QSurface">QSurface</a> (QSurface::SurfaceClass type)</td></tr>
+<tr class="separator:QSurface inherit pro_methods_qsurface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_dtk_1_1_core_1_1_d_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_dtk_1_1_core_1_1_d_object')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top"><a id="adbed6e66a1393a6045fb24e50300db7f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_object.html#adbed6e66a1393a6045fb24e50300db7f">DObject</a> (<a class="el" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">只有在不需要数据成员的派生类中才会使用 <br /></td></tr>
+<tr class="separator:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_object.html#a64d70b82c64f7d7e71d4775854b25206">DObject</a> (DObjectPrivate &amp;dd, <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">在派生类中比较常用的构造函数  <a href="class_dtk_1_1_core_1_1_d_object.html#a64d70b82c64f7d7e71d4775854b25206">更多...</a><br /></td></tr>
+<tr class="separator:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a30245bb9603e4ee6550fe30c7fc8020b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_foreign_window.html#a30245bb9603e4ee6550fe30c7fc8020b">wmClass</a></td></tr>
+<tr class="memdesc:a30245bb9603e4ee6550fe30c7fc8020b"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口 WM_CLASS 的值  <a href="#a30245bb9603e4ee6550fe30c7fc8020b">更多...</a><br /></td></tr>
+<tr class="separator:a30245bb9603e4ee6550fe30c7fc8020b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bcd8e4ebe247f2b5fa87d9bb4b45b2a"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_foreign_window.html#a1bcd8e4ebe247f2b5fa87d9bb4b45b2a">pid</a></td></tr>
+<tr class="memdesc:a1bcd8e4ebe247f2b5fa87d9bb4b45b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口所属进程的 pid  <a href="#a1bcd8e4ebe247f2b5fa87d9bb4b45b2a">更多...</a><br /></td></tr>
+<tr class="separator:a1bcd8e4ebe247f2b5fa87d9bb4b45b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_qwindow"><td colspan="2" onclick="javascript:toggleInherit('properties_qwindow')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a></td></tr>
+<tr class="memitem:title-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="title-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">title</a></td></tr>
+<tr class="separator:title-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:modality-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="modality-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#modality-prop">modality</a></td></tr>
+<tr class="separator:modality-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:flags-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="flags-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#flags-prop">flags</a></td></tr>
+<tr class="separator:flags-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:x-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="x-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#x-prop">x</a></td></tr>
+<tr class="separator:x-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:y-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="y-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#y-prop">y</a></td></tr>
+<tr class="separator:y-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:width-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="width-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#width-prop">width</a></td></tr>
+<tr class="separator:width-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:height-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="height-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#height-prop">height</a></td></tr>
+<tr class="separator:height-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:minimumWidth-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="minimumWidth-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#minimumWidth-prop">minimumWidth</a></td></tr>
+<tr class="separator:minimumWidth-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:minimumHeight-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="minimumHeight-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#minimumHeight-prop">minimumHeight</a></td></tr>
+<tr class="separator:minimumHeight-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:maximumWidth-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="maximumWidth-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#maximumWidth-prop">maximumWidth</a></td></tr>
+<tr class="separator:maximumWidth-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:maximumHeight-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="maximumHeight-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#maximumHeight-prop">maximumHeight</a></td></tr>
+<tr class="separator:maximumHeight-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:visible-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="visible-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visible-prop">visible</a></td></tr>
+<tr class="separator:visible-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:active-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="active-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#active-prop">active</a></td></tr>
+<tr class="separator:active-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:visibility-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="visibility-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visibility-prop">visibility</a></td></tr>
+<tr class="separator:visibility-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:contentOrientation-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="contentOrientation-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#contentOrientation-prop">contentOrientation</a></td></tr>
+<tr class="separator:contentOrientation-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:opacity-prop inherit properties_qwindow"><td class="memItemLeft" align="right" valign="top"><a id="opacity-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#opacity-prop">opacity</a></td></tr>
+<tr class="separator:opacity-prop inherit properties_qwindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
+<tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_dtk_1_1_core_1_1_d_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_dtk_1_1_core_1_1_d_object')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top"><a id="a1a49828e8ece06afef896e26135f23c0"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; DObjectPrivate &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_d_ptr</b></td></tr>
+<tr class="separator:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>一个用于获取本地窗口信息的类，继承于 QWindow，支持 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#geometry">QWindow::geometry</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#x-prop">QWindow::x</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#y-prop">QWindow::y</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#width-prop">QWindow::width</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#height-prop">QWindow::height</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">QWindow::title</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#flags-prop">QWindow::flags</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#visibility-prop">QWindow::visibility</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#type">QWindow::type</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#windowStates">QWindow::windowStates</a> <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#windowState">QWindow::windowState</a> 等接口的使用，另外扩展 增加了一部分接口，方面更加详细的获取窗口信息。依赖于 dxcb 插件，在未加载 dxcb 插件的应用中使用时结果未知 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_window_manager_helper.html#a6225c7cc9df459f5af43fe770682a7cc" title="DWindowManagerHelper::currentWorkspaceWindowIdList ">DWindowManagerHelper::currentWorkspaceWindows</a> </dd>
+<dd>
+DApplication::loadDXcbPlugin </dd>
+<dd>
+DApplication::isDXcbPlatform </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dforeignwindow_8h_source.html">dforeignwindow.h</a> 第 <a class="el" href="dforeignwindow_8h_source.html#l00033">33</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abe67965134550275b0cfc445872c4024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe67965134550275b0cfc445872c4024">&#9670;&nbsp;</a></span>DForeignWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DForeignWindow::DForeignWindow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_d_foreign_window.html#abe67965134550275b0cfc445872c4024" title="DForeignWindow::DForeignWindow 直接构造一个 DForeignWindow 对象和使用 QWindow 对象没有区别 ...">DForeignWindow::DForeignWindow</a> 直接构造一个 <a class="el" href="class_d_foreign_window.html" title="一个用于获取本地窗口信息的类，继承于 QWindow，支持 QWindow::geometry QWindow::x QWindow::y QWindow::w...">DForeignWindow</a> 对象和使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> 对象没有区别 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_foreign_window.html#ab5416d7037a8dc71654db6c4386958d0" title="DForeignWindow::fromWinId 使用这个窗口id创建一个 DForeignWindow 对象，此对象不会被加到 QGuiApplicatio...">DForeignWindow::fromWinId</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dforeignwindow_8cpp_source.html">dforeignwindow.cpp</a> 第 <a class="el" href="dforeignwindow_8cpp_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab5416d7037a8dc71654db6c4386958d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5416d7037a8dc71654db6c4386958d0">&#9670;&nbsp;</a></span>fromWinId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_foreign_window.html">DForeignWindow</a> * DForeignWindow::fromWinId </td>
+          <td>(</td>
+          <td class="paramtype">WId&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_d_foreign_window.html#ab5416d7037a8dc71654db6c4386958d0" title="DForeignWindow::fromWinId 使用这个窗口id创建一个 DForeignWindow 对象，此对象不会被加到 QGuiApplicatio...">DForeignWindow::fromWinId</a> 使用这个窗口id创建一个 <a class="el" href="class_d_foreign_window.html" title="一个用于获取本地窗口信息的类，继承于 QWindow，支持 QWindow::geometry QWindow::x QWindow::y QWindow::w...">DForeignWindow</a> 对象，此对象不会被加到 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qguiapplication.html#allWindows">QGuiApplication::allWindows</a> 中。一般应用在需要获取一个本地窗口信息的场景。示例： </p>
+<div class="fragment"><div class="line"><span class="comment">// a.cpp</span></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div><div class="line">{</div><div class="line">    DApplication a(argc, argv);</div><div class="line"></div><div class="line">    <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> w;</div><div class="line"></div><div class="line">    w.<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#windowTitle-prop">setWindowTitle</a>(<span class="stringliteral">&quot;deepin&quot;</span>);</div><div class="line">    w.<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#show">show</a>();</div><div class="line"></div><div class="line">    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfile.html">QFile</a> app_win_id(<span class="stringliteral">&quot;/tmp/window_id.txt&quot;</span>);</div><div class="line">    <span class="keywordflow">if</span> (app_win_id.open(QFile::WriteOnly)) {</div><div class="line">        app_win_id.write(<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbytearray.html#number">QByteArray::number</a>(w.<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#winId">winId</a>()));</div><div class="line">        app_win_id.close();</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> a.exec();</div><div class="line">}</div></div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">// b.cpp</span></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div><div class="line">{</div><div class="line">    DApplication::loadDXcbPlugin();</div><div class="line">    DApplication a(argc, argv);</div><div class="line"></div><div class="line">    <a class="code" href="class_d_foreign_window.html">DForeignWindow</a> *fw = <span class="keyword">nullptr</span>;</div><div class="line">    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfile.html">QFile</a> app_win_id(<span class="stringliteral">&quot;/tmp/window_id.txt&quot;</span>);</div><div class="line">    <span class="keywordflow">if</span> (app_win_id.open(QFile::ReadOnly)) {</div><div class="line">        fw = <a class="code" href="class_d_foreign_window.html#ab5416d7037a8dc71654db6c4386958d0">DForeignWindow::fromWinId</a>(app_win_id.readAll().toInt());</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordflow">if</span> (fw) {</div><div class="line">        qDebug() &lt;&lt; fw-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">title</a>();</div><div class="line"></div><div class="line">        fw-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a>(fw, &amp;<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#width-prop">DForeignWindow::widthChanged</a>, [&amp;] {</div><div class="line">            qDebug() &lt;&lt; fw-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#width-prop">width</a>();</div><div class="line">        });</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> a.exec();</div><div class="line">}</div></div><!-- fragment --><ul>
+<li><code>先启动应用</code> a </li>
+<li><code>再启动应用</code> b</li>
+</ul>
+<p>在应用 b 启动后将看到如下输出： </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;deepin&quot;</span></div></div><!-- fragment --><p> 当改变应用 a 中的窗口宽度时，在应用 b 中会看到宽度的输出 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>不要尝试对由本应用创建的窗口调用此接口，可能会导致窗口行为发生不可逆转的变化 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dforeignwindow_8cpp_source.html">dforeignwindow.cpp</a> 第 <a class="el" href="dforeignwindow_8cpp_source.html#l00156">156</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a1bcd8e4ebe247f2b5fa87d9bb4b45b2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bcd8e4ebe247f2b5fa87d9bb4b45b2a">&#9670;&nbsp;</a></span>pid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint32 DForeignWindow::pid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口所属进程的 pid </p>
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a href="https://specifications.freedesktop.org/wm-spec/1.3/ar01s05.html">_NET_WM_PID</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dforeignwindow_8h_source.html">dforeignwindow.h</a> 第 <a class="el" href="dforeignwindow_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a30245bb9603e4ee6550fe30c7fc8020b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30245bb9603e4ee6550fe30c7fc8020b">&#9670;&nbsp;</a></span>wmClass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> DForeignWindow::wmClass</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口 WM_CLASS 的值 </p>
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a href="https://tronche.com/gui/x/icccm/sec-4.html#WM_CLASS">WM_CLASS</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dforeignwindow_8h_source.html">dforeignwindow.h</a> 第 <a class="el" href="dforeignwindow_8h_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkgui/src/kernel/<a class="el" href="dforeignwindow_8h_source.html">dforeignwindow.h</a></li>
+<li>dtkgui/src/kernel/<a class="el" href="dforeignwindow_8cpp_source.html">dforeignwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_d_foreign_window.html">DForeignWindow</a></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:18 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

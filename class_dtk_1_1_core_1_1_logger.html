@@ -1,0 +1,832 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Core::Logger类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dtk_1_1_core_1_1_logger.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_dtk_1_1_core_1_1_logger-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Core::Logger类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Very simple but rather powerful component which may be used for logging your application activities.  
+ <a href="class_dtk_1_1_core_1_1_logger.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a4a76b1db357f61044ed67411d1c378b4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> { <br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4a8106a5cf6d4c5742382b66db92364980">Trace</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4a218e75bbd341993660ee581cff3e241a">Debug</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4ad54dde4ec2109b8a19802e3881ff3e6c">Info</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4a23b5a587d24d0aee392c2d49210256c6">Warning</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4a6bbb6c6e777f55c94427418fcd8854e0">Error</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4aa9c9b0ed330e7603907c688212ab388d">Fatal</a>
+<br />
+ }<tr class="memdesc:a4a76b1db357f61044ed67411d1c378b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the possible severity levels of the log records  <a href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a4a76b1db357f61044ed67411d1c378b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8bf632cb87800101031e5c19773cca38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a8bf632cb87800101031e5c19773cca38">Logger</a> ()</td></tr>
+<tr class="memdesc:a8bf632cb87800101031e5c19773cca38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the instance of <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a>  <a href="#a8bf632cb87800101031e5c19773cca38">更多...</a><br /></td></tr>
+<tr class="separator:a8bf632cb87800101031e5c19773cca38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f834f683f7379d92de6e413c5acb8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#ae2f834f683f7379d92de6e413c5acb8b">Logger</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a372bad2146536722eafc6a8c086c9c">defaultCategory</a>)</td></tr>
+<tr class="memdesc:ae2f834f683f7379d92de6e413c5acb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the instance of <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a> and set logger default category  <a href="#ae2f834f683f7379d92de6e413c5acb8b">更多...</a><br /></td></tr>
+<tr class="separator:ae2f834f683f7379d92de6e413c5acb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4eea40e26ce45df1c18058f97d1b11e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#ab4eea40e26ce45df1c18058f97d1b11e">~Logger</a> ()</td></tr>
+<tr class="memdesc:ab4eea40e26ce45df1c18058f97d1b11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the instance of <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a>  <a href="#ab4eea40e26ce45df1c18058f97d1b11e">更多...</a><br /></td></tr>
+<tr class="separator:ab4eea40e26ce45df1c18058f97d1b11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bcdf12779fa8567bb2079edf027662d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a2bcdf12779fa8567bb2079edf027662d">registerAppender</a> (<a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html">AbstractAppender</a> *appender)</td></tr>
+<tr class="memdesc:a2bcdf12779fa8567bb2079edf027662d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the appender to write the log records to  <a href="#a2bcdf12779fa8567bb2079edf027662d">更多...</a><br /></td></tr>
+<tr class="separator:a2bcdf12779fa8567bb2079edf027662d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ef2b960342e8153edd908b2f05029c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a95ef2b960342e8153edd908b2f05029c">registerCategoryAppender</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;category, <a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html">AbstractAppender</a> *appender)</td></tr>
+<tr class="memdesc:a95ef2b960342e8153edd908b2f05029c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the appender to write the log records to the specific category  <a href="#a95ef2b960342e8153edd908b2f05029c">更多...</a><br /></td></tr>
+<tr class="separator:a95ef2b960342e8153edd908b2f05029c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f67b2b6ed4ffec4096ffd5e118beca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a87f67b2b6ed4ffec4096ffd5e118beca">logToGlobalInstance</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;category, bool logToGlobal=false)</td></tr>
+<tr class="memdesc:a87f67b2b6ed4ffec4096ffd5e118beca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links some logging category with the global logger instance appenders.  <a href="#a87f67b2b6ed4ffec4096ffd5e118beca">更多...</a><br /></td></tr>
+<tr class="separator:a87f67b2b6ed4ffec4096ffd5e118beca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a88302ec9c667bc47529d234da516d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a88302ec9c667bc47529d234da516d4">setDefaultCategory</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;category)</td></tr>
+<tr class="memdesc:a4a88302ec9c667bc47529d234da516d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets default logging category  <a href="#a4a88302ec9c667bc47529d234da516d4">更多...</a><br /></td></tr>
+<tr class="separator:a4a88302ec9c667bc47529d234da516d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a372bad2146536722eafc6a8c086c9c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a372bad2146536722eafc6a8c086c9c">defaultCategory</a> () const</td></tr>
+<tr class="memdesc:a4a372bad2146536722eafc6a8c086c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns default logging category name  <a href="#a4a372bad2146536722eafc6a8c086c9c">更多...</a><br /></td></tr>
+<tr class="separator:a4a372bad2146536722eafc6a8c086c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9206bc76164355a8c2c04a63340195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a6a9206bc76164355a8c2c04a63340195">write</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;timeStamp, <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> logLevel, const char *file, int line, const char *function, const char *category, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;message)</td></tr>
+<tr class="memdesc:a6a9206bc76164355a8c2c04a63340195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the log record  <a href="#a6a9206bc76164355a8c2c04a63340195">更多...</a><br /></td></tr>
+<tr class="separator:a6a9206bc76164355a8c2c04a63340195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc482ceac2a443c864cdb0d11b35888"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a7fc482ceac2a443c864cdb0d11b35888">write</a> (<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> logLevel, const char *file, int line, const char *function, const char *category, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;message)</td></tr>
+<tr class="separator:a7fc482ceac2a443c864cdb0d11b35888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f982af41757cd10039eca2311005d2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdebug.html">QDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a70f982af41757cd10039eca2311005d2">write</a> (<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> logLevel, const char *file, int line, const char *function, const char *category)</td></tr>
+<tr class="separator:a70f982af41757cd10039eca2311005d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf0508d25e1506127e583689e22ec95f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#adf0508d25e1506127e583689e22ec95f">writeAssert</a> (const char *file, int line, const char *function, const char *condition)</td></tr>
+<tr class="memdesc:adf0508d25e1506127e583689e22ec95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the assertion  <a href="#adf0508d25e1506127e583689e22ec95f">更多...</a><br /></td></tr>
+<tr class="separator:adf0508d25e1506127e583689e22ec95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a8fe4085a11d71dc7c4a98edc35b8bd60"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a8fe4085a11d71dc7c4a98edc35b8bd60">levelToString</a> (<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a> logLevel)</td></tr>
+<tr class="memdesc:a8fe4085a11d71dc7c4a98edc35b8bd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the LogLevel enum value to its string representation  <a href="#a8fe4085a11d71dc7c4a98edc35b8bd60">更多...</a><br /></td></tr>
+<tr class="separator:a8fe4085a11d71dc7c4a98edc35b8bd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7938f14668bfaa3d2099ce76ffc272dd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a7938f14668bfaa3d2099ce76ffc272dd">levelFromString</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;s)</td></tr>
+<tr class="memdesc:a7938f14668bfaa3d2099ce76ffc272dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the LogLevel string representation to enum value  <a href="#a7938f14668bfaa3d2099ce76ffc272dd">更多...</a><br /></td></tr>
+<tr class="separator:a7938f14668bfaa3d2099ce76ffc272dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7aa5612396574e4274660fe3c4e307a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dtk_1_1_core_1_1_logger.html">Logger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#af7aa5612396574e4274660fe3c4e307a">globalInstance</a> ()</td></tr>
+<tr class="memdesc:af7aa5612396574e4274660fe3c4e307a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the global instance of <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a>  <a href="#af7aa5612396574e4274660fe3c4e307a">更多...</a><br /></td></tr>
+<tr class="separator:af7aa5612396574e4274660fe3c4e307a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Very simple but rather powerful component which may be used for logging your application activities. </p>
+<p>Global logger instance created on a first access to it (e.g. registering appenders, calling a <a class="el" href="_logger_8h.html#a35bf78e74128341795a2c9ae2e2979bf" title="Writes the debug log record ">dDebug()</a> macro etc.) registers itself as a <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html">Qt</a> default message handler and captures all the qDebug/dWarning/qCritical output.</p>
+<dl class="section note"><dt>注解</dt><dd><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html">Qt</a> 4 qDebug set of macro doesn't support capturing source function name, file name or line number so we recommend to use <a class="el" href="_logger_8h.html#a35bf78e74128341795a2c9ae2e2979bf" title="Writes the debug log record ">dDebug()</a> and other <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a> macros instead.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#ab69de76884dab62f7806d8802f7f64e0" title="Macro returning the current instance of Logger object ">logger</a> </dd>
+<dd>
+<a href="index.html">DLogger Documentation</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00073">73</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a4a76b1db357f61044ed67411d1c378b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a76b1db357f61044ed67411d1c378b4">&#9670;&nbsp;</a></span>LogLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Dtk::Core::Logger::LogLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Describes the possible severity levels of the log records </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a4a76b1db357f61044ed67411d1c378b4a8106a5cf6d4c5742382b66db92364980"></a>Trace&#160;</td><td class="fielddoc"><p>Trace level. Can be used for mostly unneeded records used for internal code tracing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4a76b1db357f61044ed67411d1c378b4a218e75bbd341993660ee581cff3e241a"></a>Debug&#160;</td><td class="fielddoc"><p>Debug level. Useful for non-necessary records used for the debugging of the software. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4a76b1db357f61044ed67411d1c378b4ad54dde4ec2109b8a19802e3881ff3e6c"></a>Info&#160;</td><td class="fielddoc"><p>Info level. Can be used for informational records, which may be interesting for not only developers. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4a76b1db357f61044ed67411d1c378b4a23b5a587d24d0aee392c2d49210256c6"></a>Warning&#160;</td><td class="fielddoc"><p>Warning. May be used to log some non-fatal warnings detected by your application. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4a76b1db357f61044ed67411d1c378b4a6bbb6c6e777f55c94427418fcd8854e0"></a>Error&#160;</td><td class="fielddoc"><p>Error. May be used for a big problems making your application work wrong but not crashing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4a76b1db357f61044ed67411d1c378b4aa9c9b0ed330e7603907c688212ab388d"></a>Fatal&#160;</td><td class="fielddoc"><p>Fatal. Used for unrecoverable errors, crashes the application right after the log record is written. </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00083">83</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a8bf632cb87800101031e5c19773cca38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf632cb87800101031e5c19773cca38">&#9670;&nbsp;</a></span>Logger() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dtk::Core::Logger::Logger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct the instance of <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a> </p>
+<p>If you're only using one global instance of logger you wouldn't probably need to use this constructor manually. Consider using <a class="el" href="_logger_8h.html#ab69de76884dab62f7806d8802f7f64e0">logger</a> macro instead to access the logger instance </p>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00547">547</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae2f834f683f7379d92de6e413c5acb8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f834f683f7379d92de6e413c5acb8b">&#9670;&nbsp;</a></span>Logger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dtk::Core::Logger::Logger </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultCategory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct the instance of <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a> and set logger default category </p>
+<p>If you're only using one global instance of logger you wouldn't probably need to use this constructor manually. Consider using <a class="el" href="_logger_8h.html#ab69de76884dab62f7806d8802f7f64e0">logger</a> macro instead to access the logger instance and call <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a88302ec9c667bc47529d234da516d4">setDefaultCategory</a> method.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a8bf632cb87800101031e5c19773cca38" title="Construct the instance of Logger ">Logger()</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a88302ec9c667bc47529d234da516d4" title="Sets default logging category ">setDefaultCategory()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00565">565</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab4eea40e26ce45df1c18058f97d1b11e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4eea40e26ce45df1c18058f97d1b11e">&#9670;&nbsp;</a></span>~Logger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dtk::Core::Logger::~Logger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the instance of <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a> </p>
+<p>You probably wouldn't need to use this function directly. Global instance of logger will be destroyed automatically at the end of your <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a> execution </p>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00580">580</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a4a372bad2146536722eafc6a8c086c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a372bad2146536722eafc6a8c086c9c">&#9670;&nbsp;</a></span>defaultCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::Logger::defaultCategory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns default logging category name </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a88302ec9c667bc47529d234da516d4" title="Sets default logging category ">setDefaultCategory</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00788">788</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af7aa5612396574e4274660fe3c4e307a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7aa5612396574e4274660fe3c4e307a">&#9670;&nbsp;</a></span>globalInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dtk_1_1_core_1_1_logger.html">Logger</a> * Dtk::Core::Logger::globalInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the global instance of <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a> </p>
+<p>In a most cases you shouldn't use this function directly. Consider using <a class="el" href="_logger_8h.html#ab69de76884dab62f7806d8802f7f64e0">logger</a> macro instead.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#ab69de76884dab62f7806d8802f7f64e0" title="Macro returning the current instance of Logger object ">logger</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00667">667</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7938f14668bfaa3d2099ce76ffc272dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7938f14668bfaa3d2099ce76ffc272dd">&#9670;&nbsp;</a></span>levelFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> Dtk::Core::Logger::levelFromString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts the LogLevel string representation to enum value </p>
+<p>Comparation of the strings is case independent. If the log level string provided cannot be understood <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4a218e75bbd341993660ee581cff3e241a" title="Debug level. Useful for non-necessary records used for the debugging of the software. ">Logger::Debug</a> is returned.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>String to be decoded</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4" title="Describes the possible severity levels of the log records ">LogLevel</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a8fe4085a11d71dc7c4a98edc35b8bd60" title="Converts the LogLevel enum value to its string representation ">levelToString()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00638">638</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8fe4085a11d71dc7c4a98edc35b8bd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe4085a11d71dc7c4a98edc35b8bd60">&#9670;&nbsp;</a></span>levelToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::Logger::levelToString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a>&#160;</td>
+          <td class="paramname"><em>logLevel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts the LogLevel enum value to its string representation </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">logLevel</td><td>Log level to convert</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4" title="Describes the possible severity levels of the log records ">LogLevel</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a7938f14668bfaa3d2099ce76ffc272dd" title="Converts the LogLevel string representation to enum value ">levelFromString()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00606">606</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a87f67b2b6ed4ffec4096ffd5e118beca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f67b2b6ed4ffec4096ffd5e118beca">&#9670;&nbsp;</a></span>logToGlobalInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::logToGlobalInstance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>logToGlobal</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Links some logging category with the global logger instance appenders. </p>
+<p>If set to true, all log messages to the specified category appenders will also be written to the global logger instance appenders, registered using <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a2bcdf12779fa8567bb2079edf027662d" title="Registers the appender to write the log records to ">registerAppender()</a>.</p>
+<p>By default, all messages to the specific category are written only to the specific category appenders (registered using <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a95ef2b960342e8153edd908b2f05029c" title="Registers the appender to write the log records to the specific category ">registerCategoryAppender()</a>).</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>Category name </td></tr>
+    <tr><td class="paramname">logToGlobal</td><td>Link or onlink the category from global logger instance appender</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#af7aa5612396574e4274660fe3c4e307a" title="Returns the global instance of Logger ">globalInstance</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a2bcdf12779fa8567bb2079edf027662d" title="Registers the appender to write the log records to ">registerAppender</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a95ef2b960342e8153edd908b2f05029c" title="Registers the appender to write the log records to the specific category ">registerCategoryAppender</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00809">809</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2bcdf12779fa8567bb2079edf027662d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bcdf12779fa8567bb2079edf027662d">&#9670;&nbsp;</a></span>registerAppender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::registerAppender </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html">AbstractAppender</a> *&#160;</td>
+          <td class="paramname"><em>appender</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers the appender to write the log records to </p>
+<p>On the log writing call (using one of the macros or the <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a6a9206bc76164355a8c2c04a63340195" title="Writes the log record ">write()</a> function) <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a> traverses through the list of the appenders and writes a log records to the each of them. Please, look through the <a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. ">AbstractAppender</a> documentation to understand the concept of appenders.</p>
+<p>If no appenders was added to <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a>, it falls back to logging into the <code>std::cerr</code> STL stream.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appender</td><td>Appender to register in the <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a> takes ownership on the appender and it will delete it on the application exit. According to this, appenders must be created on heap to prevent double destruction of the appender.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a95ef2b960342e8153edd908b2f05029c" title="Registers the appender to write the log records to the specific category ">registerCategoryAppender</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. ">AbstractAppender</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00709">709</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a95ef2b960342e8153edd908b2f05029c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ef2b960342e8153edd908b2f05029c">&#9670;&nbsp;</a></span>registerCategoryAppender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::registerCategoryAppender </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html">AbstractAppender</a> *&#160;</td>
+          <td class="paramname"><em>appender</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers the appender to write the log records to the specific category </p>
+<p>Calling this method, you can link some appender with the named category. On the log writing call to the specific category (calling <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a6a9206bc76164355a8c2c04a63340195" title="Writes the log record ">write()</a> with category parameter directly, writing to the default category, or using special <a class="el" href="_logger_8h.html#a80ead3523161deac954fc96a821277a1" title="Writes the debug log record to the specific category ">dCDebug()</a>, <a class="el" href="_logger_8h.html#a53dd4af931d5a133b1dabc8d4517e2a6" title="Writes the warning log record to the specific category ">dCWarning()</a> etc. macros), <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a> writes the log message only to the list of registered category appenders.</p>
+<p>You can call <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a87f67b2b6ed4ffec4096ffd5e118beca" title="Links some logging category with the global logger instance appenders. ">logToGlobalInstance()</a> to pass all category log messages to the global logger instance appenders (registered using <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a2bcdf12779fa8567bb2079edf027662d" title="Registers the appender to write the log records to ">registerAppender()</a>). If no category appenders with specific name was registered to the <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a>, it falls back to logging into the <code>std::cerr</code> STL stream, both with simple warning message.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>Category name </td></tr>
+    <tr><td class="paramname">appender</td><td>Appender to register in the <a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html" title="Very simple but rather powerful component which may be used for logging your application activities...">Logger</a> takes ownership on the appender and it will delete it on the application exit. According to this, appenders must be created on heap to prevent double destruction of the appender.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a2bcdf12779fa8567bb2079edf027662d" title="Registers the appender to write the log records to ">registerAppender</a> </dd>
+<dd>
+<a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a>, <a class="el" href="_logger_8h.html#a80ead3523161deac954fc96a821277a1" title="Writes the debug log record to the specific category ">dCDebug()</a>, <a class="el" href="_logger_8h.html#a9a9a1d34896eb369810688a48a6e59a7" title="Writes the info log record to the specific category ">dCInfo()</a>, <a class="el" href="_logger_8h.html#a53dd4af931d5a133b1dabc8d4517e2a6" title="Writes the warning log record to the specific category ">dCWarning()</a>, <a class="el" href="_logger_8h.html#ad3b4c61a6776b36685605e7d6aa20cdb" title="Writes the error log record to the specific category ">dCError()</a>, <a class="el" href="_logger_8h.html#a265d23866443aa96f08dace2aa4b77cb" title="Write the fatal log record to the specific category ">dCFatal()</a> </dd>
+<dd>
+<a class="el" href="_logger_8h.html#a4b9eeda7c462d7025536fb39d6a67634" title="Create logger instance inside your custom class to log all messages to the specified category ...">dCategory()</a>, <a class="el" href="_logger_8h.html#a4ddb109c3ac634ea13445dd43afc42e7" title="Create logger instance inside your custom class to log all messages both to the specified category an...">dGlobalCategory()</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a87f67b2b6ed4ffec4096ffd5e118beca" title="Links some logging category with the global logger instance appenders. ">logToGlobalInstance</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a88302ec9c667bc47529d234da516d4" title="Sets default logging category ">setDefaultCategory</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00745">745</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4a88302ec9c667bc47529d234da516d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a88302ec9c667bc47529d234da516d4">&#9670;&nbsp;</a></span>setDefaultCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::setDefaultCategory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>category</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets default logging category </p>
+<p>All log messages to this category appenders will also be written to general logger instance appenders (registered using <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a2bcdf12779fa8567bb2079edf027662d">registerAppender</a> method), and vice versa. In particular, any calls to the <a class="el" href="_logger_8h.html#a35bf78e74128341795a2c9ae2e2979bf" title="Writes the debug log record ">dDebug()</a> macro will be treated as category logging, so you needn't to specify category name using <a class="el" href="_logger_8h.html#a80ead3523161deac954fc96a821277a1" title="Writes the debug log record to the specific category ">dCDebug()</a> macro.</p>
+<p>To unset the default category, pass a null string as a parameter.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>Category name</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>"category" format marker will be set to the category name for all of these messages (see <a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#a2f90186aa4a0a9da9511999f48e1734a">AbstractStringAppender::setFormat</a>).</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a372bad2146536722eafc6a8c086c9c" title="Returns default logging category name ">defaultCategory()</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a95ef2b960342e8153edd908b2f05029c" title="Registers the appender to write the log records to the specific category ">registerCategoryAppender()</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a87f67b2b6ed4ffec4096ffd5e118beca" title="Links some logging category with the global logger instance appenders. ">logToGlobalInstance()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00775">775</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6a9206bc76164355a8c2c04a63340195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9206bc76164355a8c2c04a63340195">&#9670;&nbsp;</a></span>write() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::write </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>timeStamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a>&#160;</td>
+          <td class="paramname"><em>logLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the log record </p>
+<p>Writes the log records with the supplied arguments to all the registered appenders.</p>
+<dl class="section note"><dt>注解</dt><dd>It is not recommended to call this function directly. Instead of this you can just call one of the macros (dTrace, dTrac, dInfo, dWarning, dError, dFatal) that will supply all the needed information to this function.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeStamp</td><td>- the time stamp of the record </td></tr>
+    <tr><td class="paramname">logLevel</td><td>- the log level of the record </td></tr>
+    <tr><td class="paramname">file</td><td>- the name of the source file that requested the log record </td></tr>
+    <tr><td class="paramname">line</td><td>- the line of the code of source file that requested the log record </td></tr>
+    <tr><td class="paramname">function</td><td>- name of the function that requested the log record </td></tr>
+    <tr><td class="paramname">category</td><td>- logging category (0 for default category) </td></tr>
+    <tr><td class="paramname">message</td><td>- log message</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>Recording of the log record using the <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4aa9c9b0ed330e7603907c688212ab388d" title="Fatal. Used for unrecoverable errors, crashes the application right after the log record is written...">Logger::Fatal</a> log level will lead to calling the STL abort() function, which will interrupt the running of your software and begin the writing of the core dump.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4" title="Describes the possible severity levels of the log records ">LogLevel</a> </dd>
+<dd>
+<a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace</a>, <a class="el" href="_logger_8h.html#a35bf78e74128341795a2c9ae2e2979bf" title="Writes the debug log record ">dDebug</a>, <a class="el" href="_logger_8h.html#a5ef639e4aafdca49682e976f74ee8d6e" title="Writes the info log record ">dInfo</a>, <a class="el" href="_logger_8h.html#aa5316a54cc675789232c9029539fbf48" title="Write the warning log record ">dWarning</a>, <a class="el" href="_logger_8h.html#a6552afd041fe891267e2fecd823ba9b2" title="Write the error log record This macro records the error log record using the Logger::write() function...">dError</a>, <a class="el" href="_logger_8h.html#a9f37985619192d1f401a0158d41d82e6" title="Write the fatal log record ">dFatal</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. ">AbstractAppender</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00926">926</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7fc482ceac2a443c864cdb0d11b35888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc482ceac2a443c864cdb0d11b35888">&#9670;&nbsp;</a></span>write() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a>&#160;</td>
+          <td class="paramname"><em>logLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is the overloaded function provided for the convenience. It behaves similar to the above function.</p>
+<p>This function uses the current timestamp obtained with <code><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdatetime.html#currentDateTime">QDateTime::currentDateTime()</a></code>.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a6a9206bc76164355a8c2c04a63340195" title="Writes the log record ">write()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00939">939</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a70f982af41757cd10039eca2311005d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f982af41757cd10039eca2311005d2">&#9670;&nbsp;</a></span>write() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdebug.html">QDebug</a> Dtk::Core::Logger::write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">LogLevel</a>&#160;</td>
+          <td class="paramname"><em>logLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>category</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is the overloaded function provided for the convenience. It behaves similar to the above function.</p>
+<p>This function doesn't accept any log message as argument. It returns the <code><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdebug.html">QDebug</a></code> object that can be written using the stream functions. For example, you may like to write: </p><div class="fragment"><div class="line"><a class="code" href="_logger_8h.html#a35bf78e74128341795a2c9ae2e2979bf">dDebug</a>() &lt;&lt; <span class="stringliteral">&quot;This is the size&quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;of the element&quot;</span> &lt;&lt; elementName;</div></div><!-- fragment --><p> instead of writing </p><div class="fragment"><div class="line"><a class="code" href="_logger_8h.html#a35bf78e74128341795a2c9ae2e2979bf">dDebug</a>(<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>(<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlatin1string.html">QLatin1String</a>(<span class="stringliteral">&quot;This is the size %1x%2 of the element %3&quot;</span>))</div><div class="line">          .arg(size.x()).arg(size.y()).arg(elementName));</div></div><!-- fragment --><p>Please consider reading the <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html">Qt</a> Reference Documentation for the description of the <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdebug.html">QDebug</a> class usage syntax.</p>
+<dl class="section note"><dt>注解</dt><dd>This overload is definitely more pleasant to use than the first <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a6a9206bc76164355a8c2c04a63340195" title="Writes the log record ">write()</a> overload, but it behaves definitely slower than all the above overloads.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a6a9206bc76164355a8c2c04a63340195" title="Writes the log record ">write()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00967">967</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adf0508d25e1506127e583689e22ec95f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf0508d25e1506127e583689e22ec95f">&#9670;&nbsp;</a></span>writeAssert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::Logger::writeAssert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>condition</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the assertion </p>
+<p>This function writes the assertion record using the <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a6a9206bc76164355a8c2c04a63340195" title="Writes the log record ">write()</a> function.</p>
+<p>The assertion record is always written using the <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4aa9c9b0ed330e7603907c688212ab388d" title="Fatal. Used for unrecoverable errors, crashes the application right after the log record is written...">Logger::Fatal</a> log level which leads to the abortation of the program and generation of the core dump (if supported).</p>
+<p>The message written to the appenders will be identical to the <code>condition</code> argument prefixed with the <code>ASSERT:</code> notification.</p>
+<dl class="section note"><dt>注解</dt><dd>It is not recommended to call this function directly. Instead of this you can just call the LOG_ASSERT macro that will supply all the needed information to this function.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>LOG_ASSERT </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a6a9206bc76164355a8c2c04a63340195" title="Writes the log record ">write()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> 第 <a class="el" href="_logger_8cpp_source.html#l00992">992</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkcore/src/log/<a class="el" href="_logger_8h_source.html">Logger.h</a></li>
+<li>dtkcore/src/log/<a class="el" href="_logger_8cpp_source.html">Logger.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_core_1_1_logger.html">Logger</a></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:19 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

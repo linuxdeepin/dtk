@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkcore/src/log/AbstractAppender.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_abstract_appender_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">AbstractAppender.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2017 ~ 2017 Deepin Technology Co., Ltd.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published by</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public License</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; <span class="comment">// Local</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;AbstractAppender.h&quot;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// Qt</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QMutexLocker&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;DCORE_BEGIN_NAMESPACE</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;AbstractAppender::AbstractAppender()</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  : m_detailsLevel(Logger::Debug)</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{}</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_dtk_1_1_core_1_1_abstract_appender.html#a636dfff566cc35c5fcbef9fa8ace5bfe">   61</a></span>&#160;<a class="code" href="class_dtk_1_1_core_1_1_abstract_appender.html#a636dfff566cc35c5fcbef9fa8ace5bfe">AbstractAppender::~AbstractAppender</a>()</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{}</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_dtk_1_1_core_1_1_abstract_appender.html#aa63fd678baadf4cd33df6e91a478947e">   78</a></span>&#160;<a class="code" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> <a class="code" href="class_dtk_1_1_core_1_1_abstract_appender.html#aa63fd678baadf4cd33df6e91a478947e">AbstractAppender::detailsLevel</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmutexlocker.html">QMutexLocker</a> locker(&amp;m_detailsLevelMutex);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">return</span> m_detailsLevel;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_dtk_1_1_core_1_1_abstract_appender.html#a7d2e074a60e849bfa4235a52295debcb">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_core_1_1_abstract_appender.html#a7d2e074a60e849bfa4235a52295debcb">AbstractAppender::setDetailsLevel</a>(<a class="code" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> level)</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmutexlocker.html">QMutexLocker</a> locker(&amp;m_detailsLevelMutex);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  m_detailsLevel = level;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_dtk_1_1_core_1_1_abstract_appender.html#ac7f3ad66a9807638a79df8dba6b463f0">  109</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_core_1_1_abstract_appender.html#a7d2e074a60e849bfa4235a52295debcb">AbstractAppender::setDetailsLevel</a>(<span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&amp; level)</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  setDetailsLevel(<a class="code" href="class_dtk_1_1_core_1_1_logger.html#a7938f14668bfaa3d2099ce76ffc272dd">Logger::levelFromString</a>(level));</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_dtk_1_1_core_1_1_abstract_appender.html#a3de2dee36879cfff35f86e81a4982582">  124</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_core_1_1_abstract_appender.html#a3de2dee36879cfff35f86e81a4982582">AbstractAppender::write</a>(<span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdatetime.html">QDateTime</a>&amp; timeStamp, <a class="code" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> logLevel, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keywordtype">int</span> line,</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">function</span>, <span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&amp; category, <span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&amp; message)</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">if</span> (logLevel &gt;= detailsLevel())</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  {</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmutexlocker.html">QMutexLocker</a> locker(&amp;m_writeMutex);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    append(timeStamp, logLevel, file, line, <span class="keyword">function</span>, category, message);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  }</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;DCORE_END_NAMESPACE</div><div class="ttc" id="class_dtk_1_1_core_1_1_logger_html_a4a76b1db357f61044ed67411d1c378b4"><div class="ttname"><a href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Dtk::Core::Logger::LogLevel</a></div><div class="ttdeci">LogLevel</div><div class="ttdoc">Describes the possible severity levels of the log records </div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00083">Logger.h:83</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_logger_html_a7938f14668bfaa3d2099ce76ffc272dd"><div class="ttname"><a href="class_dtk_1_1_core_1_1_logger.html#a7938f14668bfaa3d2099ce76ffc272dd">Dtk::Core::Logger::levelFromString</a></div><div class="ttdeci">static LogLevel levelFromString(const QString &amp;s)</div><div class="ttdoc">Converts the LogLevel string representation to enum value </div><div class="ttdef"><b>Definition:</b> <a href="_logger_8cpp_source.html#l00638">Logger.cpp:638</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_abstract_appender_html_aa63fd678baadf4cd33df6e91a478947e"><div class="ttname"><a href="class_dtk_1_1_core_1_1_abstract_appender.html#aa63fd678baadf4cd33df6e91a478947e">Dtk::Core::AbstractAppender::detailsLevel</a></div><div class="ttdeci">Logger::LogLevel detailsLevel() const</div><div class="ttdoc">Returns the current details level of appender. </div><div class="ttdef"><b>Definition:</b> <a href="_abstract_appender_8cpp_source.html#l00078">AbstractAppender.cpp:78</a></div></div>
+<div class="ttc" id="qstring_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="qmutexlocker_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmutexlocker.html">QMutexLocker</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_abstract_appender_html_a3de2dee36879cfff35f86e81a4982582"><div class="ttname"><a href="class_dtk_1_1_core_1_1_abstract_appender.html#a3de2dee36879cfff35f86e81a4982582">Dtk::Core::AbstractAppender::write</a></div><div class="ttdeci">void write(const QDateTime &amp;timeStamp, Logger::LogLevel logLevel, const char *file, int line, const char *function, const QString &amp;category, const QString &amp;message)</div><div class="ttdoc">Tries to write the log record to this logger </div><div class="ttdef"><b>Definition:</b> <a href="_abstract_appender_8cpp_source.html#l00124">AbstractAppender.cpp:124</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_abstract_appender_html_a7d2e074a60e849bfa4235a52295debcb"><div class="ttname"><a href="class_dtk_1_1_core_1_1_abstract_appender.html#a7d2e074a60e849bfa4235a52295debcb">Dtk::Core::AbstractAppender::setDetailsLevel</a></div><div class="ttdeci">void setDetailsLevel(Logger::LogLevel level)</div><div class="ttdoc">Sets the current details level of appender. </div><div class="ttdef"><b>Definition:</b> <a href="_abstract_appender_8cpp_source.html#l00094">AbstractAppender.cpp:94</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_abstract_appender_html_a636dfff566cc35c5fcbef9fa8ace5bfe"><div class="ttname"><a href="class_dtk_1_1_core_1_1_abstract_appender.html#a636dfff566cc35c5fcbef9fa8ace5bfe">Dtk::Core::AbstractAppender::~AbstractAppender</a></div><div class="ttdeci">virtual ~AbstractAppender()</div><div class="ttdoc">Destructs the AbstractAppender object. </div><div class="ttdef"><b>Definition:</b> <a href="_abstract_appender_8cpp_source.html#l00061">AbstractAppender.cpp:61</a></div></div>
+<div class="ttc" id="qdatetime_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qdatetime.html">QDateTime</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_119aa013467e95cb00c6469cad12208b.html">src</a></li><li class="navelem"><a class="el" href="dir_a9bb0758876d611e3df677ee8ca2e122.html">log</a></li><li class="navelem"><b>AbstractAppender.cpp</b></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:16 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkwidget/src/widgets/dsuggestbutton.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dsuggestbutton_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dsuggestbutton.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;dsuggestbutton.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;dstyleoption.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QStylePainter&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QStyleOptionButton&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;DGuiApplicationHelper&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;DWIDGET_BEGIN_NAMESPACE</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a47d72f62e0f7547fa265d6ce20b8a4cd">   20</a></span>&#160;DSuggestButton::DSuggestButton(<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    : <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a>(parent)</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a6768837e258e031cbce4fc90f56c2440">   32</a></span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a47d72f62e0f7547fa265d6ce20b8a4cd">DSuggestButton::DSuggestButton</a>(<span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">text</a>, <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    : <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a>(text, parent)</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> DSuggestButton::paintEvent(<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpushbutton.html#event">event</a>)</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q_UNUSED(event)</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstylepainter.html">QStylePainter</a> p(<span class="keyword">this</span>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_button.html">DStyleOptionButton</a> option;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpushbutton.html#initStyleOption">initStyleOption</a>(&amp;option);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    option.<a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_button.html#a631fa1701e12a907ed1a112c4b737c4e">init</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    option.features |= QStyleOptionButton::ButtonFeature(DStyleOptionButton::SuggestButton);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> startColor = <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#palette-prop">palette</a>().<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpalette.html#color">color</a>(QPalette::Highlight);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> endColor = <a class="code" href="class_d_gui_application_helper.html#a9cde0c1e68ad96a4f51983dcd2e74cea">DGuiApplicationHelper::adjustColor</a>(startColor, 0, 0, +10, 0, 0, 0, 0);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    option.palette.setBrush(QPalette::Light, <a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a>(endColor));</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    option.palette.setBrush(QPalette::Dark, <a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a>(startColor));</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    option.palette.setBrush(QPalette::ButtonText, option.palette.highlightedText());</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    p.<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstylepainter.html#drawControl">drawControl</a>(QStyle::CE_PushButton, option);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;DWIDGET_END_NAMESPACE</div><div class="ttc" id="qstylepainter_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstylepainter.html">QStylePainter</a></div></div>
+<div class="ttc" id="qwidget_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="qwidget_html_palette-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#palette-prop">QWidget::palette</a></div><div class="ttdeci">const QPalette &amp; palette() const const</div></div>
+<div class="ttc" id="qpalette_html_color"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpalette.html#color">QPalette::color</a></div><div class="ttdeci">const QColor &amp; color(QPalette::ColorGroup group, QPalette::ColorRole role) const const</div></div>
+<div class="ttc" id="qbrush_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_style_option_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_option_button.html">Dtk::Widget::DStyleOptionButton</a></div><div class="ttdef"><b>Definition:</b> <a href="dstyleoption_8h_source.html#l00068">dstyleoption.h:68</a></div></div>
+<div class="ttc" id="qstylepainter_html_drawControl"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstylepainter.html#drawControl">QStylePainter::drawControl</a></div><div class="ttdeci">void drawControl(QStyle::ControlElement ce, const QStyleOption &amp;option)</div></div>
+<div class="ttc" id="qpushbutton_html_initStyleOption"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpushbutton.html#initStyleOption">QPushButton::initStyleOption</a></div><div class="ttdeci">void initStyleOption(QStyleOptionButton *option) const const</div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_suggest_button_html_a47d72f62e0f7547fa265d6ce20b8a4cd"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a47d72f62e0f7547fa265d6ce20b8a4cd">Dtk::Widget::DSuggestButton::DSuggestButton</a></div><div class="ttdeci">DSuggestButton(QWidget *parent=nullptr)</div><div class="ttdoc">DSuggestButton的构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="dsuggestbutton_8cpp_source.html#l00020">dsuggestbutton.cpp:20</a></div></div>
+<div class="ttc" id="qstring_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="qcolor_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcolor.html">QColor</a></div></div>
+<div class="ttc" id="class_d_gui_application_helper_html_a9cde0c1e68ad96a4f51983dcd2e74cea"><div class="ttname"><a href="class_d_gui_application_helper.html#a9cde0c1e68ad96a4f51983dcd2e74cea">DGuiApplicationHelper::adjustColor</a></div><div class="ttdeci">static QColor adjustColor(const QColor &amp;base, qint8 hueFloat, qint8 saturationFloat, qint8 lightnessFloat, qint8 redFloat, qint8 greenFloat, qint8 blueFloat, qint8 alphaFloat)</div><div class="ttdoc">DGuiApplicationHelper::adjustColor 调整颜色 </div><div class="ttdef"><b>Definition:</b> <a href="dguiapplicationhelper_8cpp_source.html#l00592">dguiapplicationhelper.cpp:592</a></div></div>
+<div class="ttc" id="qpushbutton_html_event"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpushbutton.html#event">QPushButton::event</a></div><div class="ttdeci">virtual bool event(QEvent *e) override</div></div>
+<div class="ttc" id="qabstractbutton_html_text-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">QAbstractButton::text</a></div><div class="ttdeci">QString text() const const</div></div>
+<div class="ttc" id="qpushbutton_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a></div></div>
+<div class="ttc" id="qpaintevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="qobject_html_parent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_style_option_button_html_a631fa1701e12a907ed1a112c4b737c4e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_option_button.html#a631fa1701e12a907ed1a112c4b737c4e">Dtk::Widget::DStyleOptionButton::init</a></div><div class="ttdeci">void init(const QWidget *widget) override</div><div class="ttdoc">初始化Dtk::Widget::DSuggestButton样式，设置为 DStyleOptionSuggestButton::SuggestButton 。 ...</div><div class="ttdef"><b>Definition:</b> <a href="dstyleoption_8cpp_source.html#l00152">dstyleoption.cpp:152</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dsuggestbutton.cpp</b></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:18 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkgui/src/private/dregionmonitor_p.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dtkgui_2src_2private_2dregionmonitor__p_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dregionmonitor_p.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DREGIONMONITOR_P_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DREGIONMONITOR_P_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;dregionmonitor.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;xeventmonitor_interface.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;dtkgui_global.h&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;DObjectPrivate&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QRegion&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QScreen&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;DCORE_USE_NAMESPACE</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;DGUI_BEGIN_NAMESPACE</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using</span> XEventMonitor = ::com::deepin::api::XEventMonitor;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>DRegionMonitorPrivate : <span class="keyword">public</span> DObjectPrivate</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="dobject_8h.html#a6b3eb59f9f5c2b7511246f15a0eb25c5">D_DECLARE_PUBLIC</a>(<a class="code" href="class_d_region_monitor.html">DRegionMonitor</a>)</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    DRegionMonitorPrivate(<a class="code" href="class_d_region_monitor.html">DRegionMonitor</a> *q);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~DRegionMonitorPrivate();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> registered()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !registerKey.isEmpty(); }</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> init();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> registerMonitorRegion();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> unregisterMonitorRegion();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> _q_ButtonPress(<span class="keyword">const</span> <span class="keywordtype">int</span> flag, <span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y, <span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> _q_ButtonRelease(<span class="keyword">const</span> <span class="keywordtype">int</span> flag, <span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y, <span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> _q_CursorMove(<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y, <span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> _q_CursorEnter(<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y, <span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> _q_CursorLeave(<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y, <span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> _q_KeyPress(<span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;keyname, <span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y, <span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> _q_KeyRelease(<span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;keyname, <span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y, <span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> deviceScaledCoordinate(<span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;p, <span class="keyword">const</span> <span class="keywordtype">double</span> ratio) <span class="keyword">const</span>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    XEventMonitor *eventInter;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregion.html">QRegion</a> watchedRegion;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> registerKey;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    DRegionMonitor::CoordinateType type = DRegionMonitor::ScaleRatio;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    DRegionMonitor::RegisterdFlags registerdFlags = <a class="code" href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4a14ab3258ebaf02a3072af5c83f66106f">DRegionMonitor::Motion</a> | <a class="code" href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4a25c8070e2a4b4a29aaff73fe625ba596">DRegionMonitor::Button</a> | <a class="code" href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4a798ec992d25ccdbbeec2f8a953815dd8">DRegionMonitor::Key</a>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;DGUI_END_NAMESPACE</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // DREGIONMONITOR_P_H</span></div><div class="ttc" id="class_d_region_monitor_html"><div class="ttname"><a href="class_d_region_monitor.html">DRegionMonitor</a></div><div class="ttdoc">一个在指定区域内监视鼠标键盘动作的类 </div><div class="ttdef"><b>Definition:</b> <a href="dtkgui_2src_2kernel_2dregionmonitor_8h_source.html#l00012">dregionmonitor.h:12</a></div></div>
+<div class="ttc" id="qpoint_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a></div></div>
+<div class="ttc" id="class_d_region_monitor_html_a2e35e5e9f947f316134b18935db633d4a798ec992d25ccdbbeec2f8a953815dd8"><div class="ttname"><a href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4a798ec992d25ccdbbeec2f8a953815dd8">DRegionMonitor::Key</a></div><div class="ttdef"><b>Definition:</b> <a href="dtkgui_2src_2kernel_2dregionmonitor_8h_source.html#l00026">dregionmonitor.h:26</a></div></div>
+<div class="ttc" id="qstring_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="dobject_8h_html_a6b3eb59f9f5c2b7511246f15a0eb25c5"><div class="ttname"><a href="dobject_8h.html#a6b3eb59f9f5c2b7511246f15a0eb25c5">D_DECLARE_PUBLIC</a></div><div class="ttdeci">#define D_DECLARE_PUBLIC(Class)</div><div class="ttdoc">这个宏用于私有类中，它定义了 q_func() 这个函数用于返回公开类的对象，另外将公开类 声明为私有类的友元类...</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00028">dobject.h:28</a></div></div>
+<div class="ttc" id="class_d_region_monitor_html_a2e35e5e9f947f316134b18935db633d4a14ab3258ebaf02a3072af5c83f66106f"><div class="ttname"><a href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4a14ab3258ebaf02a3072af5c83f66106f">DRegionMonitor::Motion</a></div><div class="ttdef"><b>Definition:</b> <a href="dtkgui_2src_2kernel_2dregionmonitor_8h_source.html#l00024">dregionmonitor.h:24</a></div></div>
+<div class="ttc" id="class_d_region_monitor_html_a2e35e5e9f947f316134b18935db633d4a25c8070e2a4b4a29aaff73fe625ba596"><div class="ttname"><a href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4a25c8070e2a4b4a29aaff73fe625ba596">DRegionMonitor::Button</a></div><div class="ttdef"><b>Definition:</b> <a href="dtkgui_2src_2kernel_2dregionmonitor_8h_source.html#l00025">dregionmonitor.h:25</a></div></div>
+<div class="ttc" id="qregion_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qregion.html">QRegion</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_01e26ae7551668ca493319620c16a3ae.html">dtkgui</a></li><li class="navelem"><a class="el" href="dir_f1a11d12171d66e86c8e928f2778dd27.html">src</a></li><li class="navelem"><a class="el" href="dir_a509d977e8d1d333b9dd2c9a77f5374d.html">private</a></li><li class="navelem"><b>dregionmonitor_p.h</b></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:17 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

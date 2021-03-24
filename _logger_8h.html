@@ -1,0 +1,700 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkcore/src/log/Logger.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_logger_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">Logger.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A file containing the description of Logger class and and additional useful macros for logging  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;QString&gt;</code><br />
+<code>#include &lt;QDebug&gt;</code><br />
+<code>#include &lt;QDateTime&gt;</code><br />
+<code>#include &quot;CuteLogger_global.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Logger.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_logger_8h__incl.png" border="0" usemap="#dtkcore_2src_2log_2_logger_8h" alt=""/></div>
+<map name="dtkcore_2src_2log_2_logger_8h" id="dtkcore_2src_2log_2_logger_8h">
+<area shape="rect" id="node5" href="_cute_logger__global_8h_source.html" title="CuteLogger_global.h" alt="" coords="305,80,447,107"/>
+<area shape="rect" id="node6" href="dtkcore__global_8h_source.html" title="dtkcore_global.h" alt="" coords="317,155,435,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="_logger_8h__dep__incl.png" border="0" usemap="#dtkcore_2src_2log_2_logger_8hdep" alt=""/></div>
+<map name="dtkcore_2src_2log_2_logger_8hdep" id="dtkcore_2src_2log_2_logger_8hdep">
+<area shape="rect" id="node2" href="_abstract_appender_8h_source.html" title="dtkcore/src/log/Abstract\lAppender.h" alt="" coords="190,80,351,121"/>
+<area shape="rect" id="node8" href="_log_manager_8cpp_source.html" title="dtkcore/src/log/LogManager.cpp" alt="" coords="252,445,460,471"/>
+<area shape="rect" id="node13" href="_logger_8cpp_source.html" title="dtkcore/src/log/Logger.cpp" alt="" coords="43,266,219,293"/>
+<area shape="rect" id="node3" href="_abstract_appender_8cpp_source.html" title="dtkcore/src/log/Abstract\lAppender.cpp" alt="" coords="131,169,293,211"/>
+<area shape="rect" id="node4" href="_abstract_string_appender_8h_source.html" title="dtkcore/src/log/Abstract\lStringAppender.h" alt="" coords="441,169,602,211"/>
+<area shape="rect" id="node5" href="_abstract_string_appender_8cpp_source.html" title="dtkcore/src/log/Abstract\lStringAppender.cpp" alt="" coords="717,259,878,300"/>
+<area shape="rect" id="node6" href="_console_appender_8h_source.html" title="dtkcore/src/log/ConsoleAppender.h" alt="" coords="243,266,469,293"/>
+<area shape="rect" id="node9" href="_file_appender_8h_source.html" title="dtkcore/src/log/FileAppender.h" alt="" coords="494,266,693,293"/>
+<area shape="rect" id="node14" href="_output_debug_appender_8h_source.html" title="dtkcore/src/log/OutputDebug\lAppender.h" alt="" coords="903,259,1092,300"/>
+<area shape="rect" id="node7" href="_console_appender_8cpp_source.html" title="dtkcore/src/log/ConsoleAppender.cpp" alt="" coords="79,355,319,382"/>
+<area shape="rect" id="node10" href="_file_appender_8cpp_source.html" title="dtkcore/src/log/FileAppender.cpp" alt="" coords="393,355,607,382"/>
+<area shape="rect" id="node11" href="_rolling_file_appender_8h_source.html" title="dtkcore/src/log/RollingFile\lAppender.h" alt="" coords="631,348,804,389"/>
+<area shape="rect" id="node12" href="_rolling_file_appender_8cpp_source.html" title="dtkcore/src/log/RollingFile\lAppender.cpp" alt="" coords="631,437,804,479"/>
+<area shape="rect" id="node15" href="_output_debug_appender_8cpp_source.html" title="dtkcore/src/log/OutputDebug\lAppender.cpp" alt="" coords="903,348,1092,389"/>
+</map>
+</div>
+</div>
+<p><a href="_logger_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger.html">Dtk::Core::Logger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Very simple but rather powerful component which may be used for logging your application activities.  <a href="class_dtk_1_1_core_1_1_logger.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_cute_message_logger.html">Dtk::Core::CuteMessageLogger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_logger_timing_helper.html">Dtk::Core::LoggerTimingHelper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ab69de76884dab62f7806d8802f7f64e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#ab69de76884dab62f7806d8802f7f64e0">logger</a>&#160;&#160;&#160;loggerInstance()</td></tr>
+<tr class="memdesc:ab69de76884dab62f7806d8802f7f64e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro returning the current instance of Logger object  <a href="#ab69de76884dab62f7806d8802f7f64e0">更多...</a><br /></td></tr>
+<tr class="separator:ab69de76884dab62f7806d8802f7f64e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b910712a7cc06c42774b2ef841f9c43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43">dTrace</a>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Trace,   __FILE__, __LINE__, Q_FUNC_INFO).write</td></tr>
+<tr class="memdesc:a2b910712a7cc06c42774b2ef841f9c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the trace log record  <a href="#a2b910712a7cc06c42774b2ef841f9c43">更多...</a><br /></td></tr>
+<tr class="separator:a2b910712a7cc06c42774b2ef841f9c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35bf78e74128341795a2c9ae2e2979bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a35bf78e74128341795a2c9ae2e2979bf">dDebug</a>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Debug,   __FILE__, __LINE__, Q_FUNC_INFO).write</td></tr>
+<tr class="memdesc:a35bf78e74128341795a2c9ae2e2979bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the debug log record  <a href="#a35bf78e74128341795a2c9ae2e2979bf">更多...</a><br /></td></tr>
+<tr class="separator:a35bf78e74128341795a2c9ae2e2979bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef639e4aafdca49682e976f74ee8d6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a5ef639e4aafdca49682e976f74ee8d6e">dInfo</a>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Info,    __FILE__, __LINE__, Q_FUNC_INFO).write</td></tr>
+<tr class="memdesc:a5ef639e4aafdca49682e976f74ee8d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the info log record  <a href="#a5ef639e4aafdca49682e976f74ee8d6e">更多...</a><br /></td></tr>
+<tr class="separator:a5ef639e4aafdca49682e976f74ee8d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5316a54cc675789232c9029539fbf48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#aa5316a54cc675789232c9029539fbf48">dWarning</a>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Warning, __FILE__, __LINE__, Q_FUNC_INFO).write</td></tr>
+<tr class="memdesc:aa5316a54cc675789232c9029539fbf48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the warning log record  <a href="#aa5316a54cc675789232c9029539fbf48">更多...</a><br /></td></tr>
+<tr class="separator:aa5316a54cc675789232c9029539fbf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6552afd041fe891267e2fecd823ba9b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a6552afd041fe891267e2fecd823ba9b2">dError</a>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Error,   __FILE__, __LINE__, Q_FUNC_INFO).write</td></tr>
+<tr class="memdesc:a6552afd041fe891267e2fecd823ba9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the error log record This macro records the error log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> macro.  <a href="#a6552afd041fe891267e2fecd823ba9b2">更多...</a><br /></td></tr>
+<tr class="separator:a6552afd041fe891267e2fecd823ba9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f37985619192d1f401a0158d41d82e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a9f37985619192d1f401a0158d41d82e6">dFatal</a>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Fatal,   __FILE__, __LINE__, Q_FUNC_INFO).write</td></tr>
+<tr class="memdesc:a9f37985619192d1f401a0158d41d82e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the fatal log record  <a href="#a9f37985619192d1f401a0158d41d82e6">更多...</a><br /></td></tr>
+<tr class="separator:a9f37985619192d1f401a0158d41d82e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61eefae6fb92fe450a1eb9f2d0f00cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb">dCTrace</a>(category)&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Trace,   __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td></tr>
+<tr class="memdesc:af61eefae6fb92fe450a1eb9f2d0f00cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the trace log record to the specific category  <a href="#af61eefae6fb92fe450a1eb9f2d0f00cb">更多...</a><br /></td></tr>
+<tr class="separator:af61eefae6fb92fe450a1eb9f2d0f00cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ead3523161deac954fc96a821277a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a80ead3523161deac954fc96a821277a1">dCDebug</a>(category)&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Debug,   __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td></tr>
+<tr class="memdesc:a80ead3523161deac954fc96a821277a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the debug log record to the specific category  <a href="#a80ead3523161deac954fc96a821277a1">更多...</a><br /></td></tr>
+<tr class="separator:a80ead3523161deac954fc96a821277a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9a1d34896eb369810688a48a6e59a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a9a9a1d34896eb369810688a48a6e59a7">dCInfo</a>(category)&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Info,    __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td></tr>
+<tr class="memdesc:a9a9a1d34896eb369810688a48a6e59a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the info log record to the specific category  <a href="#a9a9a1d34896eb369810688a48a6e59a7">更多...</a><br /></td></tr>
+<tr class="separator:a9a9a1d34896eb369810688a48a6e59a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53dd4af931d5a133b1dabc8d4517e2a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a53dd4af931d5a133b1dabc8d4517e2a6">dCWarning</a>(category)&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Warning, __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td></tr>
+<tr class="memdesc:a53dd4af931d5a133b1dabc8d4517e2a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the warning log record to the specific category  <a href="#a53dd4af931d5a133b1dabc8d4517e2a6">更多...</a><br /></td></tr>
+<tr class="separator:a53dd4af931d5a133b1dabc8d4517e2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b4c61a6776b36685605e7d6aa20cdb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#ad3b4c61a6776b36685605e7d6aa20cdb">dCError</a>(category)&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Error,   __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td></tr>
+<tr class="memdesc:ad3b4c61a6776b36685605e7d6aa20cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the error log record to the specific category  <a href="#ad3b4c61a6776b36685605e7d6aa20cdb">更多...</a><br /></td></tr>
+<tr class="separator:ad3b4c61a6776b36685605e7d6aa20cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265d23866443aa96f08dace2aa4b77cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a265d23866443aa96f08dace2aa4b77cb">dCFatal</a>(category)&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Fatal,   __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td></tr>
+<tr class="memdesc:a265d23866443aa96f08dace2aa4b77cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the fatal log record to the specific category  <a href="#a265d23866443aa96f08dace2aa4b77cb">更多...</a><br /></td></tr>
+<tr class="separator:a265d23866443aa96f08dace2aa4b77cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc25c4e95bd20f1721b0d1b23dc2539"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#affc25c4e95bd20f1721b0d1b23dc2539">dTraceTime</a>&#160;&#160;&#160;LoggerTimingHelper loggerTimingHelper(loggerInstance(), Logger::Trace, __FILE__, __LINE__, Q_FUNC_INFO); loggerTimingHelper.start</td></tr>
+<tr class="memdesc:affc25c4e95bd20f1721b0d1b23dc2539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the processing time of current function / code block  <a href="#affc25c4e95bd20f1721b0d1b23dc2539">更多...</a><br /></td></tr>
+<tr class="separator:affc25c4e95bd20f1721b0d1b23dc2539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fbf2e37437e0d7e22b460c34481fada"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a9fbf2e37437e0d7e22b460c34481fada">dDebugTime</a>&#160;&#160;&#160;LoggerTimingHelper loggerTimingHelper(loggerInstance(), Logger::Debug, __FILE__, __LINE__, Q_FUNC_INFO); loggerTimingHelper.start</td></tr>
+<tr class="memdesc:a9fbf2e37437e0d7e22b460c34481fada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the processing time of current function / code block  <a href="#a9fbf2e37437e0d7e22b460c34481fada">更多...</a><br /></td></tr>
+<tr class="separator:a9fbf2e37437e0d7e22b460c34481fada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b0967ed9f55d77a6f9a52680d8bc58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#ad8b0967ed9f55d77a6f9a52680d8bc58">dInfoTime</a>&#160;&#160;&#160;LoggerTimingHelper loggerTimingHelper(loggerInstance(), Logger::Info,  __FILE__, __LINE__, Q_FUNC_INFO); loggerTimingHelper.start</td></tr>
+<tr class="memdesc:ad8b0967ed9f55d77a6f9a52680d8bc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the processing time of current function / code block  <a href="#ad8b0967ed9f55d77a6f9a52680d8bc58">更多...</a><br /></td></tr>
+<tr class="separator:ad8b0967ed9f55d77a6f9a52680d8bc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac166e6417d650a4708717b19a344963a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#ac166e6417d650a4708717b19a344963a">dAssert</a>(cond)&#160;&#160;&#160;((!(cond)) ? loggerInstance()-&gt;writeAssert(__FILE__, __LINE__, Q_FUNC_INFO, #cond) : qt_noop())</td></tr>
+<tr class="memdesc:ac166e6417d650a4708717b19a344963a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the assertion  <a href="#ac166e6417d650a4708717b19a344963a">更多...</a><br /></td></tr>
+<tr class="separator:ac166e6417d650a4708717b19a344963a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87f9c2fe76f96e709d57374de4472e3"><td class="memItemLeft" align="right" valign="top"><a id="af87f9c2fe76f96e709d57374de4472e3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>dAssertX</b>(cond,  msg)&#160;&#160;&#160;((!(cond)) ? loggerInstance()-&gt;writeAssert(__FILE__, __LINE__, Q_FUNC_INFO, msg) : qt_noop())</td></tr>
+<tr class="separator:af87f9c2fe76f96e709d57374de4472e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9eeda7c462d7025536fb39d6a67634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a4b9eeda7c462d7025536fb39d6a67634">dCategory</a>(category)</td></tr>
+<tr class="memdesc:a4b9eeda7c462d7025536fb39d6a67634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create logger instance inside your custom class to log all messages to the specified category  <a href="#a4b9eeda7c462d7025536fb39d6a67634">更多...</a><br /></td></tr>
+<tr class="separator:a4b9eeda7c462d7025536fb39d6a67634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ddb109c3ac634ea13445dd43afc42e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a4ddb109c3ac634ea13445dd43afc42e7">dGlobalCategory</a>(category)</td></tr>
+<tr class="memdesc:a4ddb109c3ac634ea13445dd43afc42e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create logger instance inside your custom class to log all messages both to the specified category and to the global logger instance.  <a href="#a4ddb109c3ac634ea13445dd43afc42e7">更多...</a><br /></td></tr>
+<tr class="separator:a4ddb109c3ac634ea13445dd43afc42e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a3b4c30199f2b54596cb6dd2da27f2f77"><td class="memItemLeft" align="right" valign="top"><a id="a3b4c30199f2b54596cb6dd2da27f2f77"></a>
+Logger *&#160;</td><td class="memItemRight" valign="bottom"><b>Dtk::Core::loggerInstance</b> ()</td></tr>
+<tr class="separator:a3b4c30199f2b54596cb6dd2da27f2f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A file containing the description of Logger class and and additional useful macros for logging </p>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="ac166e6417d650a4708717b19a344963a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac166e6417d650a4708717b19a344963a">&#9670;&nbsp;</a></span>dAssert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dAssert</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cond</td><td>)</td>
+          <td>&#160;&#160;&#160;((!(cond)) ? loggerInstance()-&gt;writeAssert(__FILE__, __LINE__, Q_FUNC_INFO, #cond) : qt_noop())</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check the assertion </p>
+<p>This macro is a convenient and recommended to use way to call Logger::writeAssert() function. It uses the preprocessor macros (as the <a class="el" href="_logger_8h.html#a35bf78e74128341795a2c9ae2e2979bf" title="Writes the debug log record ">dDebug()</a> does) to fill the necessary arguments of the Logger::writeAssert() call. It also uses undocumented but rather mature and stable <code>qt_noop()</code> function (which does nothing) when the assertion is true.</p>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">bool</span> b = checkSomething();</div><div class="line">...</div><div class="line">dAssert(b == <span class="keyword">true</span>);</div></div><!-- fragment --><dl class="section see"><dt>参见</dt><dd>Dtk::Logger::writeAssert() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4b9eeda7c462d7025536fb39d6a67634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9eeda7c462d7025536fb39d6a67634">&#9670;&nbsp;</a></span>dCategory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dCategory</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">category</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:\</div><div class="line">    Logger* loggerInstance()\</div><div class="line">    {\</div><div class="line">        static Logger customLoggerInstance(category);\</div><div class="line">        return &amp;customLoggerInstance;\</div><div class="line">    }\</div></div><!-- fragment -->
+<p>Create logger instance inside your custom class to log all messages to the specified category </p>
+<p>This macro is used to pass all log messages inside your custom class to the specific category. You must include this macro inside your class declaration (similarly to the Q_OBJECT macro). Internally, this macro redefines loggerInstance() function, creates the local Logger object inside your class and sets the default category to the specified parameter.</p>
+<p>Thus, any call to loggerInstance() (for example, inside <a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> macro) will return the local Logger object, so any logging message will be directed to the default category.</p>
+<dl class="section note"><dt>注解</dt><dd>This macro does not register any appender to the newly created logger instance. You should register logger appenders manually, inside your class.</dd></dl>
+<p>Usage example: </p><div class="fragment"><div class="line"><span class="keyword">class </span>CustomClass : <span class="keyword">public</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></div><div class="line">{</div><div class="line">  Q_OBJECT</div><div class="line">  <a class="code" href="_logger_8h.html#a4b9eeda7c462d7025536fb39d6a67634">dCategory</a>(<span class="stringliteral">&quot;custom_category&quot;</span>)</div><div class="line">  ...</div><div class="line">};</div><div class="line"></div><div class="line">CustomClass::CustomClass(<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a>* parent) : <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a>(parent)</div><div class="line">{</div><div class="line">  <a class="code" href="_logger_8h.html#ab69de76884dab62f7806d8802f7f64e0">logger</a>-&gt;registerAppender(<span class="keyword">new</span> FileAppender(<span class="stringliteral">&quot;custom_category_log&quot;</span>));</div><div class="line">  <a class="code" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43">dTrace</a>() &lt;&lt; <span class="stringliteral">&quot;Trace to the custom category log&quot;</span>;</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>参见</dt><dd>Dtk::Logger::write() </dd>
+<dd>
+<a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace</a> </dd>
+<dd>
+Dtk::Logger::registerCategoryAppender() </dd>
+<dd>
+Dtk::Logger::setDefaultCategory() </dd>
+<dd>
+<a class="el" href="_logger_8h.html#a4ddb109c3ac634ea13445dd43afc42e7" title="Create logger instance inside your custom class to log all messages both to the specified category an...">dGlobalCategory</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a80ead3523161deac954fc96a821277a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ead3523161deac954fc96a821277a1">&#9670;&nbsp;</a></span>dCDebug</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dCDebug</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">category</td><td>)</td>
+          <td>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Debug,   __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the debug log record to the specific category </p>
+<p>This macro records the debug log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a> macro.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad3b4c61a6776b36685605e7d6aa20cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b4c61a6776b36685605e7d6aa20cdb">&#9670;&nbsp;</a></span>dCError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dCError</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">category</td><td>)</td>
+          <td>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Error,   __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the error log record to the specific category </p>
+<p>This macro records the error log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a> macro.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a265d23866443aa96f08dace2aa4b77cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a265d23866443aa96f08dace2aa4b77cb">&#9670;&nbsp;</a></span>dCFatal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dCFatal</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">category</td><td>)</td>
+          <td>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Fatal,   __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write the fatal log record to the specific category </p>
+<p>This macro records the fatal log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a> macro.</p>
+<dl class="section note"><dt>注解</dt><dd>Recording of the log record using the Logger::Fatal log level will lead to calling the STL abort() function, which will interrupt the running of your software and begin the writing of the core dump.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9a9a1d34896eb369810688a48a6e59a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9a1d34896eb369810688a48a6e59a7">&#9670;&nbsp;</a></span>dCInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dCInfo</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">category</td><td>)</td>
+          <td>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Info,    __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the info log record to the specific category </p>
+<p>This macro records the info log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a> macro.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af61eefae6fb92fe450a1eb9f2d0f00cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af61eefae6fb92fe450a1eb9f2d0f00cb">&#9670;&nbsp;</a></span>dCTrace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dCTrace</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">category</td><td>)</td>
+          <td>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Trace,   __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the trace log record to the specific category </p>
+<p>This macro is the similar to the <a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> macro, but has a category parameter to write only to the category appenders (registered using Logger::registerCategoryAppender() method).</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>category name string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> </dd>
+<dd>
+Dtk::Logger::LogLevel </dd>
+<dd>
+Dtk::Logger::registerCategoryAppender() </dd>
+<dd>
+Dtk::Logger::write() </dd>
+<dd>
+<a class="el" href="_logger_8h.html#a4b9eeda7c462d7025536fb39d6a67634" title="Create logger instance inside your custom class to log all messages to the specified category ...">dCategory()</a>, <a class="el" href="_logger_8h.html#a4ddb109c3ac634ea13445dd43afc42e7" title="Create logger instance inside your custom class to log all messages both to the specified category an...">dGlobalCategory()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a53dd4af931d5a133b1dabc8d4517e2a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53dd4af931d5a133b1dabc8d4517e2a6">&#9670;&nbsp;</a></span>dCWarning</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dCWarning</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">category</td><td>)</td>
+          <td>&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Warning, __FILE__, __LINE__, Q_FUNC_INFO, category).write()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the warning log record to the specific category </p>
+<p>This macro records the warning log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a> macro.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#af61eefae6fb92fe450a1eb9f2d0f00cb" title="Writes the trace log record to the specific category ">dCTrace()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a35bf78e74128341795a2c9ae2e2979bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35bf78e74128341795a2c9ae2e2979bf">&#9670;&nbsp;</a></span>dDebug</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dDebug&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Debug,   __FILE__, __LINE__, Q_FUNC_INFO).write</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the debug log record </p>
+<p>This macro records the debug log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> macro.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> </dd>
+<dd>
+Dtk::Logger::LogLevel </dd>
+<dd>
+Dtk::Logger::write() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9fbf2e37437e0d7e22b460c34481fada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fbf2e37437e0d7e22b460c34481fada">&#9670;&nbsp;</a></span>dDebugTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dDebugTime&#160;&#160;&#160;LoggerTimingHelper loggerTimingHelper(loggerInstance(), Logger::Debug, __FILE__, __LINE__, Q_FUNC_INFO); loggerTimingHelper.start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs the processing time of current function / code block </p>
+<p>This macro automagically measures the function or code of block execution time and outputs it as a Logger::Debug level log record. It works similar to <a class="el" href="_logger_8h.html#affc25c4e95bd20f1721b0d1b23dc2539" title="Logs the processing time of current function / code block ">dTraceTime()</a> macro.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#affc25c4e95bd20f1721b0d1b23dc2539" title="Logs the processing time of current function / code block ">dTraceTime</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6552afd041fe891267e2fecd823ba9b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6552afd041fe891267e2fecd823ba9b2">&#9670;&nbsp;</a></span>dError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dError&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Error,   __FILE__, __LINE__, Q_FUNC_INFO).write</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write the error log record This macro records the error log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> macro. </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> </dd>
+<dd>
+Dtk::Logger::LogLevel </dd>
+<dd>
+Dtk::Logger::write() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9f37985619192d1f401a0158d41d82e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f37985619192d1f401a0158d41d82e6">&#9670;&nbsp;</a></span>dFatal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dFatal&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Fatal,   __FILE__, __LINE__, Q_FUNC_INFO).write</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write the fatal log record </p>
+<p>This macro records the fatal log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> macro.</p>
+<dl class="section note"><dt>注解</dt><dd>Recording of the log record using the Logger::Fatal log level will lead to calling the STL abort() function, which will interrupt the running of your software and begin the writing of the core dump.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> </dd>
+<dd>
+Dtk::Logger::LogLevel </dd>
+<dd>
+Dtk::Logger::write() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4ddb109c3ac634ea13445dd43afc42e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ddb109c3ac634ea13445dd43afc42e7">&#9670;&nbsp;</a></span>dGlobalCategory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dGlobalCategory</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">category</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:\</div><div class="line">    Logger* loggerInstance()\</div><div class="line">    {\</div><div class="line">        static Logger customLoggerInstance(category);\</div><div class="line">        customLoggerInstance.logToGlobalInstance(category, <span class="keyword">true</span>);\</div><div class="line">        return &amp;customLoggerInstance;\</div><div class="line">    }\</div></div><!-- fragment -->
+<p>Create logger instance inside your custom class to log all messages both to the specified category and to the global logger instance. </p>
+<p>This macro is similar to <a class="el" href="_logger_8h.html#a4b9eeda7c462d7025536fb39d6a67634" title="Create logger instance inside your custom class to log all messages to the specified category ...">dCategory()</a>, but also passes all log messages to the global logger instance appenders. It is equal to defining the local category logger using dCategory macro and calling: </p><div class="fragment"><div class="line"><a class="code" href="_logger_8h.html#ab69de76884dab62f7806d8802f7f64e0">logger</a>-&gt;logToGlobalInstance(<a class="code" href="_logger_8h.html#ab69de76884dab62f7806d8802f7f64e0">logger</a>-&gt;defaultCategory(), <span class="keyword">true</span>); </div></div><!-- fragment --><dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#a4b9eeda7c462d7025536fb39d6a67634" title="Create logger instance inside your custom class to log all messages to the specified category ...">dCategory</a> </dd>
+<dd>
+Dtk::Logger::logToGlobalInstance() </dd>
+<dd>
+Dtk::Logger::defaultCategory() </dd>
+<dd>
+Dtk::Logger::registerCategoryAppender() </dd>
+<dd>
+Dtk::Logger::write() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00062">62</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5ef639e4aafdca49682e976f74ee8d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ef639e4aafdca49682e976f74ee8d6e">&#9670;&nbsp;</a></span>dInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dInfo&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Info,    __FILE__, __LINE__, Q_FUNC_INFO).write</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the info log record </p>
+<p>This macro records the info log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> macro.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> </dd>
+<dd>
+Dtk::Logger::LogLevel </dd>
+<dd>
+Dtk::Logger::write() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad8b0967ed9f55d77a6f9a52680d8bc58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b0967ed9f55d77a6f9a52680d8bc58">&#9670;&nbsp;</a></span>dInfoTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dInfoTime&#160;&#160;&#160;LoggerTimingHelper loggerTimingHelper(loggerInstance(), Logger::Info,  __FILE__, __LINE__, Q_FUNC_INFO); loggerTimingHelper.start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs the processing time of current function / code block </p>
+<p>This macro automagically measures the function or code of block execution time and outputs it as a Logger::Info level log record. It works similar to <a class="el" href="_logger_8h.html#affc25c4e95bd20f1721b0d1b23dc2539" title="Logs the processing time of current function / code block ">dTraceTime()</a> macro.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#affc25c4e95bd20f1721b0d1b23dc2539" title="Logs the processing time of current function / code block ">dTraceTime</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2b910712a7cc06c42774b2ef841f9c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b910712a7cc06c42774b2ef841f9c43">&#9670;&nbsp;</a></span>dTrace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dTrace&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Trace,   __FILE__, __LINE__, Q_FUNC_INFO).write</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the trace log record </p>
+<p>This macro is the convenient way to call Logger::write(). It uses the common preprocessor macros <code><b>FILE</b></code>, <code><b>LINE</b></code> and the standard <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html">Qt</a> <code>Q_FUNC_INFO</code> macros to automatically determine the needed parameters to call Logger::write().</p>
+<dl class="section note"><dt>注解</dt><dd>This and other (<a class="el" href="_logger_8h.html#a5ef639e4aafdca49682e976f74ee8d6e" title="Writes the info log record ">dInfo()</a> etc...) macros uses the variadic macro arguments to give convenient usage form for the different versions of Logger::write() (using the <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> or const char* argument or returning the <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdebug.html">QDebug</a> class instance). Not all compilers will support this. Please, consider reviewing your compiler documentation to ensure it support <b>VA_ARGS</b> macro.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd>Dtk::Logger::LogLevel </dd>
+<dd>
+Dtk::Logger::write() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="affc25c4e95bd20f1721b0d1b23dc2539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc25c4e95bd20f1721b0d1b23dc2539">&#9670;&nbsp;</a></span>dTraceTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dTraceTime&#160;&#160;&#160;LoggerTimingHelper loggerTimingHelper(loggerInstance(), Logger::Trace, __FILE__, __LINE__, Q_FUNC_INFO); loggerTimingHelper.start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs the processing time of current function / code block </p>
+<p>This macro automagically measures the function or code of block execution time and outputs it as a Logger::Trace level log record.</p>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> foo()</div><div class="line">{</div><div class="line">  <a class="code" href="_logger_8h.html#affc25c4e95bd20f1721b0d1b23dc2539">dTraceTime</a>();</div><div class="line">  ... <span class="comment">// Do some long operations</span></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">} <span class="comment">// Outputs: Function foo finished in &lt;time&gt; ms.</span></div></div><!-- fragment --><p>If you are measuring a code of block execution time you may also add a name of block to the macro: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> bar(<span class="keywordtype">bool</span> doFoo)</div><div class="line">{</div><div class="line">  <a class="code" href="_logger_8h.html#affc25c4e95bd20f1721b0d1b23dc2539">dTraceTime</a>();</div><div class="line"></div><div class="line">  <span class="keywordflow">if</span> (doFoo)</div><div class="line">  {</div><div class="line">    <a class="code" href="_logger_8h.html#affc25c4e95bd20f1721b0d1b23dc2539">dTraceTime</a>(<span class="stringliteral">&quot;Foo&quot;</span>);</div><div class="line">    ...</div><div class="line">  }</div><div class="line"></div><div class="line">  ...</div><div class="line">}</div><div class="line"><span class="comment">// Outputs:</span></div><div class="line"><span class="comment">// &quot;Foo&quot; finished in &lt;time1&gt; ms.</span></div><div class="line"><span class="comment">// Function bar finished in &lt;time2&gt; ms.</span></div></div><!-- fragment --><dl class="section note"><dt>注解</dt><dd>Macro switches to logging the seconds instead of milliseconds when the execution time reaches 10000 ms. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#a9fbf2e37437e0d7e22b460c34481fada" title="Logs the processing time of current function / code block ">dDebugTime</a>, <a class="el" href="_logger_8h.html#ad8b0967ed9f55d77a6f9a52680d8bc58" title="Logs the processing time of current function / code block ">dInfoTime</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa5316a54cc675789232c9029539fbf48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5316a54cc675789232c9029539fbf48">&#9670;&nbsp;</a></span>dWarning</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dWarning&#160;&#160;&#160;CuteMessageLogger(loggerInstance(), Logger::Warning, __FILE__, __LINE__, Q_FUNC_INFO).write</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write the warning log record </p>
+<p>This macro records the warning log record using the Logger::write() function. It works similar to the <a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> macro.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_logger_8h.html#a2b910712a7cc06c42774b2ef841f9c43" title="Writes the trace log record ">dTrace()</a> </dd>
+<dd>
+Dtk::Logger::LogLevel </dd>
+<dd>
+Dtk::Logger::write() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab69de76884dab62f7806d8802f7f64e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69de76884dab62f7806d8802f7f64e0">&#9670;&nbsp;</a></span>logger</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logger&#160;&#160;&#160;loggerInstance()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro returning the current instance of Logger object </p>
+<p>If you haven't created a local Logger object it returns the same value as the Logger::globalInstance() functions. This macro is a recommended way to get an access to the Logger instance used in current class.</p>
+<p>Example: </p><div class="fragment"><div class="line">ConsoleAppender* consoleAppender = <span class="keyword">new</span> ConsoleAppender;</div><div class="line"><a class="code" href="_logger_8h.html#ab69de76884dab62f7806d8802f7f64e0">logger</a>-&gt;registerAppender(consoleAppender);</div></div><!-- fragment --><dl class="section see"><dt>参见</dt><dd>Dtk::Logger::globalInstance() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_logger_8h_source.html">Logger.h</a> 第 <a class="el" href="_logger_8h_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_119aa013467e95cb00c6469cad12208b.html">src</a></li><li class="navelem"><a class="el" href="dir_a9bb0758876d611e3df677ee8ca2e122.html">log</a></li><li class="navelem"><a class="el" href="_logger_8h.html">Logger.h</a></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:18 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

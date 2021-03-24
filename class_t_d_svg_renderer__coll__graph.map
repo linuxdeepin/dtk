@@ -1,0 +1,4 @@
+<map id="TDSvgRenderer" name="TDSvgRenderer">
+<area shape="rect" id="node2" href="$class_d_test.html" title="DTest" alt="" coords="5,81,64,108"/>
+<area shape="rect" id="node4" href="$class_d_svg_renderer.html" title="提供了将SVG文件的内容绘制到绘制设备上的方法。 SVG图形可以在构造 DSvgRenderer 时加载，也可以稍后使用lo..." alt="" coords="89,81,197,108"/>
+</map>

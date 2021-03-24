@@ -1,0 +1,7 @@
+<map id="Dtk::Widget::DFloatingWidget" name="Dtk::Widget::DFloatingWidget">
+<area shape="rect" id="node6" href="$class_dtk_1_1_widget_1_1_d_floating_message.html" title="是一个浮动消息的类, 类似于 ios 的通知栏消息, 然后有每一个新的消息对象, 就添加到一个竖直布局里面, 然后一个消息的其布局模式是: icon (图标) + Message (消息) + QWidget (存放如控件按钮,可选) + closeButton (关闭按钮,可选) 多个消息均是以竖直布局存放在一个 DMessageManager (消息管理类) 里面的 " alt="" coords="55,229,264,256"/>
+<area shape="rect" id="node2" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="59,80,132,107"/>
+<area shape="rect" id="node3" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="100,5,203,32"/>
+<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="156,80,291,107"/>
+</map>

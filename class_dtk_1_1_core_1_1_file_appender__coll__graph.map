@@ -1,0 +1,4 @@
+<map id="Dtk::Core::FileAppender" name="Dtk::Core::FileAppender">
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_abstract_string_appender.html" title="The AbstractStringAppender class provides a convenient base for appenders working with plain text for..." alt="" coords="15,80,186,121"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. " alt="" coords="5,5,196,32"/>
+</map>

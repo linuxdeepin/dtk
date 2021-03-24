@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkwidget/src/widgets/dexpandgroup.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dexpandgroup_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dexpandgroup.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2015 ~ 2017 Deepin Technology Co., Ltd.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published by</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public License</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;dexpandgroup.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;DWIDGET_USE_NAMESPACE</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;DExpandGroup::DExpandGroup(<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *parent) : <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a>(parent)</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList&lt;DBaseExpand *&gt;</a> DExpandGroup::expands()<span class="keyword"> const</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> m_expandMap.values();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="class_d_base_expand.html">DBaseExpand</a> *DExpandGroup::checkedExpand()<span class="keyword"> const</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (m_checkedMap.isEmpty())</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> m_checkedMap.first();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="class_d_base_expand.html">DBaseExpand</a> *DExpandGroup::expand(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)<span class="keyword"> const</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> m_expandMap.value(<span class="keywordtype">id</span>);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> DExpandGroup::addExpand(<a class="code" href="class_d_base_expand.html">DBaseExpand</a> *expand, <span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (m_expandMap.values().indexOf(expand) == -1){</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == -1){</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">int</span> maxId = -1;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            Q_FOREACH (<span class="keywordtype">int</span> tmp, m_expandMap.keys()) {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                maxId = qMax(tmp, maxId);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordtype">id</span> = maxId + 1;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        m_expandMap.insert(<span class="keywordtype">id</span>, expand);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a>(expand, &amp;DBaseExpand::expandChange, <span class="keyword">this</span>, &amp;DExpandGroup::onExpandChanged);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> DExpandGroup::setId(<a class="code" href="class_d_base_expand.html">DBaseExpand</a> *expand, <span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> index = m_expandMap.values().indexOf(expand);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> (index != -1){</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        m_expandMap.remove(m_expandMap.keys().at(index));</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        addExpand(expand, <span class="keywordtype">id</span>);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">void</span> DExpandGroup::removeExpand(<a class="code" href="class_d_base_expand.html">DBaseExpand</a> *expand)</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> index = m_expandMap.values().indexOf(expand);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    m_expandMap.remove(m_expandMap.keys().at(index));</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">int</span> DExpandGroup::checkedId()<span class="keyword"> const</span></div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">if</span> (m_checkedMap.isEmpty())</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> m_checkedMap.firstKey();</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keywordtype">int</span> DExpandGroup::id(<a class="code" href="class_d_base_expand.html">DBaseExpand</a> *expand)<span class="keyword"> const</span></div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> m_expandMap.keys().at(m_expandMap.values().indexOf(expand));</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">void</span> DExpandGroup::onExpandChanged(<span class="keywordtype">bool</span> v)</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="class_d_base_expand.html">DBaseExpand</a> *dSender = qobject_cast&lt;<a class="code" href="class_d_base_expand.html">DBaseExpand</a> *&gt;(<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>());</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (!dSender || dSender == checkedExpand() || !v)</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    m_checkedMap.clear();</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">int</span> checkedIndex = m_expandMap.values().indexOf(dSender);</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    m_checkedMap.insert(m_expandMap.keys().at(checkedIndex), dSender);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList&lt;DBaseExpand *&gt;</a> expandList = m_expandMap.values();</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; expandList.<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html#count">count</a>(); i ++){</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="class_d_base_expand.html">DBaseExpand</a> *<a class="code" href="class_dtk_1_1_widget_1_1_d_enhanced_widget.html#a1d504d227220c0d23c8c3024fea0f39b">target</a> = expandList.<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html#at">at</a>(i);</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">if</span> (target != dSender &amp;&amp; target-&gt;expand())</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            target-&gt;setExpand(<span class="keyword">false</span>);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div><div class="ttc" id="qobject_html_sender"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#sender">QObject::sender</a></div><div class="ttdeci">QObject * sender() const const</div></div>
+<div class="ttc" id="qlist_html_at"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlist.html#at">QList::at</a></div><div class="ttdeci">const T &amp; at(int i) const const</div></div>
+<div class="ttc" id="qlist_html_count"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlist.html#count">QList::count</a></div><div class="ttdeci">int count(const T &amp;value) const const</div></div>
+<div class="ttc" id="qobject_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_enhanced_widget_html_a1d504d227220c0d23c8c3024fea0f39b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_enhanced_widget.html#a1d504d227220c0d23c8c3024fea0f39b">Dtk::Widget::DEnhancedWidget::target</a></div><div class="ttdeci">QWidget target</div><div class="ttdoc">DEnhancedWidget::DEnhancedWidget QWidget 中只有少量的信号用于通知和窗口相关的属性变化，常用的如 x y w...</div><div class="ttdef"><b>Definition:</b> <a href="denhancedwidget_8h_source.html#l00032">denhancedwidget.h:32</a></div></div>
+<div class="ttc" id="qlist_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlist.html">QList</a></div></div>
+<div class="ttc" id="class_d_base_expand_html"><div class="ttname"><a href="class_d_base_expand.html">DBaseExpand</a></div><div class="ttdoc">一个美观的可展开的控件 </div></div>
+<div class="ttc" id="qobject_html_connect"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a></div><div class="ttdeci">QMetaObject::Connection connect(const QObject *sender, const char *signal, const QObject *receiver, const char *method, Qt::ConnectionType type)</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dexpandgroup.cpp</b></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:17 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

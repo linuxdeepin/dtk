@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Widget::DFontSizeManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dtk_1_1_widget_1_1_d_font_size_manager.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_dtk_1_1_widget_1_1_d_font_size_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Widget::DFontSizeManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>字体大小设置的一个类,系统默认只设置T6   
+ <a href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a5e94c334b7a00226df96b06a0c4c997d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">SizeType</a> { <br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997daaef82ae2226427a6d8ea7c96eadb20e4">T1</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997daf6694e1f8fddd7ab383625e1e9ba6a1a">T2</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997dae4546684002e7033e29fa131e9682750">T3</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997da8f6b8ac54920d5416fd2fedbf078eb07">T4</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997dafbce9e699d6381165ede64b12c047c3c">T5</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997dac079c9e32740f1d1a9fd7dfecf1f9a1f">T6</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997dae29adbdbc89114f03bc1dbc7a28c774b">T7</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997da4f8e55ee6cce3e4106d030c237aebf00">T8</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997da92016bd4da2ba9c99db4f2d45ec6a1f1">T9</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997da4f3eef4cc7a4f8ef7dcb23c8df88bc67">T10</a>, 
+<b>NSizeTypes</b>
+<br />
+ }</td></tr>
+<tr class="separator:a5e94c334b7a00226df96b06a0c4c997d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac56f047d191e0b7c058aaf5652fa7916"><td class="memItemLeft" align="right" valign="top"><a id="ac56f047d191e0b7c058aaf5652fa7916"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bind</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">SizeType</a> type)</td></tr>
+<tr class="separator:ac56f047d191e0b7c058aaf5652fa7916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267d44ac14ef7d3ee0119af76a260920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a267d44ac14ef7d3ee0119af76a260920">bind</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">SizeType</a> type, int weight)</td></tr>
+<tr class="memdesc:a267d44ac14ef7d3ee0119af76a260920"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字体的大小枚举 SizeType 和控件 widget 进行绑定, 其控件的字体大小(随绑定的枚举的)对应值的改变而改变; 系统自定义的绑定枚举值 T6, 若 T6 = 14px, 则其他枚举 T1 - T10 的数值,依次为:40, 30, 24, 20, 17, 14(T6), 13, 12, 11, 10; 系统自定义的绑定枚举值 T6 改为 T6 = 20px, 则其他枚举 T1 - T10 的数值,依次为:46, 36, 30, 26, 23, 20(T6), 19, 18, 17, 16; 即: 其对应的无论 T6 为何值, 其两个相邻的 T 值的差是定值: T(n) - T(n-1) == 定值 而系统是只设置 T6 这以枚举, 作为基准  <a href="#a267d44ac14ef7d3ee0119af76a260920">更多...</a><br /></td></tr>
+<tr class="separator:a267d44ac14ef7d3ee0119af76a260920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fb3ebbef26e92db9d099f6b0a1970c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a18fb3ebbef26e92db9d099f6b0a1970c">unbind</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget)</td></tr>
+<tr class="memdesc:a18fb3ebbef26e92db9d099f6b0a1970c"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字体大小枚举值和 widget 的绑定解除, 不跟随 "枚举对应的像素值" 而改变本控件的字体大小  <a href="#a18fb3ebbef26e92db9d099f6b0a1970c">更多...</a><br /></td></tr>
+<tr class="separator:a18fb3ebbef26e92db9d099f6b0a1970c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb5334d70096923c039599d1f099def"><td class="memItemLeft" align="right" valign="top">quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a7bb5334d70096923c039599d1f099def">fontPixelSize</a> (<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">SizeType</a> type) const</td></tr>
+<tr class="memdesc:a7bb5334d70096923c039599d1f099def"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体像素的大小  <a href="#a7bb5334d70096923c039599d1f099def">更多...</a><br /></td></tr>
+<tr class="separator:a7bb5334d70096923c039599d1f099def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675d16991482c9042037b7da6a048858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a675d16991482c9042037b7da6a048858">setFontPixelSize</a> (<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">SizeType</a> type, quint16 size)</td></tr>
+<tr class="memdesc:a675d16991482c9042037b7da6a048858"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体像素大小  <a href="#a675d16991482c9042037b7da6a048858">更多...</a><br /></td></tr>
+<tr class="separator:a675d16991482c9042037b7da6a048858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0dd86904be5d50fcf53564852251612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#aa0dd86904be5d50fcf53564852251612">setFontGenericPixelSize</a> (quint16 size)</td></tr>
+<tr class="memdesc:aa0dd86904be5d50fcf53564852251612"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体的通用像素大小  <a href="#aa0dd86904be5d50fcf53564852251612">更多...</a><br /></td></tr>
+<tr class="separator:aa0dd86904be5d50fcf53564852251612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2456c72bd21960f2598fd5c3bbd80c47"><td class="memItemLeft" align="right" valign="top"><a id="a2456c72bd21960f2598fd5c3bbd80c47"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">SizeType</a> type, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:a2456c72bd21960f2598fd5c3bbd80c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a690632b26d153a53a7109008e8d68"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#ae8a690632b26d153a53a7109008e8d68">get</a> (<a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">SizeType</a> type, int weight, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="memdesc:ae8a690632b26d153a53a7109008e8d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体  <a href="#ae8a690632b26d153a53a7109008e8d68">更多...</a><br /></td></tr>
+<tr class="separator:ae8a690632b26d153a53a7109008e8d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2446d931ad48a5e75ddc0bdf6a70162"><td class="memItemLeft" align="right" valign="top"><a id="ab2446d931ad48a5e75ddc0bdf6a70162"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t1</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:ab2446d931ad48a5e75ddc0bdf6a70162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562cef8bf07da01fca2645e0897ccc07"><td class="memItemLeft" align="right" valign="top"><a id="a562cef8bf07da01fca2645e0897ccc07"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t2</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:a562cef8bf07da01fca2645e0897ccc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada95f268dff9d3ed248d010bd51570a5"><td class="memItemLeft" align="right" valign="top"><a id="ada95f268dff9d3ed248d010bd51570a5"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t3</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:ada95f268dff9d3ed248d010bd51570a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5d15cbbcedaf304de8fd0bd3084ea8"><td class="memItemLeft" align="right" valign="top"><a id="aeb5d15cbbcedaf304de8fd0bd3084ea8"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t4</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:aeb5d15cbbcedaf304de8fd0bd3084ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0e8f9603769f9896744026b6269acc"><td class="memItemLeft" align="right" valign="top"><a id="a0a0e8f9603769f9896744026b6269acc"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t5</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:a0a0e8f9603769f9896744026b6269acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7732fcd9c52232b9c3c7c2846018c2f"><td class="memItemLeft" align="right" valign="top"><a id="af7732fcd9c52232b9c3c7c2846018c2f"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t6</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:af7732fcd9c52232b9c3c7c2846018c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef20107c82229a985a271dcef643391"><td class="memItemLeft" align="right" valign="top"><a id="a2ef20107c82229a985a271dcef643391"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t7</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:a2ef20107c82229a985a271dcef643391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583392e0e783042a95603ce325481768"><td class="memItemLeft" align="right" valign="top"><a id="a583392e0e783042a95603ce325481768"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:a583392e0e783042a95603ce325481768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775f41b669f978a6f06a7274329e655b"><td class="memItemLeft" align="right" valign="top"><a id="a775f41b669f978a6f06a7274329e655b"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t9</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:a775f41b669f978a6f06a7274329e655b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ef66fb894d618397547bfd60706788"><td class="memItemLeft" align="right" valign="top"><a id="a69ef66fb894d618397547bfd60706788"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t10</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()) const</td></tr>
+<tr class="separator:a69ef66fb894d618397547bfd60706788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a3b801ea5d43f862e853e5fb5917f4dfe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html">DFontSizeManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a3b801ea5d43f862e853e5fb5917f4dfe">instance</a> ()</td></tr>
+<tr class="memdesc:a3b801ea5d43f862e853e5fb5917f4dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个字体管理的实例  <a href="#a3b801ea5d43f862e853e5fb5917f4dfe">更多...</a><br /></td></tr>
+<tr class="separator:a3b801ea5d43f862e853e5fb5917f4dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4d2b8c519ad36e9e6b2722e602e9d1"><td class="memItemLeft" align="right" valign="top"><a id="a7a4d2b8c519ad36e9e6b2722e602e9d1"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>fontPixelSize</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;font)</td></tr>
+<tr class="separator:a7a4d2b8c519ad36e9e6b2722e602e9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>字体大小设置的一个类,系统默认只设置T6  </p>
+<div class="image">
+<img src="font.png" alt="font.png"/>
+</div>
+ 
+<p class="definition">在文件 <a class="el" href="dstyleoption_8h_source.html">dstyleoption.h</a> 第 <a class="el" href="dstyleoption_8h_source.html#l00155">155</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a5e94c334b7a00226df96b06a0c4c997d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e94c334b7a00226df96b06a0c4c997d">&#9670;&nbsp;</a></span>SizeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">Dtk::Widget::DFontSizeManager::SizeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">DFontSizeManager::SizeType</a> 定义了 <a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html" title="字体大小设置的一个类,系统默认只设置T6  ">DFontSizeManager</a> 的系统字体的定义的大小; 而系统只会设置 T6 为系统默认的字体 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a5e94c334b7a00226df96b06a0c4c997daaef82ae2226427a6d8ea7c96eadb20e4"></a>T1&#160;</td><td class="fielddoc"><p>系统级别为 T1 的字体大小, 默认是40 px </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5e94c334b7a00226df96b06a0c4c997daf6694e1f8fddd7ab383625e1e9ba6a1a"></a>T2&#160;</td><td class="fielddoc"><p>系统级别为 T2 的字体大小, 默认是30 px </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5e94c334b7a00226df96b06a0c4c997dae4546684002e7033e29fa131e9682750"></a>T3&#160;</td><td class="fielddoc"><p>系统级别为 T3 的字体大小, 默认是24 px </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5e94c334b7a00226df96b06a0c4c997da8f6b8ac54920d5416fd2fedbf078eb07"></a>T4&#160;</td><td class="fielddoc"><p>系统级别为 T4 的字体大小, 默认是20 px </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5e94c334b7a00226df96b06a0c4c997dafbce9e699d6381165ede64b12c047c3c"></a>T5&#160;</td><td class="fielddoc"><p>系统级别为 T5 的字体大小, 默认是17 px </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5e94c334b7a00226df96b06a0c4c997dac079c9e32740f1d1a9fd7dfecf1f9a1f"></a>T6&#160;</td><td class="fielddoc"><p>系统级别为 T6 的字体大小, 默认是14 px </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5e94c334b7a00226df96b06a0c4c997dae29adbdbc89114f03bc1dbc7a28c774b"></a>T7&#160;</td><td class="fielddoc"><p>系统级别为 T7 的字体大小, 默认是13 px </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5e94c334b7a00226df96b06a0c4c997da4f8e55ee6cce3e4106d030c237aebf00"></a>T8&#160;</td><td class="fielddoc"><p>系统级别为 T8 的字体大小, 默认是12 px </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5e94c334b7a00226df96b06a0c4c997da92016bd4da2ba9c99db4f2d45ec6a1f1"></a>T9&#160;</td><td class="fielddoc"><p>系统级别为 T9 的字体大小, 默认是11 px </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5e94c334b7a00226df96b06a0c4c997da4f3eef4cc7a4f8ef7dcb23c8df88bc67"></a>T10&#160;</td><td class="fielddoc"><p>系统级别为 T10 的字体大小, 默认是10 px </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="dstyleoption_8h_source.html">dstyleoption.h</a> 第 <a class="el" href="dstyleoption_8h_source.html#l00158">158</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a267d44ac14ef7d3ee0119af76a260920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267d44ac14ef7d3ee0119af76a260920">&#9670;&nbsp;</a></span>bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DFontSizeManager::bind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">DFontSizeManager::SizeType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将字体的大小枚举 SizeType 和控件 widget 进行绑定, 其控件的字体大小(随绑定的枚举的)对应值的改变而改变; 系统自定义的绑定枚举值 T6, 若 T6 = 14px, 则其他枚举 T1 - T10 的数值,依次为:40, 30, 24, 20, 17, 14(T6), 13, 12, 11, 10; 系统自定义的绑定枚举值 T6 改为 T6 = 20px, 则其他枚举 T1 - T10 的数值,依次为:46, 36, 30, 26, 23, 20(T6), 19, 18, 17, 16; 即: 其对应的无论 T6 为何值, 其两个相邻的 T 值的差是定值: T(n) - T(n-1) == 定值 而系统是只设置 T6 这以枚举, 作为基准 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">widget</td><td>将要绑定字体大小枚举数值的控件 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dstyleoption_8cpp_source.html">dstyleoption.cpp</a> 第 <a class="el" href="dstyleoption_8cpp_source.html#l00263">263</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7bb5334d70096923c039599d1f099def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bb5334d70096923c039599d1f099def">&#9670;&nbsp;</a></span>fontPixelSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint16 Dtk::Widget::DFontSizeManager::fontPixelSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">DFontSizeManager::SizeType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体像素的大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>字体枚举类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回字体像素的大小 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dstyleoption_8cpp_source.html">dstyleoption.cpp</a> 第 <a class="el" href="dstyleoption_8cpp_source.html#l00294">294</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae8a690632b26d153a53a7109008e8d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8a690632b26d153a53a7109008e8d68">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> Dtk::Widget::DFontSizeManager::get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">DFontSizeManager::SizeType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em> = <code><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>字体的大小枚举 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>将改变大小的字体 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回设置字体大小后的字体 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dstyleoption_8cpp_source.html">dstyleoption.cpp</a> 第 <a class="el" href="dstyleoption_8cpp_source.html#l00351">351</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3b801ea5d43f862e853e5fb5917f4dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b801ea5d43f862e853e5fb5917f4dfe">&#9670;&nbsp;</a></span>instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html">DFontSizeManager</a> * Dtk::Widget::DFontSizeManager::instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建一个字体管理的实例 </p>
+<dl class="section return"><dt>返回</dt><dd>返回一个创建的 static <a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html" title="字体大小设置的一个类,系统默认只设置T6  ">DFontSizeManager</a> 实例 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dstyleoption_8cpp_source.html">dstyleoption.cpp</a> 第 <a class="el" href="dstyleoption_8cpp_source.html#l00217">217</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa0dd86904be5d50fcf53564852251612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0dd86904be5d50fcf53564852251612">&#9670;&nbsp;</a></span>setFontGenericPixelSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DFontSizeManager::setFontGenericPixelSize </td>
+          <td>(</td>
+          <td class="paramtype">quint16&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置字体的通用像素大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>预设计的字体像素的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dstyleoption_8cpp_source.html">dstyleoption.cpp</a> 第 <a class="el" href="dstyleoption_8cpp_source.html#l00326">326</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a675d16991482c9042037b7da6a048858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a675d16991482c9042037b7da6a048858">&#9670;&nbsp;</a></span>setFontPixelSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DFontSizeManager::setFontPixelSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d">DFontSizeManager::SizeType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint16&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置字体像素大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>字体枚举类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>字体大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dstyleoption_8cpp_source.html">dstyleoption.cpp</a> 第 <a class="el" href="dstyleoption_8cpp_source.html#l00308">308</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a18fb3ebbef26e92db9d099f6b0a1970c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18fb3ebbef26e92db9d099f6b0a1970c">&#9670;&nbsp;</a></span>unbind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DFontSizeManager::unbind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>widget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将字体大小枚举值和 widget 的绑定解除, 不跟随 "枚举对应的像素值" 而改变本控件的字体大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">widget</td><td>与 "字体枚举所对应的像素值" 的 (解除绑定的控件) 对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dstyleoption_8cpp_source.html">dstyleoption.cpp</a> 第 <a class="el" href="dstyleoption_8cpp_source.html#l00282">282</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/src/widgets/<a class="el" href="dstyleoption_8h_source.html">dstyleoption.h</a></li>
+<li>dtkwidget/src/widgets/<a class="el" href="dstyleoption_8cpp_source.html">dstyleoption.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_font_size_manager.html">DFontSizeManager</a></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:20 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<map id="DTest" name="DTest">
+<area shape="rect" id="node3" href="$class_t_d_foreign_window.html" title="TDForeignWindow" alt="" coords="227,5,357,32"/>
+<area shape="rect" id="node4" href="$class_t_d_gui_application_helper.html" title="TDGuiApplicationHelper" alt="" coords="211,56,373,83"/>
+<area shape="rect" id="node5" href="$class_t_d_region_monitor.html" title="TDRegionMonitor" alt="" coords="230,107,354,133"/>
+<area shape="rect" id="node6" href="$class_t_d_svg_renderer.html" title="TDSvgRenderer" alt="" coords="234,157,350,184"/>
+<area shape="rect" id="node7" href="$class_t_d_taskbar_control.html" title="TDTaskbarControl" alt="" coords="227,208,357,235"/>
+<area shape="rect" id="node8" href="$class_t_d_thumbnail_provider.html" title="TDThumbnailProvider" alt="" coords="218,259,366,285"/>
+<area shape="rect" id="node9" href="$class_t_d_window_group_leader.html" title="TDWindowGroupLeader" alt="" coords="211,309,373,336"/>
+<area shape="rect" id="node10" href="$class_t_d_window_manger_helper.html" title="TDWindowMangerHelper" alt="" coords="208,360,376,387"/>
+</map>

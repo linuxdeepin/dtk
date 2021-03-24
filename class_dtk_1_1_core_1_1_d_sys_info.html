@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Core::DSysInfo类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dtk_1_1_core_1_1_d_sys_info.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_dtk_1_1_core_1_1_d_sys_info-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Core::DSysInfo类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a83e0d06dcacf2abf19fdd231497a9b57"><td class="memItemLeft" align="right" valign="top"><a id="a83e0d06dcacf2abf19fdd231497a9b57"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ProductType</b> { <br />
+&#160;&#160;<b>UnknownType</b> = 0, 
+<b>Deepin</b>, 
+<b>ArchLinux</b>, 
+<b>CentOS</b>, 
+<br />
+&#160;&#160;<b>Debian</b>, 
+<b>Fedora</b>, 
+<b>LinuxMint</b>, 
+<b>Manjaro</b>, 
+<br />
+&#160;&#160;<b>openSUSE</b>, 
+<b>SailfishOS</b>, 
+<b>Ubuntu</b>, 
+<b>Uos</b>
+<br />
+ }</td></tr>
+<tr class="separator:a83e0d06dcacf2abf19fdd231497a9b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce779af6b5c5e03e2a7f3b55e78ae32"><td class="memItemLeft" align="right" valign="top"><a id="abce779af6b5c5e03e2a7f3b55e78ae32"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DeepinType</b> { <br />
+&#160;&#160;<b>UnknownDeepin</b> = 0, 
+<b>DeepinDesktop</b>, 
+<b>DeepinProfessional</b>, 
+<b>DeepinServer</b>, 
+<br />
+&#160;&#160;<b>DeepinPersonal</b>
+<br />
+ }</td></tr>
+<tr class="separator:abce779af6b5c5e03e2a7f3b55e78ae32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c98faa519cd1ee5301171d8df6c86c7"><td class="memItemLeft" align="right" valign="top"><a id="a8c98faa519cd1ee5301171d8df6c86c7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>LogoType</b> { <b>Normal</b> = 0, 
+<b>Light</b>, 
+<b>Symbolic</b>, 
+<b>Transparent</b>
+ }</td></tr>
+<tr class="separator:a8c98faa519cd1ee5301171d8df6c86c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210c7bb23430c7eae5b16fa46d5176f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3">OrgType</a> { <a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3a548d203bb97fa6b383bc1aaf6b41643a">Distribution</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3aa3b3550d2157f8a49ca62d10198c0f39">Distributor</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3a2f2127a7b63650a98d810fe4a5e86236">Manufacturer</a>
+ }</td></tr>
+<tr class="separator:a210c7bb23430c7eae5b16fa46d5176f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f811bf21c840fafa7809ee01865cb93"><td class="memItemLeft" align="right" valign="top"><a id="a9f811bf21c840fafa7809ee01865cb93"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>UosType</b> { <br />
+&#160;&#160;<b>UosTypeUnknown</b>, 
+<b>UosDesktop</b>, 
+<b>UosServer</b>, 
+<b>UosDevice</b>, 
+<br />
+&#160;&#160;<b>UosTypeCount</b>
+<br />
+ }</td></tr>
+<tr class="separator:a9f811bf21c840fafa7809ee01865cb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c282f42eda222e5b9925122fe2a434"><td class="memItemLeft" align="right" valign="top"><a id="a95c282f42eda222e5b9925122fe2a434"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>UosEdition</b> { <br />
+&#160;&#160;<b>UosEditionUnknown</b>, 
+<b>UosProfessional</b>, 
+<b>UosHome</b>, 
+<b>UosCommunity</b>, 
+<br />
+&#160;&#160;<b>UosMilitary</b>, 
+<b>UosEnterprise</b>, 
+<b>UosEnterpriseC</b>, 
+<b>UosEuler</b>, 
+<br />
+&#160;&#160;<b>UosMilitaryS</b>, 
+<b>UosDeviceEdition</b>, 
+<b>UosEducation</b>, 
+<b>UosEditionCount</b>
+<br />
+ }</td></tr>
+<tr class="separator:a95c282f42eda222e5b9925122fe2a434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e74d156a2a34e26b14fcfc22dffc30"><td class="memItemLeft" align="right" valign="top"><a id="a10e74d156a2a34e26b14fcfc22dffc30"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>UosArch</b> { <br />
+&#160;&#160;<b>UosArchUnknown</b>, 
+<b>UosAMD64</b> = 1 &lt;&lt; 0, 
+<b>UosARM64</b> = 1 &lt;&lt; 1, 
+<b>UosMIPS64</b> = 1 &lt;&lt; 2, 
+<br />
+&#160;&#160;<b>UosSW64</b> = 1 &lt;&lt; 3
+<br />
+ }</td></tr>
+<tr class="separator:a10e74d156a2a34e26b14fcfc22dffc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a253caba0a7b5f86ea3a5de7299554b38"><td class="memItemLeft" align="right" valign="top"><a id="a253caba0a7b5f86ea3a5de7299554b38"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECL_DEPRECATED_X</b> (&quot;Use distributionInfoPath() instead&quot;) static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> deepinDistributionInfoPath()</td></tr>
+<tr class="separator:a253caba0a7b5f86ea3a5de7299554b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c6ecbcb42d071139426a58d8574926"><td class="memItemLeft" align="right" valign="top"><a id="ad7c6ecbcb42d071139426a58d8574926"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECL_DEPRECATED_X</b> (&quot;Use deepinDistributionOrgName() instead&quot;) static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> deepinDistributorName()</td></tr>
+<tr class="separator:ad7c6ecbcb42d071139426a58d8574926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d2be8d06cf4f854f971492ff8af549"><td class="memItemLeft" align="right" valign="top"><a id="a03d2be8d06cf4f854f971492ff8af549"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECL_DEPRECATED_X</b> (&quot;Use deepinDistributionOrgWebsite() instead&quot;) static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpair.html">QPair</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a></td></tr>
+<tr class="separator:a03d2be8d06cf4f854f971492ff8af549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3804afb4e39d7102d139ff9d49ecc755"><td class="memItemLeft" align="right" valign="top"><a id="a3804afb4e39d7102d139ff9d49ecc755"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>deepinDistributorWebsite</b> ()</td></tr>
+<tr class="separator:a3804afb4e39d7102d139ff9d49ecc755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ad363e68110ed064bc0702262246de067"><td class="memItemLeft" align="right" valign="top"><a id="ad363e68110ed064bc0702262246de067"></a>
+static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>distributionInfoPath</b> ()</td></tr>
+<tr class="separator:ad363e68110ed064bc0702262246de067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74b182295bbf18482ced1d706a66303"><td class="memItemLeft" align="right" valign="top"><a id="ac74b182295bbf18482ced1d706a66303"></a>
+static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>distributionInfoSectionName</b> (<a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3">OrgType</a> type)</td></tr>
+<tr class="separator:ac74b182295bbf18482ced1d706a66303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e3fec6a0dcec38462971f2a34d1526"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a06e3fec6a0dcec38462971f2a34d1526">distributionOrgName</a> (<a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3">OrgType</a> type=<a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3a548d203bb97fa6b383bc1aaf6b41643a">Distribution</a>, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;locale=<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlocale.html#system">QLocale::system</a>())</td></tr>
+<tr class="separator:a06e3fec6a0dcec38462971f2a34d1526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509a66b7f6d55544645bebdc7c9e5c49"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpair.html">QPair</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a509a66b7f6d55544645bebdc7c9e5c49">distributionOrgWebsite</a> (<a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3">OrgType</a> type=<a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3a548d203bb97fa6b383bc1aaf6b41643a">Distribution</a>)</td></tr>
+<tr class="separator:a509a66b7f6d55544645bebdc7c9e5c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1386f1e92ad98d98df5bb857f221e60"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#ab1386f1e92ad98d98df5bb857f221e60">distributionOrgLogo</a> (<a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3">OrgType</a> orgType=<a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3a548d203bb97fa6b383bc1aaf6b41643a">Distribution</a>, LogoType type=Normal, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;fallback=<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>())</td></tr>
+<tr class="separator:ab1386f1e92ad98d98df5bb857f221e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dsysinfo_8h_source.html">dsysinfo.h</a> 第 <a class="el" href="dsysinfo_8h_source.html#l00031">31</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a210c7bb23430c7eae5b16fa46d5176f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a210c7bb23430c7eae5b16fa46d5176f3">&#9670;&nbsp;</a></span>OrgType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3">Dtk::Core::DSysInfo::OrgType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a210c7bb23430c7eae5b16fa46d5176f3a548d203bb97fa6b383bc1aaf6b41643a"></a>Distribution&#160;</td><td class="fielddoc"><p>distribution itself </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a210c7bb23430c7eae5b16fa46d5176f3aa3b3550d2157f8a49ca62d10198c0f39"></a>Distributor&#160;</td><td class="fielddoc"><p>distributer of the current distribution </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a210c7bb23430c7eae5b16fa46d5176f3a2f2127a7b63650a98d810fe4a5e86236"></a>Manufacturer&#160;</td><td class="fielddoc"><p>manufacturer of the current distribution or device </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="dsysinfo_8h_source.html">dsysinfo.h</a> 第 <a class="el" href="dsysinfo_8h_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab1386f1e92ad98d98df5bb857f221e60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1386f1e92ad98d98df5bb857f221e60">&#9670;&nbsp;</a></span>distributionOrgLogo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DSysInfo::distributionOrgLogo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3">DSysInfo::OrgType</a>&#160;</td>
+          <td class="paramname"><em>orgType</em> = <code><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3a548d203bb97fa6b383bc1aaf6b41643a">Distribution</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DSysInfo::LogoType&#160;</td>
+          <td class="paramname"><em>type</em> = <code>Normal</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>fallback</em> = <code><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the obtained organization logo path, or the given  fallback one if there are no such logo.</dd></dl>
+<p>use  type as Distribution to get the logo of current deepin distribution itself.</p>
+<dl class="section see"><dt>参见</dt><dd>deepinDistributionInfoPath() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dsysinfo_8cpp_source.html">dsysinfo.cpp</a> 第 <a class="el" href="dsysinfo_8cpp_source.html#l00959">959</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a06e3fec6a0dcec38462971f2a34d1526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e3fec6a0dcec38462971f2a34d1526">&#9670;&nbsp;</a></span>distributionOrgName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DSysInfo::distributionOrgName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3">DSysInfo::OrgType</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3a548d203bb97fa6b383bc1aaf6b41643a">Distribution</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;&#160;</td>
+          <td class="paramname"><em>locale</em> = <code><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlocale.html#system">QLocale::system</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the organization name.</dd></dl>
+<p>use  type as Distribution to get the name of current deepin distribution itself.</p>
+<dl class="section see"><dt>参见</dt><dd>deepinDistributionInfoPath() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dsysinfo_8cpp_source.html">dsysinfo.cpp</a> 第 <a class="el" href="dsysinfo_8cpp_source.html#l00909">909</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a509a66b7f6d55544645bebdc7c9e5c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a509a66b7f6d55544645bebdc7c9e5c49">&#9670;&nbsp;</a></span>distributionOrgWebsite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpair.html">QPair</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &gt; Dtk::Core::DSysInfo::distributionOrgWebsite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3">DSysInfo::OrgType</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html#a210c7bb23430c7eae5b16fa46d5176f3a548d203bb97fa6b383bc1aaf6b41643a">Distribution</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the organization website name and url.</dd></dl>
+<p>use  type as Distribution to get the name of current deepin distribution itself.</p>
+<dl class="section see"><dt>参见</dt><dd>deepinDistributionInfoPath() </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dsysinfo_8cpp_source.html">dsysinfo.cpp</a> 第 <a class="el" href="dsysinfo_8cpp_source.html#l00932">932</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkcore/src/<a class="el" href="dsysinfo_8h_source.html">dsysinfo.h</a></li>
+<li>dtkcore/src/<a class="el" href="dsysinfo_8cpp_source.html">dsysinfo.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_core_1_1_d_sys_info.html">DSysInfo</a></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:19 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

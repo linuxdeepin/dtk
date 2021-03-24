@@ -1,0 +1,8 @@
+<map id="ut_DSwitchButton" name="ut_DSwitchButton">
+<area shape="rect" id="node3" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="296,81,369,108"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtwidgets.tags$qabstractbutton.html" title="QAbstractButton" alt="" coords="212,171,331,197"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="243,5,313,32"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="337,5,440,32"/>
+<area shape="rect" id="node6" href="$class_dtk_1_1_widget_1_1_d_switch_button.html" title="Dtk::Widget::DSwitchButton" alt="" coords="143,260,331,287"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="53,171,188,197"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Dtk::Widget::DFrame" name="Dtk::Widget::DFrame">
+<area shape="rect" id="node7" href="$class_dtk_1_1_widget_1_1_d_drawer.html" title="一个美观的可展开的控件 " alt="" coords="35,311,187,338"/>
+<area shape="rect" id="node9" href="$class_dtk_1_1_widget_1_1_d_key_label.html" title="Dtk::Widget::DKeyLabel" alt="" coords="211,311,375,338"/>
+<area shape="rect" id="node10" href="$class_dtk_1_1_widget_1_1_d_print_preview_widget.html" title="Dtk::Widget::DPrintPreview\lWidget" alt="" coords="400,304,584,345"/>
+<area shape="rect" id="node2" href="/home/union/dtk/tags/qtwidgets.tags$qframe.html" title="QFrame" alt="" coords="196,155,265,181"/>
+<area shape="rect" id="node3" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="194,80,267,107"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="141,5,211,32"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="235,5,338,32"/>
+<area shape="rect" id="node6" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="290,155,425,181"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_widget_1_1_d_arrow_line_drawer.html" title="一个美观的可展开的控件DArrowLineDrawer 继承自 DDrawer 并提供了了 ArrowHeaderLine (一个带有箭头标示的�..." alt="" coords="5,393,216,420"/>
+</map>

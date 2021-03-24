@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkcore/src/util/ddisksizeformatter.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('ddisksizeformatter_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ddisksizeformatter.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2017 ~ 2017 Deepin Technology Co., Ltd.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published by</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public License</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;ddisksizeformatter.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;DCORE_BEGIN_NAMESPACE</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a9a3831dda7585a7eb486be1f0900a1ae">   56</a></span>&#160;DDiskSizeFormatter::DDiskSizeFormatter()</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    : <a class="code" href="class_dtk_1_1_core_1_1_d_abstract_unit_formatter.html">DAbstractUnitFormatter</a>()</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#ae3b3ddd6a8132b2c964b93c3d0844233">   68</a></span>&#160;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> <a class="code" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#ae3b3ddd6a8132b2c964b93c3d0844233">DDiskSizeFormatter::unitStr</a>(<span class="keywordtype">int</span> unitId)<span class="keyword"> const</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">switch</span> (unitId)</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a73488f9c69a8fb812006eb1e74df9ccba8aaa87e086a191b7fb403de43215f0cc">B</a>:     <span class="keywordflow">return</span> QStringLiteral(<span class="stringliteral">&quot;B&quot;</span>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a73488f9c69a8fb812006eb1e74df9ccba1bef652e5fb05bd1c63a1e0d7703f319">K</a>:     <span class="keywordflow">return</span> QStringLiteral(<span class="stringliteral">&quot;KB&quot;</span>);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a73488f9c69a8fb812006eb1e74df9ccba0f4a02f5a118789f17b44ff47b5bd334">M</a>:     <span class="keywordflow">return</span> QStringLiteral(<span class="stringliteral">&quot;MB&quot;</span>);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a73488f9c69a8fb812006eb1e74df9ccba2d589d1c1cfab4e8d65237256faa30a3">G</a>:     <span class="keywordflow">return</span> QStringLiteral(<span class="stringliteral">&quot;GB&quot;</span>);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a73488f9c69a8fb812006eb1e74df9ccba5b6a7599e9be9e39846d93e0b16ee3cb">T</a>:     <span class="keywordflow">return</span> QStringLiteral(<span class="stringliteral">&quot;TB&quot;</span>);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#aa2f7f223ae4afe3419c31c385f06dbc2">   88</a></span>&#160;<a class="code" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html">DDiskSizeFormatter</a> <a class="code" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#aa2f7f223ae4afe3419c31c385f06dbc2">DDiskSizeFormatter::rate</a>(<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#aa2f7f223ae4afe3419c31c385f06dbc2">rate</a>)</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    m_rate = <a class="code" href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#aa2f7f223ae4afe3419c31c385f06dbc2">rate</a>;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;DCORE_END_NAMESPACE</div><div class="ttc" id="class_dtk_1_1_core_1_1_d_disk_size_formatter_html_a73488f9c69a8fb812006eb1e74df9ccba0f4a02f5a118789f17b44ff47b5bd334"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a73488f9c69a8fb812006eb1e74df9ccba0f4a02f5a118789f17b44ff47b5bd334">Dtk::Core::DDiskSizeFormatter::M</a></div><div class="ttdoc">兆字节 </div><div class="ttdef"><b>Definition:</b> <a href="ddisksizeformatter_8h_source.html#l00034">ddisksizeformatter.h:34</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_d_disk_size_formatter_html_aa2f7f223ae4afe3419c31c385f06dbc2"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#aa2f7f223ae4afe3419c31c385f06dbc2">Dtk::Core::DDiskSizeFormatter::rate</a></div><div class="ttdeci">DDiskSizeFormatter rate(int rate)</div><div class="ttdoc">设置当前的单位转换比率 </div><div class="ttdef"><b>Definition:</b> <a href="ddisksizeformatter_8cpp_source.html#l00088">ddisksizeformatter.cpp:88</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_d_disk_size_formatter_html_a73488f9c69a8fb812006eb1e74df9ccba5b6a7599e9be9e39846d93e0b16ee3cb"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a73488f9c69a8fb812006eb1e74df9ccba5b6a7599e9be9e39846d93e0b16ee3cb">Dtk::Core::DDiskSizeFormatter::T</a></div><div class="ttdoc">太字节 </div><div class="ttdef"><b>Definition:</b> <a href="ddisksizeformatter_8h_source.html#l00036">ddisksizeformatter.h:36</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_d_disk_size_formatter_html_a73488f9c69a8fb812006eb1e74df9ccba1bef652e5fb05bd1c63a1e0d7703f319"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a73488f9c69a8fb812006eb1e74df9ccba1bef652e5fb05bd1c63a1e0d7703f319">Dtk::Core::DDiskSizeFormatter::K</a></div><div class="ttdoc">千字节 </div><div class="ttdef"><b>Definition:</b> <a href="ddisksizeformatter_8h_source.html#l00033">ddisksizeformatter.h:33</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_d_abstract_unit_formatter_html"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_abstract_unit_formatter.html">Dtk::Core::DAbstractUnitFormatter</a></div><div class="ttdoc">DAbstractUnitFormatter 类是对拥有相同类型数据管理的接口类 接口定义了最大值、最小值、转换单位和单位对�...</div><div class="ttdef"><b>Definition:</b> <a href="dabstractunitformatter_8h_source.html#l00028">dabstractunitformatter.h:28</a></div></div>
+<div class="ttc" id="qstring_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_d_disk_size_formatter_html_a73488f9c69a8fb812006eb1e74df9ccba2d589d1c1cfab4e8d65237256faa30a3"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a73488f9c69a8fb812006eb1e74df9ccba2d589d1c1cfab4e8d65237256faa30a3">Dtk::Core::DDiskSizeFormatter::G</a></div><div class="ttdoc">吉字节 </div><div class="ttdef"><b>Definition:</b> <a href="ddisksizeformatter_8h_source.html#l00035">ddisksizeformatter.h:35</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_d_disk_size_formatter_html_a73488f9c69a8fb812006eb1e74df9ccba8aaa87e086a191b7fb403de43215f0cc"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#a73488f9c69a8fb812006eb1e74df9ccba8aaa87e086a191b7fb403de43215f0cc">Dtk::Core::DDiskSizeFormatter::B</a></div><div class="ttdoc">字节 </div><div class="ttdef"><b>Definition:</b> <a href="ddisksizeformatter_8h_source.html#l00032">ddisksizeformatter.h:32</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_d_disk_size_formatter_html"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html">Dtk::Core::DDiskSizeFormatter</a></div><div class="ttdoc">DDiskSizeFormatter 是用来获取磁盘容量单位的类, 通过枚举值 获取不同类型磁盘容量的单位 ...</div><div class="ttdef"><b>Definition:</b> <a href="ddisksizeformatter_8h_source.html#l00025">ddisksizeformatter.h:25</a></div></div>
+<div class="ttc" id="class_dtk_1_1_core_1_1_d_disk_size_formatter_html_ae3b3ddd6a8132b2c964b93c3d0844233"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_disk_size_formatter.html#ae3b3ddd6a8132b2c964b93c3d0844233">Dtk::Core::DDiskSizeFormatter::unitStr</a></div><div class="ttdeci">QString unitStr(int unitId) const override</div><div class="ttdoc">根据枚举返回对应单位的字符串 </div><div class="ttdef"><b>Definition:</b> <a href="ddisksizeformatter_8cpp_source.html#l00068">ddisksizeformatter.cpp:68</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_119aa013467e95cb00c6469cad12208b.html">src</a></li><li class="navelem"><a class="el" href="dir_c143c85c7a1492fba24ed3201ee58289.html">util</a></li><li class="navelem"><b>ddisksizeformatter.cpp</b></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:16 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

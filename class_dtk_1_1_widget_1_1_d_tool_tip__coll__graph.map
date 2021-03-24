@@ -1,0 +1,10 @@
+<map id="Dtk::Widget::DToolTip" name="Dtk::Widget::DToolTip">
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_tip_label.html" title="DTipLabel一个重新实现的 QLabel " alt="" coords="108,399,267,425"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_label.html" title="DLabel一个重新实现的 QLabel " alt="" coords="117,323,258,349"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtwidgets.tags$qlabel.html" title="QLabel" alt="" coords="96,247,159,273"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtwidgets.tags$qframe.html" title="QFrame" alt="" coords="61,157,130,184"/>
+<area shape="rect" id="node6" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="59,81,132,108"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node8" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="100,5,203,32"/>
+<area shape="rect" id="node9" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="196,247,331,273"/>
+</map>

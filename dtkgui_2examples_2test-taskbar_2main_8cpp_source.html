@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkgui/examples/test-taskbar/main.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dtkgui_2examples_2test-taskbar_2main_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;DGuiApplicationHelper&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;DFontManager&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QDesktopWidget&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;testtaskbarwindow.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qapplication.html">QApplication</a> a(argc, argv);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">auto</span> name = <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/quuid.html#createUuid">QUuid::createUuid</a>().<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/quuid.html#toString">toString</a>() + QStringLiteral(<span class="stringliteral">&quot;.desktop&quot;</span>);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    a.setDesktopFileName(name);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdir.html">QDir</a> appDir = <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstandardpaths.html#writableLocation">QStandardPaths::writableLocation</a>(QStandardPaths::ApplicationsLocation);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfile.html">QFile</a> desktopFile(appDir.<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdir.html#absoluteFilePath">absoluteFilePath</a>(name));</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">if</span>(!desktopFile.exists()) {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        desktopFile.<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfile.html#open">open</a>(QIODevice::WriteOnly);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;[Desktop Entry]\n&quot;</span>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Type=Application\n&quot;</span>);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Version=1.1\n&quot;</span>);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Name=&quot;</span> + <a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qguiapplication.html#applicationDisplayName-prop">QApplication::applicationDisplayName</a>().toUtf8() + <span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Exec=&quot;</span> + <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html#applicationFilePath">QApplication::applicationFilePath</a>().toUtf8() + <span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        desktopFile.close();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_test_taskbar_window.html">TestTaskbarWindow</a> *pTaskbarWindow = <span class="keyword">new</span> <a class="code" href="class_test_taskbar_window.html">TestTaskbarWindow</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    pTaskbarWindow-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#showMaximized">showMaximized</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//这里删除用于测试的desktop文件</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a>(pTaskbarWindow, &amp;TestTaskbarWindow::closeWindow, [&amp;desktopFile] {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfile.html#remove">QFile::remove</a>(desktopFile.fileName());</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    });</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//控制中心修改字体大小可以看到打印输出</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a>(<a class="code" href="class_d_gui_application_helper.html#a4a9d84ced740d42bf39666aaa4d3c089">DGuiApplicationHelper::instance</a>()-&gt;fontManager(), &amp;DFontManager::fontChanged, [] {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        qDebug() &lt;&lt; <a class="code" href="class_d_gui_application_helper.html#a4a9d84ced740d42bf39666aaa4d3c089">DGuiApplicationHelper::instance</a>()-&gt;<a class="code" href="class_d_gui_application_helper.html#a577e7dd7a88636632917bd1b88e1c98b">fontManager</a>()-&gt;baseFont();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    });</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> a.exec();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="ttc" id="qstandardpaths_html_writableLocation"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstandardpaths.html#writableLocation">QStandardPaths::writableLocation</a></div><div class="ttdeci">QString writableLocation(QStandardPaths::StandardLocation type)</div></div>
+<div class="ttc" id="qfile_html_remove"><div class="ttname"><a href="https://doc.qt.io/qt-5/qfile.html#remove">QFile::remove</a></div><div class="ttdeci">bool remove()</div></div>
+<div class="ttc" id="qapplication_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qapplication.html">QApplication</a></div></div>
+<div class="ttc" id="qfile_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qfile.html">QFile</a></div></div>
+<div class="ttc" id="qwidget_html_showMaximized"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#showMaximized">QWidget::showMaximized</a></div><div class="ttdeci">void showMaximized()</div></div>
+<div class="ttc" id="class_d_gui_application_helper_html_a577e7dd7a88636632917bd1b88e1c98b"><div class="ttname"><a href="class_d_gui_application_helper.html#a577e7dd7a88636632917bd1b88e1c98b">DGuiApplicationHelper::fontManager</a></div><div class="ttdeci">const DFontManager * fontManager() const</div><div class="ttdoc">DGuiApplicationHelper::fontManager 程序中唯一的DFontManager对象, 会根据程序的fontChanged信号 更新 DFo...</div><div class="ttdef"><b>Definition:</b> <a href="dguiapplicationhelper_8cpp_source.html#l01220">dguiapplicationhelper.cpp:1220</a></div></div>
+<div class="ttc" id="qfile_html_open"><div class="ttname"><a href="https://doc.qt.io/qt-5/qfile.html#open">QFile::open</a></div><div class="ttdeci">virtual bool open(QIODevice::OpenMode mode) override</div></div>
+<div class="ttc" id="class_test_taskbar_window_html"><div class="ttname"><a href="class_test_taskbar_window.html">TestTaskbarWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="testtaskbarwindow_8h_source.html#l00043">testtaskbarwindow.h:43</a></div></div>
+<div class="ttc" id="qdir_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qdir.html">QDir</a></div></div>
+<div class="ttc" id="qdir_html_absoluteFilePath"><div class="ttname"><a href="https://doc.qt.io/qt-5/qdir.html#absoluteFilePath">QDir::absoluteFilePath</a></div><div class="ttdeci">QString absoluteFilePath(const QString &amp;fileName) const const</div></div>
+<div class="ttc" id="qobject_html_connect"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a></div><div class="ttdeci">QMetaObject::Connection connect(const QObject *sender, const char *signal, const QObject *receiver, const char *method, Qt::ConnectionType type)</div></div>
+<div class="ttc" id="quuid_html_toString"><div class="ttname"><a href="https://doc.qt.io/qt-5/quuid.html#toString">QUuid::toString</a></div><div class="ttdeci">QString toString() const const</div></div>
+<div class="ttc" id="qguiapplication_html_applicationDisplayName-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qguiapplication.html#applicationDisplayName-prop">QGuiApplication::applicationDisplayName</a></div><div class="ttdeci">QString applicationDisplayName()</div></div>
+<div class="ttc" id="quuid_html_createUuid"><div class="ttname"><a href="https://doc.qt.io/qt-5/quuid.html#createUuid">QUuid::createUuid</a></div><div class="ttdeci">QUuid createUuid()</div></div>
+<div class="ttc" id="qcoreapplication_html_applicationFilePath"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcoreapplication.html#applicationFilePath">QCoreApplication::applicationFilePath</a></div><div class="ttdeci">QString applicationFilePath()</div></div>
+<div class="ttc" id="class_d_gui_application_helper_html_a4a9d84ced740d42bf39666aaa4d3c089"><div class="ttname"><a href="class_d_gui_application_helper.html#a4a9d84ced740d42bf39666aaa4d3c089">DGuiApplicationHelper::instance</a></div><div class="ttdeci">static DGuiApplicationHelper * instance()</div><div class="ttdoc">DGuiApplicationHelper::instance返回 DGuiApplicationHelper 对象 </div><div class="ttdef"><b>Definition:</b> <a href="dguiapplicationhelper_8cpp_source.html#l00568">dguiapplicationhelper.cpp:568</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_01e26ae7551668ca493319620c16a3ae.html">dtkgui</a></li><li class="navelem"><a class="el" href="dir_6b567d37ea4de413f6895c8f6fd4ed74.html">examples</a></li><li class="navelem"><a class="el" href="dir_716b81ea0bbb2f2b5ce006df280c2578.html">test-taskbar</a></li><li class="navelem"><b>main.cpp</b></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:17 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

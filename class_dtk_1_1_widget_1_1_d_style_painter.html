@@ -1,0 +1,795 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Widget::DStylePainter类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dtk_1_1_widget_1_1_d_style_painter.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_dtk_1_1_widget_1_1_d_style_painter-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Widget::DStylePainter类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Dtk::Widget::DStylePainter 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_widget_1_1_d_style_painter__inherit__graph.png" border="0" usemap="#_dtk_1_1_widget_1_1_d_style_painter_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dtk_1_1_widget_1_1_d_style_painter_inherit__map" id="_dtk_1_1_widget_1_1_d_style_painter_inherit__map">
+<area shape="rect" id="node2" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html" title="QPainter" alt="" coords="59,5,133,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Dtk::Widget::DStylePainter 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_widget_1_1_d_style_painter__coll__graph.png" border="0" usemap="#_dtk_1_1_widget_1_1_d_style_painter_coll__map" alt="Collaboration graph"/></div>
+<map name="_dtk_1_1_widget_1_1_d_style_painter_coll__map" id="_dtk_1_1_widget_1_1_d_style_painter_coll__map">
+<area shape="rect" id="node2" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html" title="QPainter" alt="" coords="59,5,133,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a56c8b2164eaeb9b43cf01f743afe36a4"><td class="memItemLeft" align="right" valign="top"><a id="a56c8b2164eaeb9b43cf01f743afe36a4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DStylePainter</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *w)</td></tr>
+<tr class="separator:a56c8b2164eaeb9b43cf01f743afe36a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57af1db3c8faebb4390574e0984d9e30"><td class="memItemLeft" align="right" valign="top"><a id="a57af1db3c8faebb4390574e0984d9e30"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DStylePainter</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *pd, <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *w)</td></tr>
+<tr class="separator:a57af1db3c8faebb4390574e0984d9e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf3ec55cfcbaaae29339e7a9afbbd5b"><td class="memItemLeft" align="right" valign="top"><a id="a4cf3ec55cfcbaaae29339e7a9afbbd5b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *w)</td></tr>
+<tr class="separator:a4cf3ec55cfcbaaae29339e7a9afbbd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1264f79d10c7b845725c8d4347385d"><td class="memItemLeft" align="right" valign="top"><a id="aae1264f79d10c7b845725c8d4347385d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *pd, <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *w)</td></tr>
+<tr class="separator:aae1264f79d10c7b845725c8d4347385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac656c2b3ac3dd867a331d35c3d6e680f"><td class="memItemLeft" align="right" valign="top"><a id="ac656c2b3ac3dd867a331d35c3d6e680f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawPrimitive</b> (QStyle::PrimitiveElement pe, const <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a> &amp;opt)</td></tr>
+<tr class="separator:ac656c2b3ac3dd867a331d35c3d6e680f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac558f98a88d297891bdfc402fbf0e3b5"><td class="memItemLeft" align="right" valign="top"><a id="ac558f98a88d297891bdfc402fbf0e3b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawPrimitive</b> (<a class="el" href="class_dtk_1_1_widget_1_1_d_style.html#a70d4440966cd8409042167b3be465c2e">DStyle::PrimitiveElement</a> pe, const <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a> &amp;opt)</td></tr>
+<tr class="separator:ac558f98a88d297891bdfc402fbf0e3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83560e7cc6d2f273dd9d67fd878e07a"><td class="memItemLeft" align="right" valign="top"><a id="ab83560e7cc6d2f273dd9d67fd878e07a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawControl</b> (QStyle::ControlElement ce, const <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a> &amp;opt)</td></tr>
+<tr class="separator:ab83560e7cc6d2f273dd9d67fd878e07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d2fd04c7e2504943b9ef6fe076f01b1"><td class="memItemLeft" align="right" valign="top"><a id="a6d2fd04c7e2504943b9ef6fe076f01b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawControl</b> (DStyle::ControlElement ce, const <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstyleoption.html">QStyleOption</a> &amp;opt)</td></tr>
+<tr class="separator:a6d2fd04c7e2504943b9ef6fe076f01b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4592c3e67f17376e4c74a789a3196550"><td class="memItemLeft" align="right" valign="top"><a id="a4592c3e67f17376e4c74a789a3196550"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawComplexControl</b> (QStyle::ComplexControl cc, const <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstyleoptioncomplex.html">QStyleOptionComplex</a> &amp;opt)</td></tr>
+<tr class="separator:a4592c3e67f17376e4c74a789a3196550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e12e1e429155187b8d3d88b30eaf2a9"><td class="memItemLeft" align="right" valign="top"><a id="a0e12e1e429155187b8d3d88b30eaf2a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawItemText</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;r, int flags, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpalette.html">QPalette</a> &amp;pal, bool enabled, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, QPalette::ColorRole textRole=QPalette::NoRole)</td></tr>
+<tr class="separator:a0e12e1e429155187b8d3d88b30eaf2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6287926e6c0fcee766b76a2753177742"><td class="memItemLeft" align="right" valign="top"><a id="a6287926e6c0fcee766b76a2753177742"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawItemPixmap</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;r, int flags, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap)</td></tr>
+<tr class="separator:a6287926e6c0fcee766b76a2753177742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5831e70fc5608fe41961ac72644e315e"><td class="memItemLeft" align="right" valign="top"><a id="a5831e70fc5608fe41961ac72644e315e"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstyle.html">QStyle</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>style</b> () const</td></tr>
+<tr class="separator:a5831e70fc5608fe41961ac72644e315e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qpainter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qpainter')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a></td></tr>
+<tr class="memitem:qt_check_for_QGADGET_macro inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="qt_check_for_QGADGET_macro"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#qt_check_for_QGADGET_macro">qt_check_for_QGADGET_macro</a> ()</td></tr>
+<tr class="separator:qt_check_for_QGADGET_macro inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QPainter-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="QPainter-1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#QPainter-1">QPainter</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#device">device</a>)</td></tr>
+<tr class="separator:QPainter-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:device inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="device"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#device">device</a> () const const</td></tr>
+<tr class="separator:device inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:begin inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="begin"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#begin">begin</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#device">device</a>)</td></tr>
+<tr class="separator:begin inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:end inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="end"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#end">end</a> ()</td></tr>
+<tr class="separator:end inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isActive inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="isActive"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#isActive">isActive</a> () const const</td></tr>
+<tr class="separator:isActive inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:initFrom inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="initFrom"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#initFrom">initFrom</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#device">device</a>)</td></tr>
+<tr class="separator:initFrom inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setCompositionMode inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setCompositionMode"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setCompositionMode">setCompositionMode</a> (QPainter::CompositionMode mode)</td></tr>
+<tr class="separator:setCompositionMode inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:compositionMode inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="compositionMode"></a>
+QPainter::CompositionMode&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#compositionMode">compositionMode</a> () const const</td></tr>
+<tr class="separator:compositionMode inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:font inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="font"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#font">font</a> () const const</td></tr>
+<tr class="separator:font inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setFont inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setFont"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setFont">setFont</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfont.html">QFont</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#font">font</a>)</td></tr>
+<tr class="separator:setFont inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fontMetrics inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fontMetrics"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfontmetrics.html">QFontMetrics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fontMetrics">fontMetrics</a> () const const</td></tr>
+<tr class="separator:fontMetrics inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fontInfo inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fontInfo"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfontinfo.html">QFontInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fontInfo">fontInfo</a> () const const</td></tr>
+<tr class="separator:fontInfo inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setPen-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setPen-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setPen-1">setPen</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;color)</td></tr>
+<tr class="separator:setPen-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setPen inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setPen"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setPen">setPen</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpen.html">QPen</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#pen">pen</a>)</td></tr>
+<tr class="separator:setPen inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setPen-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setPen-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setPen-2">setPen</a> (Qt::PenStyle style)</td></tr>
+<tr class="separator:setPen-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pen inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="pen"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpen.html">QPen</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#pen">pen</a> () const const</td></tr>
+<tr class="separator:pen inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setBrush inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setBrush"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setBrush">setBrush</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#brush">brush</a>)</td></tr>
+<tr class="separator:setBrush inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setBrush-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setBrush-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setBrush-1">setBrush</a> (Qt::BrushStyle style)</td></tr>
+<tr class="separator:setBrush-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:brush inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="brush"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#brush">brush</a> () const const</td></tr>
+<tr class="separator:brush inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setBackgroundMode inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setBackgroundMode"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setBackgroundMode">setBackgroundMode</a> (Qt::BGMode mode)</td></tr>
+<tr class="separator:setBackgroundMode inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:backgroundMode inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="backgroundMode"></a>
+Qt::BGMode&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#backgroundMode">backgroundMode</a> () const const</td></tr>
+<tr class="separator:backgroundMode inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:brushOrigin inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="brushOrigin"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#brushOrigin">brushOrigin</a> () const const</td></tr>
+<tr class="separator:brushOrigin inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setBrushOrigin-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setBrushOrigin-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setBrushOrigin-2">setBrushOrigin</a> (int x, int y)</td></tr>
+<tr class="separator:setBrushOrigin-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setBrushOrigin-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setBrushOrigin-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setBrushOrigin-1">setBrushOrigin</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;position)</td></tr>
+<tr class="separator:setBrushOrigin-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setBrushOrigin inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setBrushOrigin"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setBrushOrigin">setBrushOrigin</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;position)</td></tr>
+<tr class="separator:setBrushOrigin inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setBackground inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setBackground"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setBackground">setBackground</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#brush">brush</a>)</td></tr>
+<tr class="separator:setBackground inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:background inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="background"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#background">background</a> () const const</td></tr>
+<tr class="separator:background inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:opacity inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="opacity"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#opacity">opacity</a> () const const</td></tr>
+<tr class="separator:opacity inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setOpacity inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setOpacity"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setOpacity">setOpacity</a> (qreal <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#opacity">opacity</a>)</td></tr>
+<tr class="separator:setOpacity inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:clipRegion inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="clipRegion"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregion.html">QRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#clipRegion">clipRegion</a> () const const</td></tr>
+<tr class="separator:clipRegion inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:clipPath inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="clipPath"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#clipPath">clipPath</a> () const const</td></tr>
+<tr class="separator:clipPath inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setClipRect inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setClipRect"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setClipRect">setClipRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, Qt::ClipOperation operation)</td></tr>
+<tr class="separator:setClipRect inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setClipRect-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setClipRect-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setClipRect-1">setClipRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, Qt::ClipOperation operation)</td></tr>
+<tr class="separator:setClipRect-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setClipRect-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setClipRect-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setClipRect-2">setClipRect</a> (int x, int y, int width, int height, Qt::ClipOperation operation)</td></tr>
+<tr class="separator:setClipRect-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setClipRegion inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setClipRegion"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setClipRegion">setClipRegion</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregion.html">QRegion</a> &amp;region, Qt::ClipOperation operation)</td></tr>
+<tr class="separator:setClipRegion inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setClipPath inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setClipPath"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setClipPath">setClipPath</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> &amp;path, Qt::ClipOperation operation)</td></tr>
+<tr class="separator:setClipPath inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setClipping inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setClipping"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setClipping">setClipping</a> (bool enable)</td></tr>
+<tr class="separator:setClipping inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hasClipping inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="hasClipping"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#hasClipping">hasClipping</a> () const const</td></tr>
+<tr class="separator:hasClipping inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:clipBoundingRect inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="clipBoundingRect"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#clipBoundingRect">clipBoundingRect</a> () const const</td></tr>
+<tr class="separator:clipBoundingRect inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:save inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="save"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#save">save</a> ()</td></tr>
+<tr class="separator:save inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:restore inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="restore"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#restore">restore</a> ()</td></tr>
+<tr class="separator:restore inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setMatrix inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setMatrix"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#setMatrix">setMatrix</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmatrix.html">QMatrix</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#matrix">matrix</a>, bool combine)</td></tr>
+<tr class="separator:setMatrix inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:matrix inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="matrix"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmatrix.html">QMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#matrix">matrix</a> () const const</td></tr>
+<tr class="separator:matrix inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deviceMatrix inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="deviceMatrix"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmatrix.html">QMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#deviceMatrix">deviceMatrix</a> () const const</td></tr>
+<tr class="separator:deviceMatrix inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:resetMatrix inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="resetMatrix"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#resetMatrix">resetMatrix</a> ()</td></tr>
+<tr class="separator:resetMatrix inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setTransform inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setTransform"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setTransform">setTransform</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtransform.html">QTransform</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#transform">transform</a>, bool combine)</td></tr>
+<tr class="separator:setTransform inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:transform inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="transform"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtransform.html">QTransform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#transform">transform</a> () const const</td></tr>
+<tr class="separator:transform inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deviceTransform inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="deviceTransform"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtransform.html">QTransform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#deviceTransform">deviceTransform</a> () const const</td></tr>
+<tr class="separator:deviceTransform inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:resetTransform inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="resetTransform"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#resetTransform">resetTransform</a> ()</td></tr>
+<tr class="separator:resetTransform inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setWorldMatrix inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setWorldMatrix"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#setWorldMatrix">setWorldMatrix</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmatrix.html">QMatrix</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#matrix">matrix</a>, bool combine)</td></tr>
+<tr class="separator:setWorldMatrix inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:worldMatrix inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="worldMatrix"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmatrix.html">QMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#worldMatrix">worldMatrix</a> () const const</td></tr>
+<tr class="separator:worldMatrix inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setWorldTransform inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setWorldTransform"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setWorldTransform">setWorldTransform</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtransform.html">QTransform</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#matrix">matrix</a>, bool combine)</td></tr>
+<tr class="separator:setWorldTransform inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:worldTransform inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="worldTransform"></a>
+const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtransform.html">QTransform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#worldTransform">worldTransform</a> () const const</td></tr>
+<tr class="separator:worldTransform inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:combinedMatrix inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="combinedMatrix"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmatrix.html">QMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#combinedMatrix">combinedMatrix</a> () const const</td></tr>
+<tr class="separator:combinedMatrix inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:combinedTransform inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="combinedTransform"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtransform.html">QTransform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#combinedTransform">combinedTransform</a> () const const</td></tr>
+<tr class="separator:combinedTransform inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setMatrixEnabled inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setMatrixEnabled"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#setMatrixEnabled">setMatrixEnabled</a> (bool enable)</td></tr>
+<tr class="separator:setMatrixEnabled inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:matrixEnabled inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="matrixEnabled"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#matrixEnabled">matrixEnabled</a> () const const</td></tr>
+<tr class="separator:matrixEnabled inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setWorldMatrixEnabled inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setWorldMatrixEnabled"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setWorldMatrixEnabled">setWorldMatrixEnabled</a> (bool enable)</td></tr>
+<tr class="separator:setWorldMatrixEnabled inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:worldMatrixEnabled inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="worldMatrixEnabled"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#worldMatrixEnabled">worldMatrixEnabled</a> () const const</td></tr>
+<tr class="separator:worldMatrixEnabled inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:scale inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="scale"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#scale">scale</a> (qreal sx, qreal sy)</td></tr>
+<tr class="separator:scale inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:shear inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="shear"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#shear">shear</a> (qreal sh, qreal sv)</td></tr>
+<tr class="separator:shear inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:rotate inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="rotate"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#rotate">rotate</a> (qreal angle)</td></tr>
+<tr class="separator:rotate inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:translate inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="translate"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#translate">translate</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;offset)</td></tr>
+<tr class="separator:translate inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:translate-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="translate-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#translate-1">translate</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;offset)</td></tr>
+<tr class="separator:translate-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:translate-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="translate-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#translate-2">translate</a> (qreal dx, qreal dy)</td></tr>
+<tr class="separator:translate-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:window inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="window"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#window">window</a> () const const</td></tr>
+<tr class="separator:window inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setWindow inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setWindow"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setWindow">setWindow</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle)</td></tr>
+<tr class="separator:setWindow inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setWindow-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setWindow-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setWindow-1">setWindow</a> (int x, int y, int width, int height)</td></tr>
+<tr class="separator:setWindow-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:viewport inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="viewport"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#viewport">viewport</a> () const const</td></tr>
+<tr class="separator:viewport inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setViewport inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setViewport"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setViewport">setViewport</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle)</td></tr>
+<tr class="separator:setViewport inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setViewport-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setViewport-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setViewport-1">setViewport</a> (int x, int y, int width, int height)</td></tr>
+<tr class="separator:setViewport-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setViewTransformEnabled inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setViewTransformEnabled"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setViewTransformEnabled">setViewTransformEnabled</a> (bool enable)</td></tr>
+<tr class="separator:setViewTransformEnabled inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:viewTransformEnabled inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="viewTransformEnabled"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#viewTransformEnabled">viewTransformEnabled</a> () const const</td></tr>
+<tr class="separator:viewTransformEnabled inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:strokePath inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="strokePath"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#strokePath">strokePath</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> &amp;path, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpen.html">QPen</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#pen">pen</a>)</td></tr>
+<tr class="separator:strokePath inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillPath inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillPath"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillPath">fillPath</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> &amp;path, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#brush">brush</a>)</td></tr>
+<tr class="separator:fillPath inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPath inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPath"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPath">drawPath</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> &amp;path)</td></tr>
+<tr class="separator:drawPath inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPoint inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPoint"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPoint">drawPoint</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;position)</td></tr>
+<tr class="separator:drawPoint inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPoint-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPoint-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPoint-1">drawPoint</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;position)</td></tr>
+<tr class="separator:drawPoint-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPoint-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPoint-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPoint-2">drawPoint</a> (int x, int y)</td></tr>
+<tr class="separator:drawPoint-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPoints inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPoints"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPoints">drawPoints</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> *points, int pointCount)</td></tr>
+<tr class="separator:drawPoints inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPoints-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPoints-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPoints-1">drawPoints</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpolygonf.html">QPolygonF</a> &amp;points)</td></tr>
+<tr class="separator:drawPoints-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPoints-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPoints-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPoints-2">drawPoints</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> *points, int pointCount)</td></tr>
+<tr class="separator:drawPoints-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPoints-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPoints-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPoints-3">drawPoints</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpolygon.html">QPolygon</a> &amp;points)</td></tr>
+<tr class="separator:drawPoints-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLine inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLine"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLine">drawLine</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlinef.html">QLineF</a> &amp;line)</td></tr>
+<tr class="separator:drawLine inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLine-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLine-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLine-1">drawLine</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qline.html">QLine</a> &amp;line)</td></tr>
+<tr class="separator:drawLine-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLine-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLine-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLine-2">drawLine</a> (int x1, int y1, int x2, int y2)</td></tr>
+<tr class="separator:drawLine-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLine-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLine-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLine-3">drawLine</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;p1, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;p2)</td></tr>
+<tr class="separator:drawLine-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLine-4 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLine-4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLine-4">drawLine</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;p1, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;p2)</td></tr>
+<tr class="separator:drawLine-4 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLines inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLines"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLines">drawLines</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlinef.html">QLineF</a> *lines, int lineCount)</td></tr>
+<tr class="separator:drawLines inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLines-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLines-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLines-1">drawLines</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlinef.html">QLineF</a> &gt; &amp;lines)</td></tr>
+<tr class="separator:drawLines-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLines-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLines-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLines-2">drawLines</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> *pointPairs, int lineCount)</td></tr>
+<tr class="separator:drawLines-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLines-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLines-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLines-3">drawLines</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &gt; &amp;pointPairs)</td></tr>
+<tr class="separator:drawLines-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLines-4 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLines-4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLines-4">drawLines</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qline.html">QLine</a> *lines, int lineCount)</td></tr>
+<tr class="separator:drawLines-4 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLines-5 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLines-5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLines-5">drawLines</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qline.html">QLine</a> &gt; &amp;lines)</td></tr>
+<tr class="separator:drawLines-5 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLines-6 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLines-6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLines-6">drawLines</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> *pointPairs, int lineCount)</td></tr>
+<tr class="separator:drawLines-6 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawLines-7 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawLines-7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawLines-7">drawLines</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &gt; &amp;pointPairs)</td></tr>
+<tr class="separator:drawLines-7 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRect inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRect"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawRect">drawRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle)</td></tr>
+<tr class="separator:drawRect inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRect-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRect-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawRect-1">drawRect</a> (int x, int y, int width, int height)</td></tr>
+<tr class="separator:drawRect-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRect-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRect-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawRect-2">drawRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle)</td></tr>
+<tr class="separator:drawRect-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRects inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRects"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawRects">drawRects</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> *rectangles, int rectCount)</td></tr>
+<tr class="separator:drawRects inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRects-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRects-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawRects-1">drawRects</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &gt; &amp;rectangles)</td></tr>
+<tr class="separator:drawRects-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRects-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRects-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawRects-2">drawRects</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> *rectangles, int rectCount)</td></tr>
+<tr class="separator:drawRects-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRects-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRects-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawRects-3">drawRects</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &gt; &amp;rectangles)</td></tr>
+<tr class="separator:drawRects-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawEllipse inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawEllipse"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawEllipse">drawEllipse</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle)</td></tr>
+<tr class="separator:drawEllipse inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawEllipse-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawEllipse-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawEllipse-1">drawEllipse</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle)</td></tr>
+<tr class="separator:drawEllipse-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawEllipse-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawEllipse-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawEllipse-2">drawEllipse</a> (int x, int y, int width, int height)</td></tr>
+<tr class="separator:drawEllipse-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawEllipse-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawEllipse-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawEllipse-3">drawEllipse</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;center, qreal rx, qreal ry)</td></tr>
+<tr class="separator:drawEllipse-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawEllipse-4 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawEllipse-4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawEllipse-4">drawEllipse</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;center, int rx, int ry)</td></tr>
+<tr class="separator:drawEllipse-4 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPolyline inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPolyline"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPolyline">drawPolyline</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> *points, int pointCount)</td></tr>
+<tr class="separator:drawPolyline inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPolyline-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPolyline-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPolyline-1">drawPolyline</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpolygonf.html">QPolygonF</a> &amp;points)</td></tr>
+<tr class="separator:drawPolyline-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPolyline-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPolyline-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPolyline-2">drawPolyline</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> *points, int pointCount)</td></tr>
+<tr class="separator:drawPolyline-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPolyline-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPolyline-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPolyline-3">drawPolyline</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpolygon.html">QPolygon</a> &amp;points)</td></tr>
+<tr class="separator:drawPolyline-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPolygon inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPolygon"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPolygon">drawPolygon</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> *points, int pointCount, Qt::FillRule fillRule)</td></tr>
+<tr class="separator:drawPolygon inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPolygon-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPolygon-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPolygon-1">drawPolygon</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpolygonf.html">QPolygonF</a> &amp;points, Qt::FillRule fillRule)</td></tr>
+<tr class="separator:drawPolygon-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPolygon-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPolygon-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPolygon-2">drawPolygon</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> *points, int pointCount, Qt::FillRule fillRule)</td></tr>
+<tr class="separator:drawPolygon-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPolygon-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPolygon-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPolygon-3">drawPolygon</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpolygon.html">QPolygon</a> &amp;points, Qt::FillRule fillRule)</td></tr>
+<tr class="separator:drawPolygon-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawConvexPolygon inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawConvexPolygon"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawConvexPolygon">drawConvexPolygon</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> *points, int pointCount)</td></tr>
+<tr class="separator:drawConvexPolygon inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawConvexPolygon-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawConvexPolygon-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawConvexPolygon-1">drawConvexPolygon</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpolygonf.html">QPolygonF</a> &amp;polygon)</td></tr>
+<tr class="separator:drawConvexPolygon-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawConvexPolygon-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawConvexPolygon-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawConvexPolygon-2">drawConvexPolygon</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> *points, int pointCount)</td></tr>
+<tr class="separator:drawConvexPolygon-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawConvexPolygon-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawConvexPolygon-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawConvexPolygon-3">drawConvexPolygon</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpolygon.html">QPolygon</a> &amp;polygon)</td></tr>
+<tr class="separator:drawConvexPolygon-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawArc inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawArc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawArc">drawArc</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, int startAngle, int spanAngle)</td></tr>
+<tr class="separator:drawArc inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawArc-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawArc-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawArc-1">drawArc</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, int startAngle, int spanAngle)</td></tr>
+<tr class="separator:drawArc-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawArc-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawArc-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawArc-2">drawArc</a> (int x, int y, int width, int height, int startAngle, int spanAngle)</td></tr>
+<tr class="separator:drawArc-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPie inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPie"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPie">drawPie</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, int startAngle, int spanAngle)</td></tr>
+<tr class="separator:drawPie inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPie-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPie-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPie-1">drawPie</a> (int x, int y, int width, int height, int startAngle, int spanAngle)</td></tr>
+<tr class="separator:drawPie-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPie-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPie-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPie-2">drawPie</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, int startAngle, int spanAngle)</td></tr>
+<tr class="separator:drawPie-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawChord inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawChord"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawChord">drawChord</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, int startAngle, int spanAngle)</td></tr>
+<tr class="separator:drawChord inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawChord-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawChord-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawChord-1">drawChord</a> (int x, int y, int width, int height, int startAngle, int spanAngle)</td></tr>
+<tr class="separator:drawChord-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawChord-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawChord-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawChord-2">drawChord</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, int startAngle, int spanAngle)</td></tr>
+<tr class="separator:drawChord-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRoundedRect inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRoundedRect"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawRoundedRect">drawRoundedRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rect, qreal xRadius, qreal yRadius, Qt::SizeMode mode)</td></tr>
+<tr class="separator:drawRoundedRect inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRoundedRect-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRoundedRect-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawRoundedRect-1">drawRoundedRect</a> (int x, int y, int w, int h, qreal xRadius, qreal yRadius, Qt::SizeMode mode)</td></tr>
+<tr class="separator:drawRoundedRect-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRoundedRect-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRoundedRect-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawRoundedRect-2">drawRoundedRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rect, qreal xRadius, qreal yRadius, Qt::SizeMode mode)</td></tr>
+<tr class="separator:drawRoundedRect-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRoundRect inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRoundRect"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#drawRoundRect">drawRoundRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;r, int xRnd, int yRnd)</td></tr>
+<tr class="separator:drawRoundRect inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRoundRect-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRoundRect-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#drawRoundRect-1">drawRoundRect</a> (int x, int y, int w, int h, int, int)</td></tr>
+<tr class="separator:drawRoundRect-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawRoundRect-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawRoundRect-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#drawRoundRect-2">drawRoundRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;r, int xRnd, int yRnd)</td></tr>
+<tr class="separator:drawRoundRect-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawTiledPixmap inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawTiledPixmap"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawTiledPixmap">drawTiledPixmap</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;position)</td></tr>
+<tr class="separator:drawTiledPixmap inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawTiledPixmap-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawTiledPixmap-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawTiledPixmap-1">drawTiledPixmap</a> (int x, int y, int width, int height, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap, int sx, int sy)</td></tr>
+<tr class="separator:drawTiledPixmap-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawTiledPixmap-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawTiledPixmap-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawTiledPixmap-2">drawTiledPixmap</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;position)</td></tr>
+<tr class="separator:drawTiledPixmap-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPicture inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPicture"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPicture">drawPicture</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;point, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpicture.html">QPicture</a> &amp;picture)</td></tr>
+<tr class="separator:drawPicture inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPicture-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPicture-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPicture-1">drawPicture</a> (int x, int y, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpicture.html">QPicture</a> &amp;picture)</td></tr>
+<tr class="separator:drawPicture-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPicture-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPicture-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPicture-2">drawPicture</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;point, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpicture.html">QPicture</a> &amp;picture)</td></tr>
+<tr class="separator:drawPicture-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap">drawPixmap</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;target, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;source)</td></tr>
+<tr class="separator:drawPixmap inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap-1">drawPixmap</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;target, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;source)</td></tr>
+<tr class="separator:drawPixmap-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap-2">drawPixmap</a> (int x, int y, int w, int h, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap, int sx, int sy, int sw, int sh)</td></tr>
+<tr class="separator:drawPixmap-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap-3">drawPixmap</a> (int x, int y, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap, int sx, int sy, int sw, int sh)</td></tr>
+<tr class="separator:drawPixmap-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap-4 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap-4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap-4">drawPixmap</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;point, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;source)</td></tr>
+<tr class="separator:drawPixmap-4 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap-5 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap-5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap-5">drawPixmap</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;point, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;source)</td></tr>
+<tr class="separator:drawPixmap-5 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap-6 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap-6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap-6">drawPixmap</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;point, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap)</td></tr>
+<tr class="separator:drawPixmap-6 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap-7 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap-7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap-7">drawPixmap</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;point, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap)</td></tr>
+<tr class="separator:drawPixmap-7 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap-8 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap-8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap-8">drawPixmap</a> (int x, int y, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap)</td></tr>
+<tr class="separator:drawPixmap-8 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap-9 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap-9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap-9">drawPixmap</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap)</td></tr>
+<tr class="separator:drawPixmap-9 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmap-10 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmap-10"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmap-10">drawPixmap</a> (int x, int y, int width, int height, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap)</td></tr>
+<tr class="separator:drawPixmap-10 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawPixmapFragments inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawPixmapFragments"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawPixmapFragments">drawPixmapFragments</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-pixmapfragment.html">QPainter::PixmapFragment</a> *fragments, int fragmentCount, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> &amp;pixmap, <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#PixmapFragmentHint-enum">QPainter::PixmapFragmentHints</a> hints)</td></tr>
+<tr class="separator:drawPixmapFragments inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawImage inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawImage"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawImage">drawImage</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;target, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;source, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#ImageConversionFlag-enum">Qt::ImageConversionFlags</a> flags)</td></tr>
+<tr class="separator:drawImage inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawImage-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawImage-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawImage-1">drawImage</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;target, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;source, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#ImageConversionFlag-enum">Qt::ImageConversionFlags</a> flags)</td></tr>
+<tr class="separator:drawImage-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawImage-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawImage-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawImage-2">drawImage</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;point, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;source, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#ImageConversionFlag-enum">Qt::ImageConversionFlags</a> flags)</td></tr>
+<tr class="separator:drawImage-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawImage-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawImage-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawImage-3">drawImage</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;point, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;source, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#ImageConversionFlag-enum">Qt::ImageConversionFlags</a> flags)</td></tr>
+<tr class="separator:drawImage-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawImage-4 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawImage-4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawImage-4">drawImage</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image)</td></tr>
+<tr class="separator:drawImage-4 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawImage-5 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawImage-5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawImage-5">drawImage</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image)</td></tr>
+<tr class="separator:drawImage-5 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawImage-6 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawImage-6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawImage-6">drawImage</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;point, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image)</td></tr>
+<tr class="separator:drawImage-6 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawImage-7 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawImage-7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawImage-7">drawImage</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;point, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image)</td></tr>
+<tr class="separator:drawImage-7 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawImage-8 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawImage-8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawImage-8">drawImage</a> (int x, int y, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;image, int sx, int sy, int sw, int sh, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#ImageConversionFlag-enum">Qt::ImageConversionFlags</a> flags)</td></tr>
+<tr class="separator:drawImage-8 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setLayoutDirection inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setLayoutDirection"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setLayoutDirection">setLayoutDirection</a> (Qt::LayoutDirection direction)</td></tr>
+<tr class="separator:setLayoutDirection inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:layoutDirection inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="layoutDirection"></a>
+Qt::LayoutDirection&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#layoutDirection">layoutDirection</a> () const const</td></tr>
+<tr class="separator:layoutDirection inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawGlyphRun inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawGlyphRun"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawGlyphRun">drawGlyphRun</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;position, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qglyphrun.html">QGlyphRun</a> &amp;glyphs)</td></tr>
+<tr class="separator:drawGlyphRun inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawStaticText inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawStaticText"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawStaticText">drawStaticText</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;topLeftPosition, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstatictext.html">QStaticText</a> &amp;staticText)</td></tr>
+<tr class="separator:drawStaticText inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawStaticText-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawStaticText-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawStaticText-1">drawStaticText</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;topLeftPosition, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstatictext.html">QStaticText</a> &amp;staticText)</td></tr>
+<tr class="separator:drawStaticText-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawStaticText-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawStaticText-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawStaticText-2">drawStaticText</a> (int left, int top, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstatictext.html">QStaticText</a> &amp;staticText)</td></tr>
+<tr class="separator:drawStaticText-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawText inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawText"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawText">drawText</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointf.html">QPointF</a> &amp;position, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text)</td></tr>
+<tr class="separator:drawText inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawText-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawText-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawText-1">drawText</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;position, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text)</td></tr>
+<tr class="separator:drawText-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawText-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawText-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawText-2">drawText</a> (int x, int y, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text)</td></tr>
+<tr class="separator:drawText-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawText-4 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawText-4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawText-4">drawText</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, int flags, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#boundingRect">boundingRect</a>)</td></tr>
+<tr class="separator:drawText-4 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawText-5 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawText-5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawText-5">drawText</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, int flags, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#boundingRect">boundingRect</a>)</td></tr>
+<tr class="separator:drawText-5 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawText-6 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawText-6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawText-6">drawText</a> (int x, int y, int width, int height, int flags, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#boundingRect">boundingRect</a>)</td></tr>
+<tr class="separator:drawText-6 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:drawText-7 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="drawText-7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#drawText-7">drawText</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtextoption.html">QTextOption</a> &amp;option)</td></tr>
+<tr class="separator:drawText-7 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:boundingRect inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="boundingRect"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#boundingRect">boundingRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, int flags, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text)</td></tr>
+<tr class="separator:boundingRect inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:boundingRect-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="boundingRect-1"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#boundingRect-1">boundingRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, int flags, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text)</td></tr>
+<tr class="separator:boundingRect-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:boundingRect-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="boundingRect-2"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#boundingRect-2">boundingRect</a> (int x, int y, int w, int h, int flags, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text)</td></tr>
+<tr class="separator:boundingRect-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:boundingRect-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="boundingRect-3"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#boundingRect-3">boundingRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtextoption.html">QTextOption</a> &amp;option)</td></tr>
+<tr class="separator:boundingRect-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect">fillRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#brush">brush</a>)</td></tr>
+<tr class="separator:fillRect inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-1">fillRect</a> (int x, int y, int width, int height, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#brush">brush</a>)</td></tr>
+<tr class="separator:fillRect-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-2">fillRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a> &amp;<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#brush">brush</a>)</td></tr>
+<tr class="separator:fillRect-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-3 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-3">fillRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;color)</td></tr>
+<tr class="separator:fillRect-3 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-4 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-4">fillRect</a> (int x, int y, int width, int height, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;color)</td></tr>
+<tr class="separator:fillRect-4 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-5 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-5">fillRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;color)</td></tr>
+<tr class="separator:fillRect-5 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-6 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-6">fillRect</a> (int x, int y, int width, int height, Qt::GlobalColor color)</td></tr>
+<tr class="separator:fillRect-6 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-7 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-7">fillRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, Qt::GlobalColor color)</td></tr>
+<tr class="separator:fillRect-7 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-8 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-8">fillRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, Qt::GlobalColor color)</td></tr>
+<tr class="separator:fillRect-8 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-9 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-9">fillRect</a> (int x, int y, int width, int height, Qt::BrushStyle style)</td></tr>
+<tr class="separator:fillRect-9 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-10 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-10"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-10">fillRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle, Qt::BrushStyle style)</td></tr>
+<tr class="separator:fillRect-10 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fillRect-11 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="fillRect-11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#fillRect-11">fillRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle, Qt::BrushStyle style)</td></tr>
+<tr class="separator:fillRect-11 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eraseRect inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="eraseRect"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#eraseRect">eraseRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> &amp;rectangle)</td></tr>
+<tr class="separator:eraseRect inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eraseRect-1 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="eraseRect-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#eraseRect-1">eraseRect</a> (int x, int y, int width, int height)</td></tr>
+<tr class="separator:eraseRect-1 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eraseRect-2 inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="eraseRect-2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#eraseRect-2">eraseRect</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rectangle)</td></tr>
+<tr class="separator:eraseRect-2 inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setRenderHint inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setRenderHint"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setRenderHint">setRenderHint</a> (QPainter::RenderHint hint, bool on)</td></tr>
+<tr class="separator:setRenderHint inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setRenderHints inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setRenderHints"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#setRenderHints">setRenderHints</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#RenderHint-enum">QPainter::RenderHints</a> hints, bool on)</td></tr>
+<tr class="separator:setRenderHints inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:renderHints inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="renderHints"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#RenderHint-enum">QPainter::RenderHints</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#renderHints">renderHints</a> () const const</td></tr>
+<tr class="separator:renderHints inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:testRenderHint inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="testRenderHint"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#testRenderHint">testRenderHint</a> (QPainter::RenderHint hint) const const</td></tr>
+<tr class="separator:testRenderHint inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:paintEngine inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="paintEngine"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintengine.html">QPaintEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#paintEngine">paintEngine</a> () const const</td></tr>
+<tr class="separator:paintEngine inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:beginNativePainting inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="beginNativePainting"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#beginNativePainting">beginNativePainting</a> ()</td></tr>
+<tr class="separator:beginNativePainting inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:endNativePainting inherit pub_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="endNativePainting"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#endNativePainting">endNativePainting</a> ()</td></tr>
+<tr class="separator:endNativePainting inherit pub_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_qpainter"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qpainter')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a></td></tr>
+<tr class="memitem:setRedirected inherit pub_static_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="setRedirected"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#setRedirected">setRedirected</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#device">device</a>, <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *replacement, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;offset)</td></tr>
+<tr class="separator:setRedirected inherit pub_static_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:redirected inherit pub_static_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="redirected"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#redirected">redirected</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#device">device</a>, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> *offset)</td></tr>
+<tr class="separator:redirected inherit pub_static_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:restoreRedirected inherit pub_static_methods_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="restoreRedirected"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter-obsolete.html#restoreRedirected">restoreRedirected</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintdevice.html">QPaintDevice</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#device">device</a>)</td></tr>
+<tr class="separator:restoreRedirected inherit pub_static_methods_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_qpainter"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qpainter')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a></td></tr>
+<tr class="memitem:QtGadgetHelper-typedef inherit pub_attribs_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="QtGadgetHelper-typedef"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#QtGadgetHelper-typedef">QtGadgetHelper</a></td></tr>
+<tr class="separator:QtGadgetHelper-typedef inherit pub_attribs_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:RenderHint-enum inherit pub_attribs_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="RenderHint-enum"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#RenderHint-enum">RenderHints</a></td></tr>
+<tr class="separator:RenderHint-enum inherit pub_attribs_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:PixmapFragmentHint-enum inherit pub_attribs_qpainter"><td class="memItemLeft" align="right" valign="top"><a id="PixmapFragmentHint-enum"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainter.html#PixmapFragmentHint-enum">PixmapFragmentHints</a></td></tr>
+<tr class="separator:PixmapFragmentHint-enum inherit pub_attribs_qpainter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dstyle_8h_source.html">dstyle.h</a> 第 <a class="el" href="dstyle_8h_source.html#l00360">360</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/src/widgets/<a class="el" href="dstyle_8h_source.html">dstyle.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_style_painter.html">DStylePainter</a></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:21 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

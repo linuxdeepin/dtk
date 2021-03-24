@@ -1,0 +1,11 @@
+<map id="ut_DPrintPreviewDialog" name="ut_DPrintPreviewDialog">
+<area shape="rect" id="node3" href="$class_test_print_preview_dialog.html" title="TestPrintPreviewDialog" alt="" coords="113,489,272,516"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_widget_1_1_d_print_preview_dialog.html" title="Dtk::Widget::DPrintPreview\lDialog" alt="" coords="101,399,285,440"/>
+<area shape="rect" id="node5" href="$class_dtk_1_1_widget_1_1_d_dialog.html" title="可以使用 DDialog 类快速创建符合 DDE 风格的简要对话框窗口。 " alt="" coords="119,323,266,349"/>
+<area shape="rect" id="node6" href="$class_dtk_1_1_widget_1_1_d_abstract_dialog.html" title="可以使用 DAbstractDialog 类创建符合 DDE 风格的对话框窗口。 " alt="" coords="95,247,291,273"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtwidgets.tags$qdialog.html" title="QDialog" alt="" coords="95,171,165,197"/>
+<area shape="rect" id="node8" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="63,81,136,108"/>
+<area shape="rect" id="node9" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="9,5,80,32"/>
+<area shape="rect" id="node10" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="104,5,207,32"/>
+<area shape="rect" id="node11" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="201,171,336,197"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. " alt="" coords="5,56,196,83"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_abstract_string_appender.html" title="The AbstractStringAppender class provides a convenient base for appenders working with plain text for..." alt="" coords="244,49,415,90"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_console_appender.html" title="ConsoleAppender is the simple appender that writes the log records to the std::cerr output stream..." alt="" coords="477,5,667,32"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_file_appender.html" title="Simple appender that writes the log records to the plain text file. " alt="" coords="491,56,653,83"/>
+<area shape="rect" id="node6" href="$class_dtk_1_1_core_1_1_output_debug_appender.html" title="Appender that writes the log records to the Microsoft Debug Log " alt="" coords="463,107,681,133"/>
+<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_rolling_file_appender.html" title="The RollingFileAppender class extends FileAppender so that the underlying file is rolled over at a us..." alt="" coords="729,56,932,83"/>
+</map>

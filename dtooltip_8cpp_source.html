@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkwidget/src/widgets/dtooltip.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dtooltip_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dtooltip.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;dtooltip.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;dstyle.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;DPlatformWindowHandle&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QEvent&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;DWIDGET_BEGIN_NAMESPACE</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_tool_tip.html#a3e678cc590d1b994ed544deb8acc6a21">   23</a></span>&#160;DToolTip::DToolTip(<span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <span class="keywordtype">bool</span> completionClose)</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    : <a class="code" href="class_dtk_1_1_widget_1_1_d_tip_label.html">DTipLabel</a>(text)</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (completionClose) {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#setAttribute">setAttribute</a>(Qt::WA_DeleteOnClose);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_tool_tip.html#a7a7740ba9904d1445e0e759a6b6dc4e7">   35</a></span>&#160;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_tool_tip.html#a7a7740ba9904d1445e0e759a6b6dc4e7">DToolTip::sizeHint</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> radius = <a class="code" href="class_dtk_1_1_widget_1_1_d_style_helper.html">DStyleHelper</a>(<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#style">style</a>()).pixelMetric(<a class="code" href="class_dtk_1_1_widget_1_1_d_style.html#a42036bfddd18d067159479232deaf6ffaecc2e1f977448936a38134803f89064e">DStyle::PM_FrameRadius</a>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> fontSize = <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#fontMetrics">fontMetrics</a>().<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfontmetrics.html#size">size</a>(Qt::TextSingleLine, <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlabel.html#text-prop">text</a>());</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    fontSize.<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html#setWidth">setWidth</a>(fontSize.<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html#width">width</a>() + radius);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> fontSize;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_tool_tip.html#a1df5499af584c905eb0468fee8dc9e8e">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#show">DToolTip::show</a>(<span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#pos-prop">pos</a>, <span class="keywordtype">int</span> duration)</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtimer.html#singleShot-prop">QTimer::singleShot</a>(duration, <span class="keyword">this</span>, &amp;<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#close">DTipLabel::close</a>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#show">DTipLabel::show</a>(pos);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;DWIDGET_END_NAMESPACE</div><div class="ttc" id="qwidget_html_close"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#close">QWidget::close</a></div><div class="ttdeci">bool close()</div></div>
+<div class="ttc" id="qsize_html_width"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsize.html#width">QSize::width</a></div><div class="ttdeci">int width() const const</div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_style_html_a42036bfddd18d067159479232deaf6ffaecc2e1f977448936a38134803f89064e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style.html#a42036bfddd18d067159479232deaf6ffaecc2e1f977448936a38134803f89064e">Dtk::Widget::DStyle::PM_FrameRadius</a></div><div class="ttdef"><b>Definition:</b> <a href="dstyle_8h_source.html#l00136">dstyle.h:136</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_tip_label_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_tip_label.html">Dtk::Widget::DTipLabel</a></div><div class="ttdoc">DTipLabel一个重新实现的 QLabel </div><div class="ttdef"><b>Definition:</b> <a href="dtiplabel_8h_source.html#l00030">dtiplabel.h:30</a></div></div>
+<div class="ttc" id="qwidget_html_style"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#style">QWidget::style</a></div><div class="ttdeci">QStyle * style() const const</div></div>
+<div class="ttc" id="qwidget_html_setAttribute"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#setAttribute">QWidget::setAttribute</a></div><div class="ttdeci">void setAttribute(Qt::WidgetAttribute attribute, bool on)</div></div>
+<div class="ttc" id="qpoint_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a></div></div>
+<div class="ttc" id="qsize_html_setWidth"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsize.html#setWidth">QSize::setWidth</a></div><div class="ttdeci">void setWidth(int width)</div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_tool_tip_html_a7a7740ba9904d1445e0e759a6b6dc4e7"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_tool_tip.html#a7a7740ba9904d1445e0e759a6b6dc4e7">Dtk::Widget::DToolTip::sizeHint</a></div><div class="ttdeci">QSize sizeHint() const override</div><div class="ttdoc">DToolTip::sizeHint </div><div class="ttdef"><b>Definition:</b> <a href="dtooltip_8cpp_source.html#l00035">dtooltip.cpp:35</a></div></div>
+<div class="ttc" id="qwidget_html_pos-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#pos-prop">QWidget::pos</a></div><div class="ttdeci">QPoint pos() const const</div></div>
+<div class="ttc" id="qlabel_html_text-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlabel.html#text-prop">QLabel::text</a></div><div class="ttdeci">QString text() const const</div></div>
+<div class="ttc" id="qstring_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="qsize_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_style_helper_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_helper.html">Dtk::Widget::DStyleHelper</a></div><div class="ttdef"><b>Definition:</b> <a href="dstyle_8h_source.html#l00309">dstyle.h:309</a></div></div>
+<div class="ttc" id="qwidget_html_fontMetrics"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#fontMetrics">QWidget::fontMetrics</a></div><div class="ttdeci">QFontMetrics fontMetrics() const const</div></div>
+<div class="ttc" id="qfontmetrics_html_size"><div class="ttname"><a href="https://doc.qt.io/qt-5/qfontmetrics.html#size">QFontMetrics::size</a></div><div class="ttdeci">QSize size(int flags, const QString &amp;text, int tabStops, int *tabArray) const const</div></div>
+<div class="ttc" id="qwidget_html_show"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#show">QWidget::show</a></div><div class="ttdeci">void show()</div></div>
+<div class="ttc" id="qtimer_html_singleShot-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtimer.html#singleShot-prop">QTimer::singleShot</a></div><div class="ttdeci">singleShot</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dtooltip.cpp</b></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:18 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

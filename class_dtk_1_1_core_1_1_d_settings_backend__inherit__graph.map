@@ -1,0 +1,5 @@
+<map id="Dtk::Core::DSettingsBackend" name="Dtk::Core::DSettingsBackend">
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_g_settings_backend.html" title="Storage backend of DSettings use gsettings. " alt="" coords="5,155,201,181"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_q_setting_backend.html" title="Storage DSetttings to an QSettings " alt="" coords="226,155,415,181"/>
+<area shape="rect" id="node2" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="176,5,247,32"/>
+</map>

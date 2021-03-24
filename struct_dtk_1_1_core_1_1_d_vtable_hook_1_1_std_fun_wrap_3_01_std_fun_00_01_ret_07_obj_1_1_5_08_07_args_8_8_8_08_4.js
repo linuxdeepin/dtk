@@ -1,0 +1,4 @@
+var struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_std_fun_wrap_3_01_std_fun_00_01_ret_07_obj_1_1_5_08_07_args_8_8_8_08_4 =
+[
+    [ "StdFunType", "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_std_fun_wrap_3_01_std_fun_00_01_ret_07_obj_1_1_5_08_07_args_8_8_8_08_4.html#a283eeef953bf74fbbe452ba727548af5", null ]
+];

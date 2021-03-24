@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Core::AbstractStringAppender类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dtk_1_1_core_1_1_abstract_string_appender.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_dtk_1_1_core_1_1_abstract_string_appender-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Core::AbstractStringAppender类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html" title="The AbstractStringAppender class provides a convenient base for appenders working with plain text for...">AbstractStringAppender</a> class provides a convenient base for appenders working with plain text formatted logs.  
+ <a href="class_dtk_1_1_core_1_1_abstract_string_appender.html#details">更多...</a></p>
+<div class="dynheader">
+类 Dtk::Core::AbstractStringAppender 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_core_1_1_abstract_string_appender__inherit__graph.png" border="0" usemap="#_dtk_1_1_core_1_1_abstract_string_appender_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dtk_1_1_core_1_1_abstract_string_appender_inherit__map" id="_dtk_1_1_core_1_1_abstract_string_appender_inherit__map">
+<area shape="rect" id="node3" href="class_dtk_1_1_core_1_1_console_appender.html" title="ConsoleAppender is the simple appender that writes the log records to the std::cerr output stream..." alt="" coords="5,169,196,196"/>
+<area shape="rect" id="node4" href="class_dtk_1_1_core_1_1_file_appender.html" title="Simple appender that writes the log records to the plain text file. " alt="" coords="221,169,383,196"/>
+<area shape="rect" id="node6" href="class_dtk_1_1_core_1_1_output_debug_appender.html" title="Appender that writes the log records to the Microsoft Debug Log " alt="" coords="407,169,626,196"/>
+<area shape="rect" id="node2" href="class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. " alt="" coords="207,5,397,32"/>
+<area shape="rect" id="node5" href="class_dtk_1_1_core_1_1_rolling_file_appender.html" title="The RollingFileAppender class extends FileAppender so that the underlying file is rolled over at a us..." alt="" coords="201,244,403,271"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Dtk::Core::AbstractStringAppender 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_core_1_1_abstract_string_appender__coll__graph.png" border="0" usemap="#_dtk_1_1_core_1_1_abstract_string_appender_coll__map" alt="Collaboration graph"/></div>
+<map name="_dtk_1_1_core_1_1_abstract_string_appender_coll__map" id="_dtk_1_1_core_1_1_abstract_string_appender_coll__map">
+<area shape="rect" id="node2" href="class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. " alt="" coords="5,5,196,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0c9c0e424354c415af7be50d4591779c"><td class="memItemLeft" align="right" valign="top"><a id="a0c9c0e424354c415af7be50d4591779c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#a0c9c0e424354c415af7be50d4591779c">AbstractStringAppender</a> ()</td></tr>
+<tr class="memdesc:a0c9c0e424354c415af7be50d4591779c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new string appender object <br /></td></tr>
+<tr class="separator:a0c9c0e424354c415af7be50d4591779c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa173a47c3b89a7022ff83628d1ebe770"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#aa173a47c3b89a7022ff83628d1ebe770">format</a> () const</td></tr>
+<tr class="memdesc:aa173a47c3b89a7022ff83628d1ebe770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current log format string.  <a href="#aa173a47c3b89a7022ff83628d1ebe770">更多...</a><br /></td></tr>
+<tr class="separator:aa173a47c3b89a7022ff83628d1ebe770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f90186aa4a0a9da9511999f48e1734a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#a2f90186aa4a0a9da9511999f48e1734a">setFormat</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;)</td></tr>
+<tr class="memdesc:a2f90186aa4a0a9da9511999f48e1734a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the logging format for writing strings to the log target with this appender.  <a href="#a2f90186aa4a0a9da9511999f48e1734a">更多...</a><br /></td></tr>
+<tr class="separator:a2f90186aa4a0a9da9511999f48e1734a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_dtk_1_1_core_1_1_abstract_appender')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html">Dtk::Core::AbstractAppender</a></td></tr>
+<tr class="memitem:a7cdf727afbb71edf724b17d06cabd50e inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memItemLeft" align="right" valign="top"><a id="a7cdf727afbb71edf724b17d06cabd50e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html#a7cdf727afbb71edf724b17d06cabd50e">AbstractAppender</a> ()</td></tr>
+<tr class="memdesc:a7cdf727afbb71edf724b17d06cabd50e inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. ">AbstractAppender</a> object. <br /></td></tr>
+<tr class="separator:a7cdf727afbb71edf724b17d06cabd50e inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636dfff566cc35c5fcbef9fa8ace5bfe inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memItemLeft" align="right" valign="top"><a id="a636dfff566cc35c5fcbef9fa8ace5bfe"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html#a636dfff566cc35c5fcbef9fa8ace5bfe">~AbstractAppender</a> ()</td></tr>
+<tr class="memdesc:a636dfff566cc35c5fcbef9fa8ace5bfe inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs the <a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. ">AbstractAppender</a> object. <br /></td></tr>
+<tr class="separator:a636dfff566cc35c5fcbef9fa8ace5bfe inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63fd678baadf4cd33df6e91a478947e inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html#aa63fd678baadf4cd33df6e91a478947e">detailsLevel</a> () const</td></tr>
+<tr class="memdesc:aa63fd678baadf4cd33df6e91a478947e inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current details level of appender.  <a href="class_dtk_1_1_core_1_1_abstract_appender.html#aa63fd678baadf4cd33df6e91a478947e">更多...</a><br /></td></tr>
+<tr class="separator:aa63fd678baadf4cd33df6e91a478947e inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2e074a60e849bfa4235a52295debcb inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html#a7d2e074a60e849bfa4235a52295debcb">setDetailsLevel</a> (<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> level)</td></tr>
+<tr class="memdesc:a7d2e074a60e849bfa4235a52295debcb inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current details level of appender.  <a href="class_dtk_1_1_core_1_1_abstract_appender.html#a7d2e074a60e849bfa4235a52295debcb">更多...</a><br /></td></tr>
+<tr class="separator:a7d2e074a60e849bfa4235a52295debcb inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f3ad66a9807638a79df8dba6b463f0 inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html#ac7f3ad66a9807638a79df8dba6b463f0">setDetailsLevel</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;level)</td></tr>
+<tr class="memdesc:ac7f3ad66a9807638a79df8dba6b463f0 inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current details level of appender  <a href="class_dtk_1_1_core_1_1_abstract_appender.html#ac7f3ad66a9807638a79df8dba6b463f0">更多...</a><br /></td></tr>
+<tr class="separator:ac7f3ad66a9807638a79df8dba6b463f0 inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de2dee36879cfff35f86e81a4982582 inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html#a3de2dee36879cfff35f86e81a4982582">write</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;timeStamp, <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> logLevel, const char *file, int line, const char *function, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;category, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;message)</td></tr>
+<tr class="memdesc:a3de2dee36879cfff35f86e81a4982582 inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to write the log record to this logger  <a href="class_dtk_1_1_core_1_1_abstract_appender.html#a3de2dee36879cfff35f86e81a4982582">更多...</a><br /></td></tr>
+<tr class="separator:a3de2dee36879cfff35f86e81a4982582 inherit pub_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:abda75bc101380d567bb2afd3082541cc"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#abda75bc101380d567bb2afd3082541cc">stripFunctionName</a> (const char *)</td></tr>
+<tr class="memdesc:abda75bc101380d567bb2afd3082541cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strips the long function signature (as added by Q_FUNC_INFO macro)  <a href="#abda75bc101380d567bb2afd3082541cc">更多...</a><br /></td></tr>
+<tr class="separator:abda75bc101380d567bb2afd3082541cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:acd84d6c2423aee5be1afa0d30f0b57a9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#acd84d6c2423aee5be1afa0d30f0b57a9">formattedString</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;timeStamp, <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> logLevel, const char *file, int line, const char *function, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;category, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;message) const</td></tr>
+<tr class="memdesc:acd84d6c2423aee5be1afa0d30f0b57a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string to record to the logging target, formatted according to the <a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#aa173a47c3b89a7022ff83628d1ebe770" title="Returns the current log format string. ">format()</a>.  <a href="#acd84d6c2423aee5be1afa0d30f0b57a9">更多...</a><br /></td></tr>
+<tr class="separator:acd84d6c2423aee5be1afa0d30f0b57a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_dtk_1_1_core_1_1_abstract_appender"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_dtk_1_1_core_1_1_abstract_appender')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html">Dtk::Core::AbstractAppender</a></td></tr>
+<tr class="memitem:ab65789459b74307789438907af06ecee inherit pro_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html#ab65789459b74307789438907af06ecee">append</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;timeStamp, <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a> logLevel, const char *file, int line, const char *function, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;category, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;message)=0</td></tr>
+<tr class="memdesc:ab65789459b74307789438907af06ecee inherit pro_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the log record to the logger instance  <a href="class_dtk_1_1_core_1_1_abstract_appender.html#ab65789459b74307789438907af06ecee">更多...</a><br /></td></tr>
+<tr class="separator:ab65789459b74307789438907af06ecee inherit pro_methods_class_dtk_1_1_core_1_1_abstract_appender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The <a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html" title="The AbstractStringAppender class provides a convenient base for appenders working with plain text for...">AbstractStringAppender</a> class provides a convenient base for appenders working with plain text formatted logs. </p>
+<p>AbstractSringAppender is the simple extension of the <a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. ">AbstractAppender</a> class providing the convenient way to create custom log appenders working with a plain text formatted log targets.</p>
+<p>It have the <a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#acd84d6c2423aee5be1afa0d30f0b57a9" title="Returns the string to record to the logging target, formatted according to the format(). ">formattedString()</a> protected function that formats the logging arguments according to a format set with <a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#a2f90186aa4a0a9da9511999f48e1734a" title="Sets the logging format for writing strings to the log target with this appender. ...">setFormat()</a>.</p>
+<p>This class can not be directly instantiated because it contains pure virtual function inherited from <a class="el" href="class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. ">AbstractAppender</a> class.</p>
+<p>For more detailed description of customizing the log output format see the documentation on the <a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#a2f90186aa4a0a9da9511999f48e1734a" title="Sets the logging format for writing strings to the log target with this appender. ...">setFormat()</a> function. </p>
+
+<p class="definition">在文件 <a class="el" href="_abstract_string_appender_8h_source.html">AbstractStringAppender.h</a> 第 <a class="el" href="_abstract_string_appender_8h_source.html#l00026">26</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="aa173a47c3b89a7022ff83628d1ebe770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa173a47c3b89a7022ff83628d1ebe770">&#9670;&nbsp;</a></span>format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::AbstractStringAppender::format </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current log format string. </p>
+<p>The default format is set to "%{time}{yyyy-MM-ddTHH:mm:ss.zzz} [%{type:-7}] &lt;%{function}&gt; %{message}\n". You can set a different log record format using the <a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#a2f90186aa4a0a9da9511999f48e1734a" title="Sets the logging format for writing strings to the log target with this appender. ...">setFormat()</a> function.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#a2f90186aa4a0a9da9511999f48e1734a" title="Sets the logging format for writing strings to the log target with this appender. ...">setFormat(const QString&amp;)</a> </dd></dl>
+
+<p>被 <a class="el" href="class_dtk_1_1_core_1_1_console_appender.html#ab63b018904413cbfd056ff4e08f2d5cc">Dtk::Core::ConsoleAppender</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_abstract_string_appender_8cpp_source.html">AbstractStringAppender.cpp</a> 第 <a class="el" href="_abstract_string_appender_8cpp_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acd84d6c2423aee5be1afa0d30f0b57a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd84d6c2423aee5be1afa0d30f0b57a9">&#9670;&nbsp;</a></span>formattedString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::AbstractStringAppender::formattedString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdatetime.html">QDateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>timeStamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4">Logger::LogLevel</a>&#160;</td>
+          <td class="paramname"><em>logLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>category</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the string to record to the logging target, formatted according to the <a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#aa173a47c3b89a7022ff83628d1ebe770" title="Returns the current log format string. ">format()</a>. </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#aa173a47c3b89a7022ff83628d1ebe770" title="Returns the current log format string. ">format()</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#a2f90186aa4a0a9da9511999f48e1734a" title="Sets the logging format for writing strings to the log target with this appender. ...">setFormat(const QString&amp;)</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_abstract_string_appender_8cpp_source.html">AbstractStringAppender.cpp</a> 第 <a class="el" href="_abstract_string_appender_8cpp_source.html#l00308">308</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2f90186aa4a0a9da9511999f48e1734a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f90186aa4a0a9da9511999f48e1734a">&#9670;&nbsp;</a></span>setFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Core::AbstractStringAppender::setFormat </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the logging format for writing strings to the log target with this appender. </p>
+<p>The string format seems to be very common to those developers who have used a standard sprintf function.</p>
+<p>Log output format is a simple <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> with the special markers (starting with % sign) which will be replaced with it's internal meaning when writing a log record.</p>
+<p>Controlling marker begins with the percent sign (%) which is followed by the command inside {} brackets (the command describes, what will be put to log record instead of marker). Optional field width argument may be specified right after the command (through the colon symbol before the closing bracket) Some commands requires an additional formatting argument (in the second {} brackets).</p>
+<p>Field width argument works almost identically to the <code><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html#arg-11">QString::arg()</a></code> <code>fieldWidth</code> argument (and uses it internally). For example, <code>"%{type:-7}"</code> will be replaced with the left padded debug level of the message (<code>"Debug  "</code>) or something. For the more detailed description of it you may consider to look to the <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html">Qt</a> Reference Documentation.</p>
+<p>Supported marker commands are: </p><ul>
+<li><code>%{time}</code> - timestamp. You may specify your custom timestamp format using the second {} brackets after the marker, timestamp format here will be similar to those used in <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qdatetime.html#toString-1">QDateTime::toString()</a> function. For example, "%{time}{dd-MM-yyyy, HH:mm}" may be replaced with "17-12-2010, 20:17" depending on current date and time. The default format used here is "HH:mm:ss.zzz". </li>
+<li><code>%{type}</code> - Log level. Possible log levels are shown in the <a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4" title="Describes the possible severity levels of the log records ">Logger::LogLevel</a> enumerator. </li>
+<li><code>%{Type}</code> - Uppercased log level. </li>
+<li><code>%{typeOne}</code> - One letter log level. </li>
+<li><code>%{TypeOne}</code> - One uppercase letter log level. </li>
+<li><code>%{File}</code> - Full source file name (with path) of the file that requested log recording. Uses the <code><b>FILE</b></code> preprocessor macro. </li>
+<li><code>%{file}</code> - Short file name (with stripped path). </li>
+<li><code>%{line}</code> - Line number in the source file. Uses the <code><b>LINE</b></code> preprocessor macro. </li>
+<li><code>%{Function}</code> - Name of function that called on of the LOG_* macros. Uses the <code>Q_FUNC_INFO</code> macro provided with <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html">Qt</a>. </li>
+<li><code>%{function}</code> - Similar to the %{Function}, but the function name is stripped using stripFunctionName </li>
+<li><code>%{message}</code> - The log message sent by the caller. </li>
+<li><code>%{category}</code> - The log category. </li>
+<li><code>%{appname}</code> - Application name (returned by <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html#applicationName-prop">QCoreApplication::applicationName()</a> function). </li>
+<li><code>%{pid}</code> - Application pid (returned by <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html#applicationPid">QCoreApplication::applicationPid()</a> function). </li>
+<li><code>%{threadid}</code> - ID of current thread. </li>
+<li><code>%%</code> - Convinient marker that is replaced with the single <code>%</code> mark.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Format doesn't add <code>'\n'</code> to the end of the format line. Please consider adding it manually.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#aa173a47c3b89a7022ff83628d1ebe770" title="Returns the current log format string. ">format()</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html#abda75bc101380d567bb2afd3082541cc" title="Strips the long function signature (as added by Q_FUNC_INFO macro) ">stripFunctionName()</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4" title="Describes the possible severity levels of the log records ">Logger::LogLevel</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_abstract_string_appender_8cpp_source.html">AbstractStringAppender.cpp</a> 第 <a class="el" href="_abstract_string_appender_8cpp_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abda75bc101380d567bb2afd3082541cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abda75bc101380d567bb2afd3082541cc">&#9670;&nbsp;</a></span>stripFunctionName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::AbstractStringAppender::stripFunctionName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Strips the long function signature (as added by Q_FUNC_INFO macro) </p>
+<p>The string processing drops the returning type, arguments and template parameters of function. It is definitely useful for enchancing the log output readability. </p><dl class="section return"><dt>返回</dt><dd>stripped function name </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_abstract_string_appender_8cpp_source.html">AbstractStringAppender.cpp</a> 第 <a class="el" href="_abstract_string_appender_8cpp_source.html#l00130">130</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkcore/src/log/<a class="el" href="_abstract_string_appender_8h_source.html">AbstractStringAppender.h</a></li>
+<li>dtkcore/src/log/<a class="el" href="_abstract_string_appender_8cpp_source.html">AbstractStringAppender.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_core_1_1_abstract_string_appender.html">AbstractStringAppender</a></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:19 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

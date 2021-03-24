@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkcore/src/util/dthreadutils.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dthreadutils_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dthreadutils.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2020 ~ 2020 Deepin Technology Co., Ltd.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Author:     zccrs &lt;zccrs@live.com&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Maintainer: zccrs &lt;zhangjide@deepin.com&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * any later version.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;dthreadutils.h&quot;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;DCORE_BEGIN_NAMESPACE</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>DThreadUtil {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;FunctionCallProxy::FunctionCallProxy(<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *thread)</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    qRegisterMetaType&lt;QPointer&lt;QObject&gt;&gt;();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    connect(<span class="keyword">this</span>, &amp;FunctionCallProxy::callInLiveThread, <span class="keyword">this</span>, [] (<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsemaphore.html">QSemaphore</a> *s, <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpointer.html">QPointer&lt;QObject&gt;</a> target, FunctionType *func) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (Q_LIKELY(target)) {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            (*func)();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            qWarning() &lt;&lt; <span class="stringliteral">&quot;DThreadUtils::runInThread:&quot;</span> &lt;&lt; <span class="stringliteral">&quot;The target object is destoryed&quot;</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        s-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsemaphore.html#release">release</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }, Qt::QueuedConnection);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    connect(thread, &amp;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html#finished">QThread::finished</a>, <span class="keyword">this</span>, [<span class="keyword">this</span>] {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        qWarning() &lt;&lt; <span class="stringliteral">&quot;DThreadUtils::runInThread:&quot;</span> &lt;&lt; sender() &lt;&lt; <span class="stringliteral">&quot;the thread finished&quot;</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }, Qt::DirectConnection);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> FunctionCallProxy::proxyCall(<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsemaphore.html">QSemaphore</a> *s, <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *thread, <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *target, FunctionType fun)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html#currentThread">QThread::currentThread</a>() == thread)</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> fun();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    FunctionCallProxy proxy(thread);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    proxy.moveToThread(thread);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// 如果线程未开启事件循环，且不是主线程，则需要给出严重警告信息，因为可能会导致死锁</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (thread-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html#loopLevel">loopLevel</a>() &lt;= 0 &amp;&amp; (!<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html#instance">QCoreApplication::instance</a>() || thread != <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html#instance">QCoreApplication::instance</a>()-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#thread">thread</a>())) {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        qCritical() &lt;&lt; Q_FUNC_INFO &lt;&lt; thread &lt;&lt; <span class="stringliteral">&quot;, the thread no event loop&quot;</span>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    proxy.callInLiveThread(s, target ? target : &amp;proxy, &amp;fun);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    s-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsemaphore.html#acquire">acquire</a>();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// end namespace DThreadUtil</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;DCORE_END_NAMESPACE</div><div class="ttc" id="qpointer_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpointer.html">QPointer</a></div></div>
+<div class="ttc" id="qobject_html_thread"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#thread">QObject::thread</a></div><div class="ttdeci">QThread * thread() const const</div></div>
+<div class="ttc" id="qsemaphore_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsemaphore.html">QSemaphore</a></div></div>
+<div class="ttc" id="qthread_html_loopLevel"><div class="ttname"><a href="https://doc.qt.io/qt-5/qthread.html#loopLevel">QThread::loopLevel</a></div><div class="ttdeci">int loopLevel() const const</div></div>
+<div class="ttc" id="qobject_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="qcoreapplication_html_instance"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcoreapplication.html#instance">QCoreApplication::instance</a></div><div class="ttdeci">QCoreApplication * instance()</div></div>
+<div class="ttc" id="qthread_html_currentThread"><div class="ttname"><a href="https://doc.qt.io/qt-5/qthread.html#currentThread">QThread::currentThread</a></div><div class="ttdeci">QThread * currentThread()</div></div>
+<div class="ttc" id="qsemaphore_html_release"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsemaphore.html#release">QSemaphore::release</a></div><div class="ttdeci">void release(int n)</div></div>
+<div class="ttc" id="qthread_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qthread.html">QThread</a></div></div>
+<div class="ttc" id="qsemaphore_html_acquire"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsemaphore.html#acquire">QSemaphore::acquire</a></div><div class="ttdeci">void acquire(int n)</div></div>
+<div class="ttc" id="qthread_html_finished"><div class="ttname"><a href="https://doc.qt.io/qt-5/qthread.html#finished">QThread::finished</a></div><div class="ttdeci">void finished()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_6c3d837d12de6918ecc70ece2c9d5940.html">dtkcore</a></li><li class="navelem"><a class="el" href="dir_119aa013467e95cb00c6469cad12208b.html">src</a></li><li class="navelem"><a class="el" href="dir_c143c85c7a1492fba24ed3201ee58289.html">util</a></li><li class="navelem"><b>dthreadutils.cpp</b></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:16 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

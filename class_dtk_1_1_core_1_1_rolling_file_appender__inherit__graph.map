@@ -1,0 +1,5 @@
+<map id="Dtk::Core::RollingFileAppender" name="Dtk::Core::RollingFileAppender">
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_file_appender.html" title="Simple appender that writes the log records to the plain text file. " alt="" coords="25,169,188,196"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_abstract_string_appender.html" title="The AbstractStringAppender class provides a convenient base for appenders working with plain text for..." alt="" coords="21,80,192,121"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. " alt="" coords="11,5,202,32"/>
+</map>

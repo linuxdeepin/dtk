@@ -1,0 +1,11 @@
+<map id="Dtk::Widget::DBaseLine" name="Dtk::Widget::DBaseLine">
+<area shape="rect" id="node7" href="$class_dtk_1_1_widget_1_1_d_header_line.html" title="可以使用 DHeaderLine 类快速创建标题行控件。 " alt="" coords="717,56,893,83"/>
+<area shape="rect" id="node2" href="/home/union/dtk/tags/qtwidgets.tags$qlabel.html" title="QLabel" alt="" coords="395,56,457,83"/>
+<area shape="rect" id="node3" href="/home/union/dtk/tags/qtwidgets.tags$qframe.html" title="QFrame" alt="" coords="277,56,347,83"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="156,56,229,83"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="21,31,92,57"/>
+<area shape="rect" id="node6" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="5,81,108,108"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_widget_1_1_arrow_header_line.html" title="Dtk::Widget::ArrowHeaderLine" alt="" coords="949,5,1149,32"/>
+<area shape="rect" id="node9" href="$class_dtk_1_1_widget_1_1_d_switch_header_line.html" title="DSwitchHeaderLine 类用于提供 DSwitchLineExpand 的标题栏。 " alt="" coords="941,56,1157,83"/>
+<area shape="rect" id="node10" href="$class_dtk_1_1_widget_1_1_header_line_1_1_arrow_header_line.html" title="Dtk::Widget::HeaderLine\l::ArrowHeaderLine" alt="" coords="966,107,1133,149"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Dtk::Core::AbstractStringAppender" name="Dtk::Core::AbstractStringAppender">
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_console_appender.html" title="ConsoleAppender is the simple appender that writes the log records to the std::cerr output stream..." alt="" coords="5,169,196,196"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_file_appender.html" title="Simple appender that writes the log records to the plain text file. " alt="" coords="221,169,383,196"/>
+<area shape="rect" id="node6" href="$class_dtk_1_1_core_1_1_output_debug_appender.html" title="Appender that writes the log records to the Microsoft Debug Log " alt="" coords="407,169,626,196"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. " alt="" coords="207,5,397,32"/>
+<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_rolling_file_appender.html" title="The RollingFileAppender class extends FileAppender so that the underlying file is rolled over at a us..." alt="" coords="201,244,403,271"/>
+</map>

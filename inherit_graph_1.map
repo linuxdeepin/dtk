@@ -1,0 +1,14 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node2" href="$class_add_pixmap_param_test.html" title="AddPixmapParamTest" alt="" coords="197,5,351,32"/>
+<area shape="rect" id="node3" href="$class_d_test_with_param.html" title="DTestWithParam\&lt; T \&gt;" alt="" coords="197,56,351,83"/>
+<area shape="rect" id="node4" href="$class_d_test_with_param.html" title="DTestWithParam\&lt; int \&gt;" alt="" coords="193,107,355,133"/>
+<area shape="rect" id="node7" href="$class_test_for_pixel_metric_param.html" title="TestForPixelMetricParam" alt="" coords="189,157,359,184"/>
+<area shape="rect" id="node8" href="$class_test_for_qt_draw_complex_control_param.html" title="TestForQtDrawComplexControl\lParam" alt="" coords="171,209,377,250"/>
+<area shape="rect" id="node9" href="$class_test_for_qt_draw_control_param.html" title="TestForQtDrawControlParam" alt="" coords="178,275,370,301"/>
+<area shape="rect" id="node10" href="$class_test_for_qt_standard_pixmap_param.html" title="TestForQtStandardPixmapParam" alt="" coords="167,325,381,352"/>
+<area shape="rect" id="node11" href="$class_test_for_style_hint_param.html" title="TestForStyleHintParam" alt="" coords="195,376,353,403"/>
+<area shape="rect" id="node12" href="$classut___d_print_preview_widget_private_param.html" title="ut_DPrintPreviewWidgetPrivate\lParam" alt="" coords="171,427,377,469"/>
+<area shape="rect" id="node13" href="$classut___d_print_preview_widget_test_param.html" title="ut_DPrintPreviewWidgetTest\lParam" alt="" coords="179,493,369,534"/>
+<area shape="rect" id="node5" href="$class_t_d_font_manager.html" title="TDFontManager" alt="" coords="429,81,545,108"/>
+<area shape="rect" id="node6" href="$class_t_d_palette.html" title="TDPalette" alt="" coords="447,132,528,159"/>
+</map>

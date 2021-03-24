@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Core::DDesktopEntry类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dtk_1_1_core_1_1_d_desktop_entry.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_dtk_1_1_core_1_1_d_desktop_entry-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Core::DDesktopEntry类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Handling desktop entry files.  
+ <a href="class_dtk_1_1_core_1_1_d_desktop_entry.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a31cd3020dcd76d7b9e02524bc7930ffe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffe">EntryType</a> { <br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffeae7ec3f2d3c0628bb7dcab7032d75b774">Unknown</a> = 0, 
+<a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea48abe993eb70dcb8c04b1d81a115edbf">Application</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffeaedccd56c8cfd77a5867776dc89b91c78">Link</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea8b7b432aaa370dc8c67d3b5aeb6edb21">Directory</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea4cd73b453ea8379b232a062984041870">ServiceType</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea22240ab6db22d24f43d6568a99806714">Service</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea929c551d8091d0c4b73fc9f444d179b5">FSDevice</a>
+<br />
+ }</td></tr>
+<tr class="separator:a31cd3020dcd76d7b9e02524bc7930ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44aba30f52603b63f99515712047c23"><td class="memItemLeft" align="right" valign="top"><a id="af44aba30f52603b63f99515712047c23"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ValueType</b> { <br />
+&#160;&#160;<b>Unparsed</b> = 0, 
+<b>String</b>, 
+<b>Strings</b>, 
+<b>Boolean</b>, 
+<br />
+&#160;&#160;<b>Numeric</b>, 
+<b>NotExisted</b> = 99
+<br />
+ }</td></tr>
+<tr class="separator:af44aba30f52603b63f99515712047c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3076653b0fcd6b9e898399e7c2eb2268"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a3076653b0fcd6b9e898399e7c2eb2268">Status</a> { <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a3076653b0fcd6b9e898399e7c2eb2268ad0c2dbf428f942dc659a271dd4fcce64">NoError</a> = 0, 
+<a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a3076653b0fcd6b9e898399e7c2eb2268a59f623f8b332b71130d9de27e1a7d7b3">AccessError</a>, 
+<a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a3076653b0fcd6b9e898399e7c2eb2268a4a8af956e375eea1204cc1837550775e">FormatError</a>
+ }</td></tr>
+<tr class="separator:a3076653b0fcd6b9e898399e7c2eb2268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a28c1a750559d76466e059d8f8d598038"><td class="memItemLeft" align="right" valign="top"><a id="a28c1a750559d76466e059d8f8d598038"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DDesktopEntry</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;filePath) noexcept</td></tr>
+<tr class="separator:a28c1a750559d76466e059d8f8d598038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca962839a986bd492f72ed68ce11695"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a3ca962839a986bd492f72ed68ce11695">save</a> () const</td></tr>
+<tr class="memdesc:a3ca962839a986bd492f72ed68ce11695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write back data to the desktop entry file.  <a href="#a3ca962839a986bd492f72ed68ce11695">更多...</a><br /></td></tr>
+<tr class="separator:a3ca962839a986bd492f72ed68ce11695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56ee84326a5976ea3760a4501382f73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a3076653b0fcd6b9e898399e7c2eb2268">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#ae56ee84326a5976ea3760a4501382f73">status</a> () const</td></tr>
+<tr class="memdesc:ae56ee84326a5976ea3760a4501382f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data parse status  <a href="#ae56ee84326a5976ea3760a4501382f73">更多...</a><br /></td></tr>
+<tr class="separator:ae56ee84326a5976ea3760a4501382f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231721fcb8a979aa51dcdd4457a75725"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a231721fcb8a979aa51dcdd4457a75725">keys</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;) const</td></tr>
+<tr class="memdesc:a231721fcb8a979aa51dcdd4457a75725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of all section keys inside the given <em>section</em>.  <a href="#a231721fcb8a979aa51dcdd4457a75725">更多...</a><br /></td></tr>
+<tr class="separator:a231721fcb8a979aa51dcdd4457a75725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab362e7bb2ce8f0c3119465b991596216"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#ab362e7bb2ce8f0c3119465b991596216">allGroups</a> (bool sorted=false) const</td></tr>
+<tr class="memdesc:ab362e7bb2ce8f0c3119465b991596216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of all section groups inside the desktop entry.  <a href="#ab362e7bb2ce8f0c3119465b991596216">更多...</a><br /></td></tr>
+<tr class="separator:ab362e7bb2ce8f0c3119465b991596216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f10cd5616ce0e3fffbc3389c636f13f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a9f10cd5616ce0e3fffbc3389c636f13f">contains</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;) const</td></tr>
+<tr class="memdesc:a9f10cd5616ce0e3fffbc3389c636f13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the desktop entry file have the given <em>section</em> contains the given <em>key</em>  <a href="#a9f10cd5616ce0e3fffbc3389c636f13f">更多...</a><br /></td></tr>
+<tr class="separator:a9f10cd5616ce0e3fffbc3389c636f13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2adfa7cf0958e789daedfdc4480ee540"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a2adfa7cf0958e789daedfdc4480ee540">name</a> () const</td></tr>
+<tr class="memdesc:a2adfa7cf0958e789daedfdc4480ee540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localized string value of the "Name" key under "Desktop Entry" section.  <a href="#a2adfa7cf0958e789daedfdc4480ee540">更多...</a><br /></td></tr>
+<tr class="separator:a2adfa7cf0958e789daedfdc4480ee540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8d1f5103f04f24c977f8c5894c5045"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a4d8d1f5103f04f24c977f8c5894c5045">genericName</a> () const</td></tr>
+<tr class="memdesc:a4d8d1f5103f04f24c977f8c5894c5045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localized string value of the "GenericName" key under "Desktop Entry" section.  <a href="#a4d8d1f5103f04f24c977f8c5894c5045">更多...</a><br /></td></tr>
+<tr class="separator:a4d8d1f5103f04f24c977f8c5894c5045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c81d91c490dca6bcfe91441752fba9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a37c81d91c490dca6bcfe91441752fba9">ddeDisplayName</a> () const</td></tr>
+<tr class="memdesc:a37c81d91c490dca6bcfe91441752fba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display name specially for DDE applications.  <a href="#a37c81d91c490dca6bcfe91441752fba9">更多...</a><br /></td></tr>
+<tr class="separator:a37c81d91c490dca6bcfe91441752fba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c22b3382ab71fb741739d9d2303c50f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a2c22b3382ab71fb741739d9d2303c50f">comment</a> () const</td></tr>
+<tr class="memdesc:a2c22b3382ab71fb741739d9d2303c50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localized string value of the "Comment" key under "Desktop Entry" section.  <a href="#a2c22b3382ab71fb741739d9d2303c50f">更多...</a><br /></td></tr>
+<tr class="separator:a2c22b3382ab71fb741739d9d2303c50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb687dadc5c29494a91aef173d23b9b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a4fb687dadc5c29494a91aef173d23b9b">rawValue</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;defaultValue=<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()) const</td></tr>
+<tr class="memdesc:a4fb687dadc5c29494a91aef173d23b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw string value associated with the given <em>key</em> in <em>section</em>.  <a href="#a4fb687dadc5c29494a91aef173d23b9b">更多...</a><br /></td></tr>
+<tr class="separator:a4fb687dadc5c29494a91aef173d23b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3c2f04e0417cd582e291333b4654d0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aae3c2f04e0417cd582e291333b4654d0">stringValue</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;defaultValue=<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()) const</td></tr>
+<tr class="memdesc:aae3c2f04e0417cd582e291333b4654d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unescaped string value associated with the given <em>key</em> in <em>section</em>.  <a href="#aae3c2f04e0417cd582e291333b4654d0">更多...</a><br /></td></tr>
+<tr class="separator:aae3c2f04e0417cd582e291333b4654d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8ddbd07cb7322573e31023d85c225a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aff8ddbd07cb7322573e31023d85c225a">localizedValue</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;localeKey=&quot;default&quot;, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;defaultValue=<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()) const</td></tr>
+<tr class="memdesc:aff8ddbd07cb7322573e31023d85c225a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localized string value associated with the given <em>key</em> and <em>localeKey</em> in <em>section</em>.  <a href="#aff8ddbd07cb7322573e31023d85c225a">更多...</a><br /></td></tr>
+<tr class="separator:aff8ddbd07cb7322573e31023d85c225a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bcd126c3789ffa6f63d024b1c427f12"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a3bcd126c3789ffa6f63d024b1c427f12">localizedValue</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;locale, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;defaultValue=<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()) const</td></tr>
+<tr class="memdesc:a3bcd126c3789ffa6f63d024b1c427f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localized string value associated with the given <em>key</em> and <em>locale</em> in <em>section</em>.  <a href="#a3bcd126c3789ffa6f63d024b1c427f12">更多...</a><br /></td></tr>
+<tr class="separator:a3bcd126c3789ffa6f63d024b1c427f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e15bc2e1ded51f08d8cb8f18e5e65b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#ab0e15bc2e1ded51f08d8cb8f18e5e65b">stringListValue</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;) const</td></tr>
+<tr class="memdesc:ab0e15bc2e1ded51f08d8cb8f18e5e65b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of strings associated with the given <em>key</em> in the given <em>section</em>.  <a href="#ab0e15bc2e1ded51f08d8cb8f18e5e65b">更多...</a><br /></td></tr>
+<tr class="separator:ab0e15bc2e1ded51f08d8cb8f18e5e65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4e50012b0535214312ae101e1afb9d"><td class="memItemLeft" align="right" valign="top"><a id="a9c4e50012b0535214312ae101e1afb9d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setRawValue</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;value, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;)</td></tr>
+<tr class="separator:a9c4e50012b0535214312ae101e1afb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2581ab46bd2c3dbe107203496c4923"><td class="memItemLeft" align="right" valign="top"><a id="aaa2581ab46bd2c3dbe107203496c4923"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setStringValue</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;value, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;)</td></tr>
+<tr class="separator:aaa2581ab46bd2c3dbe107203496c4923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8a1139aebf60f2f80aef58264e9d60"><td class="memItemLeft" align="right" valign="top"><a id="a7a8a1139aebf60f2f80aef58264e9d60"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setLocalizedValue</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;value, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;localeKey, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;)</td></tr>
+<tr class="separator:a7a8a1139aebf60f2f80aef58264e9d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cfb5118ebff6521f7ac785fbf9f2afa"><td class="memItemLeft" align="right" valign="top"><a id="a0cfb5118ebff6521f7ac785fbf9f2afa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeEntry</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;section=&quot;Desktop Entry&quot;)</td></tr>
+<tr class="separator:a0cfb5118ebff6521f7ac785fbf9f2afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:afaf0afc69a747d6788a71263fa875b9f"><td class="memItemLeft" align="right" valign="top"><a id="afaf0afc69a747d6788a71263fa875b9f"></a>
+static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>escape</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;str)</td></tr>
+<tr class="separator:afaf0afc69a747d6788a71263fa875b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3876ae89eb8ebd45aec8c459eca963"><td class="memItemLeft" align="right" valign="top"><a id="a6f3876ae89eb8ebd45aec8c459eca963"></a>
+static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>escapeExec</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;str)</td></tr>
+<tr class="separator:a6f3876ae89eb8ebd45aec8c459eca963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a905bd2af6d3ead6a38e5081f675dd2"><td class="memItemLeft" align="right" valign="top"><a id="a3a905bd2af6d3ead6a38e5081f675dd2"></a>
+static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>unescape</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;str, bool unescapeSemicolons=false)</td></tr>
+<tr class="separator:a3a905bd2af6d3ead6a38e5081f675dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad529376566e4500c71ee56184987062d"><td class="memItemLeft" align="right" valign="top"><a id="ad529376566e4500c71ee56184987062d"></a>
+static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>unescapeExec</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;str)</td></tr>
+<tr class="separator:ad529376566e4500c71ee56184987062d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a190a010877efc20d4cc43d019b444c0f"><td class="memItemLeft" align="right" valign="top"><a id="a190a010877efc20d4cc43d019b444c0f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setStatus</b> (const <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a3076653b0fcd6b9e898399e7c2eb2268">Status</a> &amp;<a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#ae56ee84326a5976ea3760a4501382f73">status</a>)</td></tr>
+<tr class="separator:a190a010877efc20d4cc43d019b444c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Handling desktop entry files. </p>
+<p><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html" title="Handling desktop entry files. ">DDesktopEntry</a> provide method for handling XDG desktop entry read and write. The interface of this class is similar to <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsettings.html">QSettings</a>.</p>
+<p>For more details about the spec itself, please refer to: <a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html</a> </p>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8h_source.html">ddesktopentry.h</a> 第 <a class="el" href="ddesktopentry_8h_source.html#l00034">34</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a31cd3020dcd76d7b9e02524bc7930ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31cd3020dcd76d7b9e02524bc7930ffe">&#9670;&nbsp;</a></span>EntryType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffe">Dtk::Core::DDesktopEntry::EntryType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a31cd3020dcd76d7b9e02524bc7930ffeae7ec3f2d3c0628bb7dcab7032d75b774"></a>Unknown&#160;</td><td class="fielddoc"><p>Unknown desktop file type. Maybe is invalid. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a31cd3020dcd76d7b9e02524bc7930ffea48abe993eb70dcb8c04b1d81a115edbf"></a>Application&#160;</td><td class="fielddoc"><p>The file describes application. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a31cd3020dcd76d7b9e02524bc7930ffeaedccd56c8cfd77a5867776dc89b91c78"></a>Link&#160;</td><td class="fielddoc"><p>The file describes URL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a31cd3020dcd76d7b9e02524bc7930ffea8b7b432aaa370dc8c67d3b5aeb6edb21"></a>Directory&#160;</td><td class="fielddoc"><p>The file describes directory settings. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a31cd3020dcd76d7b9e02524bc7930ffea4cd73b453ea8379b232a062984041870"></a>ServiceType&#160;</td><td class="fielddoc"><p>KDE specific type. mentioned in the spec, so listed here too. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a31cd3020dcd76d7b9e02524bc7930ffea22240ab6db22d24f43d6568a99806714"></a>Service&#160;</td><td class="fielddoc"><p>KDE specific type. mentioned in the spec, so listed here too. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a31cd3020dcd76d7b9e02524bc7930ffea929c551d8091d0c4b73fc9f444d179b5"></a>FSDevice&#160;</td><td class="fielddoc"><p>KDE specific type. mentioned in the spec, so listed here too. </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8h_source.html">ddesktopentry.h</a> 第 <a class="el" href="ddesktopentry_8h_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3076653b0fcd6b9e898399e7c2eb2268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3076653b0fcd6b9e898399e7c2eb2268">&#9670;&nbsp;</a></span>Status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a3076653b0fcd6b9e898399e7c2eb2268">Dtk::Core::DDesktopEntry::Status</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a3076653b0fcd6b9e898399e7c2eb2268ad0c2dbf428f942dc659a271dd4fcce64"></a>NoError&#160;</td><td class="fielddoc"><p>No error occurred. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3076653b0fcd6b9e898399e7c2eb2268a59f623f8b332b71130d9de27e1a7d7b3"></a>AccessError&#160;</td><td class="fielddoc"><p>An access error occurred (e.g. trying to write to a read-only file). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3076653b0fcd6b9e898399e7c2eb2268a4a8af956e375eea1204cc1837550775e"></a>FormatError&#160;</td><td class="fielddoc"><p>A format error occurred (e.g. loading a malformed desktop entry file). </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8h_source.html">ddesktopentry.h</a> 第 <a class="el" href="ddesktopentry_8h_source.html#l00059">59</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab362e7bb2ce8f0c3119465b991596216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab362e7bb2ce8f0c3119465b991596216">&#9670;&nbsp;</a></span>allGroups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> Dtk::Core::DDesktopEntry::allGroups </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sorted</em> = <code>false</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of all section groups inside the desktop entry. </p>
+<p>If <em>sorted</em> is set to true, the returned result will keep the order as-is when reading the entry file.</p>
+<dl class="section return"><dt>返回</dt><dd>all available section groups. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00607">607</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2c22b3382ab71fb741739d9d2303c50f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c22b3382ab71fb741739d9d2303c50f">&#9670;&nbsp;</a></span>comment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DDesktopEntry::comment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the localized string value of the "Comment" key under "Desktop Entry" section. </p>
+<p>It's equivalent to calling localizedValue("Comment").</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aff8ddbd07cb7322573e31023d85c225a" title="Returns the localized string value associated with the given key and localeKey in section...">localizedValue()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00705">705</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9f10cd5616ce0e3fffbc3389c636f13f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f10cd5616ce0e3fffbc3389c636f13f">&#9670;&nbsp;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDesktopEntry::contains </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>section</em> = <code>&quot;Desktop&#160;Entry&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the desktop entry file have the given <em>section</em> contains the given <em>key</em> </p>
+<dl class="section return"><dt>返回</dt><dd>true if the desktop entry contains the <em>key</em> in <em>section</em>; otherwise returns false. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00642">642</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a37c81d91c490dca6bcfe91441752fba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c81d91c490dca6bcfe91441752fba9">&#9670;&nbsp;</a></span>ddeDisplayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DDesktopEntry::ddeDisplayName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display name specially for DDE applications. </p>
+<p>This will check "X-Deepin-Vendor" and will return the localized string value of "GenericName" if "X-Deepin-Vendor" is "deepin", or it will return the localized string value of "Name".</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aff8ddbd07cb7322573e31023d85c225a" title="Returns the localized string value associated with the given key and localeKey in section...">localizedValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a2adfa7cf0958e789daedfdc4480ee540" title="Returns the localized string value of the &quot;Name&quot; key under &quot;Desktop Entry&quot; section. ">name()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a4d8d1f5103f04f24c977f8c5894c5045" title="Returns the localized string value of the &quot;GenericName&quot; key under &quot;Desktop Entry&quot; section...">genericName()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00687">687</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4d8d1f5103f04f24c977f8c5894c5045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8d1f5103f04f24c977f8c5894c5045">&#9670;&nbsp;</a></span>genericName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DDesktopEntry::genericName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the localized string value of the "GenericName" key under "Desktop Entry" section. </p>
+<p>It's equivalent to calling localizedValue("GenericName"). It will NOT fallback to "Name" if "GenericName" is not existed.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aff8ddbd07cb7322573e31023d85c225a" title="Returns the localized string value associated with the given key and localeKey in section...">localizedValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a2adfa7cf0958e789daedfdc4480ee540" title="Returns the localized string value of the &quot;Name&quot; key under &quot;Desktop Entry&quot; section. ">name()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a37c81d91c490dca6bcfe91441752fba9" title="Display name specially for DDE applications. ">ddeDisplayName()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00674">674</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a231721fcb8a979aa51dcdd4457a75725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231721fcb8a979aa51dcdd4457a75725">&#9670;&nbsp;</a></span>keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> Dtk::Core::DDesktopEntry::keys </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>section</em> = <code>&quot;Desktop&#160;Entry&quot;</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of all section keys inside the given <em>section</em>. </p>
+<dl class="section return"><dt>返回</dt><dd>all available section keys. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00588">588</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aff8ddbd07cb7322573e31023d85c225a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff8ddbd07cb7322573e31023d85c225a">&#9670;&nbsp;</a></span>localizedValue() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DDesktopEntry::localizedValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>localeKey</em> = <code>&quot;default&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>section</em> = <code>&quot;Desktop&#160;Entry&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the localized string value associated with the given <em>key</em> and <em>localeKey</em> in <em>section</em>. </p>
+<p>If the given <em>localeKey</em> can't be found, it will fallback to "C", if still cannot found, will fallback to the key without localeKey.</p>
+<p>If the entry contains no item with the key, the function returns a default-constructed value.</p>
+<dl class="section see"><dt>参见</dt><dd>setLocalizedValue(), <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a4fb687dadc5c29494a91aef173d23b9b" title="Returns the raw string value associated with the given key in section. ">rawValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aae3c2f04e0417cd582e291333b4654d0" title="Returns the unescaped string value associated with the given key in section. ">stringValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#ab0e15bc2e1ded51f08d8cb8f18e5e65b" title="Returns a list of strings associated with the given key in the given section. ">stringListValue()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00753">753</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3bcd126c3789ffa6f63d024b1c427f12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bcd126c3789ffa6f63d024b1c427f12">&#9670;&nbsp;</a></span>localizedValue() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DDesktopEntry::localizedValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;&#160;</td>
+          <td class="paramname"><em>locale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>section</em> = <code>&quot;Desktop&#160;Entry&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the localized string value associated with the given <em>key</em> and <em>locale</em> in <em>section</em>. </p>
+<p>If the given <em>locale</em> can't be found, it will fallback to "C", if still cannot found, will fallback to the key without a locale key.</p>
+<p>If the entry contains no item with the key, the function returns a default-constructed value.</p>
+<dl class="section see"><dt>参见</dt><dd>setLocalizedValue(), <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a4fb687dadc5c29494a91aef173d23b9b" title="Returns the raw string value associated with the given key in section. ">rawValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aae3c2f04e0417cd582e291333b4654d0" title="Returns the unescaped string value associated with the given key in section. ">stringValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#ab0e15bc2e1ded51f08d8cb8f18e5e65b" title="Returns a list of strings associated with the given key in the given section. ">stringListValue()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00807">807</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2adfa7cf0958e789daedfdc4480ee540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2adfa7cf0958e789daedfdc4480ee540">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DDesktopEntry::name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the localized string value of the "Name" key under "Desktop Entry" section. </p>
+<p>It's equivalent to calling localizedValue("Name").</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aff8ddbd07cb7322573e31023d85c225a" title="Returns the localized string value associated with the given key and localeKey in section...">localizedValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a4d8d1f5103f04f24c977f8c5894c5045" title="Returns the localized string value of the &quot;GenericName&quot; key under &quot;Desktop Entry&quot; section...">genericName()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a37c81d91c490dca6bcfe91441752fba9" title="Display name specially for DDE applications. ">ddeDisplayName()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00661">661</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4fb687dadc5c29494a91aef173d23b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb687dadc5c29494a91aef173d23b9b">&#9670;&nbsp;</a></span>rawValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DDesktopEntry::rawValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>section</em> = <code>&quot;Desktop&#160;Entry&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the raw string value associated with the given <em>key</em> in <em>section</em>. </p>
+<p>If the entry contains no item with the key, the function returns a default-constructed value.</p>
+<dl class="section see"><dt>参见</dt><dd>setRawValue(), <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aae3c2f04e0417cd582e291333b4654d0" title="Returns the unescaped string value associated with the given key in section. ">stringValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aff8ddbd07cb7322573e31023d85c225a" title="Returns the localized string value associated with the given key and localeKey in section...">localizedValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#ab0e15bc2e1ded51f08d8cb8f18e5e65b" title="Returns a list of strings associated with the given key in the given section. ">stringListValue()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00717">717</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3ca962839a986bd492f72ed68ce11695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca962839a986bd492f72ed68ce11695">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DDesktopEntry::save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write back data to the desktop entry file. </p>
+<dl class="section return"><dt>返回</dt><dd>true if write success; otherwise returns false. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00524">524</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae56ee84326a5976ea3760a4501382f73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56ee84326a5976ea3760a4501382f73">&#9670;&nbsp;</a></span>status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a3076653b0fcd6b9e898399e7c2eb2268">DDesktopEntry::Status</a> Dtk::Core::DDesktopEntry::status </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get data parse status </p>
+<p>Returns a status code indicating the first error that was met by <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html" title="Handling desktop entry files. ">DDesktopEntry</a>, or QSettings::NoError if no error occurred.</p>
+<p>Be aware that <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html" title="Handling desktop entry files. ">DDesktopEntry</a> delays performing some operations. </p>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00577">577</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab0e15bc2e1ded51f08d8cb8f18e5e65b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e15bc2e1ded51f08d8cb8f18e5e65b">&#9670;&nbsp;</a></span>stringListValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> Dtk::Core::DDesktopEntry::stringListValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>section</em> = <code>&quot;Desktop&#160;Entry&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of strings associated with the given <em>key</em> in the given <em>section</em>. </p>
+<p>If the entry contains no item with the key, the function returns a empty string list.</p>
+<dl class="section see"><dt>参见</dt><dd>setRawValue(), <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a4fb687dadc5c29494a91aef173d23b9b" title="Returns the raw string value associated with the given key in section. ">rawValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aae3c2f04e0417cd582e291333b4654d0" title="Returns the unescaped string value associated with the given key in section. ">stringValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aff8ddbd07cb7322573e31023d85c225a" title="Returns the localized string value associated with the given key and localeKey in section...">localizedValue()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00819">819</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aae3c2f04e0417cd582e291333b4654d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae3c2f04e0417cd582e291333b4654d0">&#9670;&nbsp;</a></span>stringValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DDesktopEntry::stringValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>section</em> = <code>&quot;Desktop&#160;Entry&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the unescaped string value associated with the given <em>key</em> in <em>section</em>. </p>
+<p>If the entry contains no item with the key, the function returns a default-constructed value.</p>
+<dl class="section see"><dt>参见</dt><dd>setStringValue(), <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#a4fb687dadc5c29494a91aef173d23b9b" title="Returns the raw string value associated with the given key in section. ">rawValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#aff8ddbd07cb7322573e31023d85c225a" title="Returns the localized string value associated with the given key and localeKey in section...">localizedValue()</a>, <a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html#ab0e15bc2e1ded51f08d8cb8f18e5e65b" title="Returns a list of strings associated with the given key in the given section. ">stringListValue()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a> 第 <a class="el" href="ddesktopentry_8cpp_source.html#l00736">736</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkcore/src/<a class="el" href="ddesktopentry_8h_source.html">ddesktopentry.h</a></li>
+<li>dtkcore/src/<a class="el" href="ddesktopentry_8cpp_source.html">ddesktopentry.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_core_1_1_d_desktop_entry.html">DDesktopEntry</a></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:19 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

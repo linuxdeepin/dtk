@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkwidget/src/widgets/dcommandlinkbutton.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dcommandlinkbutton_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dcommandlinkbutton.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;dcommandlinkbutton.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;dpalettehelper.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;DStyleOption&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;DStylePainter&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;DWIDGET_BEGIN_NAMESPACE</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">enum</span> Margins{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    LeftMargins = 3,</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    RightMargins = LeftMargins,</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    TopLeftMargins = 3,</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    BottomMargins = LeftMargins,</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    TextMargins = 4</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_command_link_button.html#ac08efb6c122938bfa61bffa75d76802b">   27</a></span>&#160;DCommandLinkButton::DCommandLinkButton(<span class="keyword">const</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> text, <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    : <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qabstractbutton.html">QAbstractButton</a>(parent)</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    this-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">setText</a>(text);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_command_link_button.html#a55a00a2f5dda1c746da4c16d7c581ee3">   37</a></span>&#160;<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_command_link_button.html#a55a00a2f5dda1c746da4c16d7c581ee3">DCommandLinkButton::sizeHint</a>()<span class="keyword"> const</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">text</a> = this-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">text</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#size-prop">size</a> = <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#fontMetrics">fontMetrics</a>().<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qfontmetrics.html#size">size</a>(0, text);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    size += <a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>(LeftMargins + RightMargins + TextMargins *2, TopLeftMargins + BottomMargins);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#size-prop">size</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_command_link_button.html#a9b9cf5b4bb053d6ea984b8d1b3e748bf">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_command_link_button.html#a9b9cf5b4bb053d6ea984b8d1b3e748bf">DCommandLinkButton::initStyleOption</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_button.html">DStyleOptionButton</a> *option)<span class="keyword"> const</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    option-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstyleoption.html#initFrom">initFrom</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qabstractbutton.html#down-prop">isDown</a>())</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        option-&gt;state |= QStyle::State_Sunken;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_d_palette.html">DPalette</a> pa = DPaletteHelper::instance()-&gt;palette(<span class="keyword">this</span>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    option-&gt;palette.setBrush(DPalette::ButtonText, pa.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpalette.html#highlight">highlight</a>());</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    option-&gt;text = this-&gt;<a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">text</a>();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_command_link_button.html#a8ef3b04b702bdb908143505447387055">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_command_link_button.html#a8ef3b04b702bdb908143505447387055">DCommandLinkButton::paintEvent</a>(<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *e)</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Q_UNUSED(e)</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_button.html">DStyleOptionButton</a> opt;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_command_link_button.html#a9b9cf5b4bb053d6ea984b8d1b3e748bf">initStyleOption</a>(&amp;opt);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_style_painter.html">DStylePainter</a> painter(<span class="keyword">this</span>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    painter.drawControl(DStyle::CE_TextButton, opt);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;DWIDGET_END_NAMESPACE</div><div class="ttc" id="qabstractbutton_html_down-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractbutton.html#down-prop">QAbstractButton::isDown</a></div><div class="ttdeci">bool isDown() const const</div></div>
+<div class="ttc" id="qwidget_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="qpalette_html_highlight"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpalette.html#highlight">QPalette::highlight</a></div><div class="ttdeci">const QBrush &amp; highlight() const const</div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_style_option_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_option_button.html">Dtk::Widget::DStyleOptionButton</a></div><div class="ttdef"><b>Definition:</b> <a href="dstyleoption_8h_source.html#l00068">dstyleoption.h:68</a></div></div>
+<div class="ttc" id="qstyleoption_html_initFrom"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstyleoption.html#initFrom">QStyleOption::initFrom</a></div><div class="ttdeci">void initFrom(const QWidget *widget)</div></div>
+<div class="ttc" id="qwidget_html_size-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#size-prop">QWidget::size</a></div><div class="ttdeci">QSize size() const const</div></div>
+<div class="ttc" id="class_d_palette_html"><div class="ttname"><a href="class_d_palette.html">DPalette</a></div><div class="ttdoc">DPalette提供了修改的 QPalette 类 </div><div class="ttdef"><b>Definition:</b> <a href="dpalette_8h_source.html#l00032">dpalette.h:32</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_command_link_button_html_a8ef3b04b702bdb908143505447387055"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_command_link_button.html#a8ef3b04b702bdb908143505447387055">Dtk::Widget::DCommandLinkButton::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *e) override</div><div class="ttdoc">绘画事件 </div><div class="ttdef"><b>Definition:</b> <a href="dcommandlinkbutton_8cpp_source.html#l00065">dcommandlinkbutton.cpp:65</a></div></div>
+<div class="ttc" id="qstring_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="qsize_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_style_painter_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_painter.html">Dtk::Widget::DStylePainter</a></div><div class="ttdef"><b>Definition:</b> <a href="dstyle_8h_source.html#l00360">dstyle.h:360</a></div></div>
+<div class="ttc" id="qabstractbutton_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractbutton.html">QAbstractButton</a></div></div>
+<div class="ttc" id="qwidget_html_fontMetrics"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#fontMetrics">QWidget::fontMetrics</a></div><div class="ttdeci">QFontMetrics fontMetrics() const const</div></div>
+<div class="ttc" id="qabstractbutton_html_text-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">QAbstractButton::setText</a></div><div class="ttdeci">void setText(const QString &amp;text)</div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_command_link_button_html_a55a00a2f5dda1c746da4c16d7c581ee3"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_command_link_button.html#a55a00a2f5dda1c746da4c16d7c581ee3">Dtk::Widget::DCommandLinkButton::sizeHint</a></div><div class="ttdeci">QSize sizeHint() const override</div><div class="ttdoc">获取控件的矩形大小 </div><div class="ttdef"><b>Definition:</b> <a href="dcommandlinkbutton_8cpp_source.html#l00037">dcommandlinkbutton.cpp:37</a></div></div>
+<div class="ttc" id="qfontmetrics_html_size"><div class="ttname"><a href="https://doc.qt.io/qt-5/qfontmetrics.html#size">QFontMetrics::size</a></div><div class="ttdeci">QSize size(int flags, const QString &amp;text, int tabStops, int *tabArray) const const</div></div>
+<div class="ttc" id="qpaintevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_command_link_button_html_a9b9cf5b4bb053d6ea984b8d1b3e748bf"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_command_link_button.html#a9b9cf5b4bb053d6ea984b8d1b3e748bf">Dtk::Widget::DCommandLinkButton::initStyleOption</a></div><div class="ttdeci">void initStyleOption(DStyleOptionButton *option) const</div><div class="ttdoc">初始化的一个 option 的风格,和一些基本的属性 </div><div class="ttdef"><b>Definition:</b> <a href="dcommandlinkbutton_8cpp_source.html#l00049">dcommandlinkbutton.cpp:49</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dcommandlinkbutton.cpp</b></li>
+    <li class="footer">生成于 2021年 七月 21日 星期三 23:59:17 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
