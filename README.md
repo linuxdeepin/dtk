@@ -1,4 +1,7 @@
-Portal - DTK Documentations & Resources
+# Portal - DTK Documentations & Resources
+
+[English](https://linuxdeepin.github.io/dtk/) |
+[中文](https://linuxdeepin.github.io/dtk/README_zh_CN)
 
 ## Why This Repository Exists
 

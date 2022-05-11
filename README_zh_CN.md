@@ -1,4 +1,7 @@
-传送门 - DTK 文档与资源
+# 传送门 - DTK 文档与资源
+
+[English](https://linuxdeepin.github.io/dtk/) |
+[中文](https://linuxdeepin.github.io/dtk/README_zh_CN)
 
 ## 此仓库为何存在
 
