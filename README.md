@@ -1,7 +1,7 @@
 # Portal - DTK Documentations & Resources
 
 [English](https://linuxdeepin.github.io/dtk/) |
-[中文](https://linuxdeepin.github.io/dtk/README_zh_CN)
+[中文](https://linuxdeepin.github.io/dtk/README.zh_CN)
 
 ## Why This Repository Exists
 
@@ -9,5 +9,15 @@ We used to link the DTK documentation directly to <https://linuxdeepin.github.io
 
 ## DTK Documentations
 
-- [dtk-docs online documentation](https://linuxdeepin.github.io/dtk-docs/) (source repo: [dtk-docs](https://github.com/linuxdeepin/dtk-docs))
+### Official Documentations (recommended)
+
+- [DTK documentation at deepin developer platform site](https://docs.deepin.org/)
 - [DTK documentation at UnionTech](http://docs.uniontech.com/) (site language: Chinese)
+
+### Community-maintained Documentations
+
+- [DTK documentation at Codeberg Pages](https://linuxdeepin.codeberg.page/dtkcore/@docs~master/)
+
+### Historical Projects (not recommended)
+
+- [dtk-docs online documentation](https://linuxdeepin.github.io/dtk-docs/) (source repo: [dtk-docs](https://github.com/linuxdeepin/dtk-docs))

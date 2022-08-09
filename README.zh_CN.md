@@ -1,7 +1,7 @@
 # 传送门 - DTK 文档与资源
 
 [English](https://linuxdeepin.github.io/dtk/) |
-[中文](https://linuxdeepin.github.io/dtk/README_zh_CN)
+[中文](https://linuxdeepin.github.io/dtk/README.zh_CN)
 
 ## 此仓库为何存在
 
@@ -9,5 +9,15 @@
 
 ## DTK 文档
 
-- [dtk-docs 在线文档](https://linuxdeepin.github.io/dtk-docs/) (来源仓库: [dtk-docs](https://github.com/linuxdeepin/dtk-docs))
+### 官方渠道（推荐）
+
+- [deepin 开发者平台中的在线文档](https://docs.deepin.org/)
 - [UnionTech 上的 DTK 文档](http://docs.uniontech.com/)
+
+### 社区维护的文档渠道
+
+- [Codeberg 上的 DTK 在线文档](https://linuxdeepin.codeberg.page/dtkcore/@docs~master/)
+
+### 相关历史项目（不推荐）
+
+- [dtk-docs 在线文档](https://linuxdeepin.github.io/dtk-docs/) (来源仓库: [dtk-docs](https://github.com/linuxdeepin/dtk-docs))
