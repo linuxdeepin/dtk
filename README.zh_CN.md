@@ -11,6 +11,19 @@
 
 ### 官方渠道（推荐）
 
+#### 开发中版本的文档
+
+组件名称       | 文档
+---------------|---------------
+dtkcore        | [`master`](https://linuxdeepin.github.io/dtkcore/)
+dtkwidget      | [`master`](https://linuxdeepin.github.io/dtkwidget/)
+dtkgui         | [`master`](https://linuxdeepin.github.io/dtkgui/)
+dtkdeclarative | *暂未就绪*
+
+#### 稳定发布的文档
+
+自 deepin v23 后，您也可以通过安装对应的 `-doc` 软件包来获取这些文档。安装过后，即可通过 QtCreator IDE 自带的文档查询功能查看文档了。
+
 - [deepin 开发者平台中的在线文档](https://docs.deepin.org/)
 - [UnionTech 上的 DTK 文档](http://docs.uniontech.com/)
 

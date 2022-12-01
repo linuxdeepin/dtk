@@ -11,6 +11,19 @@ We used to link the DTK documentation directly to <https://linuxdeepin.github.io
 
 ### Official Documentations (recommended)
 
+#### Development version
+
+Component      | Documentation
+---------------|---------------
+dtkcore        | [`master`](https://linuxdeepin.github.io/dtkcore/)
+dtkwidget      | [`master`](https://linuxdeepin.github.io/dtkwidget/)
+dtkgui         | [`master`](https://linuxdeepin.github.io/dtkgui/)
+dtkdeclarative | *not ready yet*
+
+#### Stable release
+
+Since deepin v23, you can also get the documentation from the related `-doc` package. Once the documentation packages are installed, you can then view these documentations inside the QtCreator IDE.
+
 - [DTK documentation at deepin developer platform site](https://docs.deepin.org/)
 - [DTK documentation at UnionTech](http://docs.uniontech.com/) (site language: Chinese)
 
