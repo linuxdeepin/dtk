@@ -13,12 +13,14 @@
 
 #### 开发中版本的文档
 
-组件名称       | 文档
----------------|---------------
-dtkcore        | [`master`](https://linuxdeepin.github.io/dtkcore/)
-dtkwidget      | [`master`](https://linuxdeepin.github.io/dtkwidget/)
-dtkgui         | [`master`](https://linuxdeepin.github.io/dtkgui/)
-dtkdeclarative | *暂未就绪*
+组件名称          | 文档
+------------------|---------------
+dtkcore           | [`master`](https://linuxdeepin.github.io/dtkcore/)
+dtkwidget         | [`master`](https://linuxdeepin.github.io/dtkwidget/)
+dtkgui            | [`master`](https://linuxdeepin.github.io/dtkgui/)
+dtkdeclarative    | *暂未就绪*
+dtksystemsettings | *暂未就绪*
+dtknetworkmanager | [`master`](https://linuxdeepin.github.io/dtknetworkmanager/)
 
 #### 稳定发布的文档
 

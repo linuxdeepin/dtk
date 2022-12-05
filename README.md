@@ -13,12 +13,14 @@ We used to link the DTK documentation directly to <https://linuxdeepin.github.io
 
 #### Development version
 
-Component      | Documentation
----------------|---------------
-dtkcore        | [`master`](https://linuxdeepin.github.io/dtkcore/)
-dtkwidget      | [`master`](https://linuxdeepin.github.io/dtkwidget/)
-dtkgui         | [`master`](https://linuxdeepin.github.io/dtkgui/)
-dtkdeclarative | *not ready yet*
+Component         | Documentation
+------------------|---------------
+dtkcore           | [`master`](https://linuxdeepin.github.io/dtkcore/)
+dtkwidget         | [`master`](https://linuxdeepin.github.io/dtkwidget/)
+dtkgui            | [`master`](https://linuxdeepin.github.io/dtkgui/)
+dtkdeclarative    | *not ready yet*
+dtksystemsettings | *not ready yet*
+dtknetworkmanager | [`master`](https://linuxdeepin.github.io/dtknetworkmanager/)
 
 #### Stable release
 
