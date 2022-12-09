@@ -20,6 +20,7 @@ dtkwidget         | [`master`](https://linuxdeepin.github.io/dtkwidget/)
 dtkgui            | [`master`](https://linuxdeepin.github.io/dtkgui/)
 dtkdeclarative    | *not ready yet*
 dtksystemsettings | *not ready yet*
+dtknotifications  | [`master`](https://linuxdeepin.github.io/dtknotifications/)
 dtknetworkmanager | [`master`](https://linuxdeepin.github.io/dtknetworkmanager/)
 
 #### Stable release
