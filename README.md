@@ -19,9 +19,12 @@ dtkcore           | [`master`](https://linuxdeepin.github.io/dtkcore/)
 dtkwidget         | [`master`](https://linuxdeepin.github.io/dtkwidget/)
 dtkgui            | [`master`](https://linuxdeepin.github.io/dtkgui/)
 dtkdeclarative    | *not ready yet*
+dtkio             | *not ready yet*
+dtkdevice         | *not ready yet*
 dtkmultimedia     | [`master`](https://linuxdeepin.github.io/dtkmultimedia/)
 dtksystemsettings | [`master`](https://linuxdeepin.github.io/dtksystemsettings/)
 dtknotifications  | [`master`](https://linuxdeepin.github.io/dtknotifications/)
+dtkaudiomanager   | [`master`](https://linuxdeepin.github.io/dtkaudiomanager/)
 dtknetworkmanager | [`master`](https://linuxdeepin.github.io/dtknetworkmanager/)
 
 #### Stable release
