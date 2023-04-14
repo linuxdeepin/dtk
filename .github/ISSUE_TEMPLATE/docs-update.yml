@@ -1,0 +1,47 @@
+---
+name: docs-update | 文档补充
+description: General docs-update report
+labels: []
+assignees: []
+body:
+- type: markdown
+  attributes:
+    value: |
+      **Thanks for taking a minute to file a docs-update report!**
+      **感谢抽出时间补充文档！**
+      
+      A valid docs-update report should be accurate and easy to understand, if you find some code is hard to understand when you are supplementing the document, please feel free to ask your question in the [Discussion board][discussion-board].
+      一个有效的文档补充应当准确且容易理解，如果你在补充文档时发现有部分代码是难以理解的，欢迎在 [Discussion 面板][discussion-board] 中提出你的疑问。
+
+      we use doxygen to generate the document, you can learn more about doxygen [here][doxygen]. The file naming convention is `<class-name>.<language_code>.dox`, for example `x.zh_CN.dox`, `x.en_US.dox`.
+      我们使用doxygen来生成文档，你可以在[这里][doxygen]了解更多关于doxygen的信息。文件命名规范是`<class-name>.<language_code>.dox`，比如`x.zh_CN.dox`，`x.en_US.dox`。
+
+      [discussion-board]: https://github.com/linuxdeepin/developer-center/discussions/new
+      [doxygen]: https://www.doxygen.nl
+
+- type: textarea
+  attributes:
+    label: NAME | 想要补充的文档对应的类名
+    description: |
+      Describe the class you want to supplement the document
+      在这里描述你想要补充文档的类
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: TIME | 计划完成时间
+    description: |
+      Describe the time you want to supplement the document
+      在这里描述你想要补充文档的时间
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: ADDITIONAL INFORMATION | 额外补充
+    description: |
+      any additional information you may want to provide so we can offer better help
+      有什么额外需要补充的信息的话，可以写到这里
+
+...

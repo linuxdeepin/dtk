@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Discussion & Questions | 常规讨论与问答
+    url: https://github.com/linuxdeepin/developer-center/discussions/categories/q-a-%E9%97%AE%E7%AD%94%E6%9D%BF%E5%9D%97
+    about: Please use the discussion board in our developer-center repo.
+  - name: Development Questions | 开发问答
+    url: https://github.com/orgs/linuxdeepin/discussions/new?category=development-questions-%E5%BC%80%E5%8F%91%E7%AD%94%E7%96%91
+    about: Please use the discussion board in our developer-center repo.

@@ -1,0 +1,38 @@
+---
+name: unit-test-report | 单元测试报告
+description: General unit-test report
+labels: []
+assignees: []
+body:
+- type: markdown
+  attributes:
+    value: |
+      **Thanks for taking a minute to file a unit-test report!**
+      **感谢抽出时间补充单元测试！**
+
+- type: textarea
+  attributes:
+    label: NAME | 想要补充的单元测试对应的类名
+    description: |
+      Describe the class you want to supplement the unit test
+      在这里描述你想要补充单元测试的类
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: TIME | 计划完成时间
+    description: |
+      Describe the time you want to supplement the unit test
+      在这里描述你想要完成补充单元测试的时间
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: ADDITIONAL INFORMATION | 额外补充
+    description: |
+      any additional information you may want to provide so we can offer better help
+      有什么额外需要补充的信息的话，可以写到这里
+
+...
