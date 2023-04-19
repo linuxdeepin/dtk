@@ -26,6 +26,7 @@ dtksystemsettings | [`master`](https://linuxdeepin.github.io/dtksystemsettings/)
 dtknotifications  | [`master`](https://linuxdeepin.github.io/dtknotifications/)
 dtkaudiomanager   | [`master`](https://linuxdeepin.github.io/dtkaudiomanager/)
 dtknetworkmanager | [`master`](https://linuxdeepin.github.io/dtknetworkmanager/)
+dtkbluetooth      | [`master`](https://linuxdeepin.github.io/dtkbluetooth/)
 
 #### 稳定发布的文档
 
