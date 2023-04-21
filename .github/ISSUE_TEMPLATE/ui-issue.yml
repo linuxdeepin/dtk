@@ -1,0 +1,54 @@
+---
+name: UI-issue | UI问题
+description: UI问题
+labels: []
+assignees: []
+body:
+- type: markdown
+  attributes:
+    value: |
+      **Thanks for taking a minute to file a UI issue!**
+      **感谢抽出时间汇报 UI 设计问题 **
+
+- type: textarea
+  attributes:
+    label: SUMMARY | 问题概要
+    description: |
+      Describe the bug you want to report
+      在这里描述你遇到的问题
+
+- type: textarea
+  attributes:
+    label: DTK VERSIONS | DTK版本信息
+    description: |
+      Describe your DTK components and system version information here
+      在这里描述你的DTK组件和系统版本信息
+    placeholder: |
+      Example:
+      Distribution: deepin v20.9
+      Package: dtkcore：5.6.8
+
+- type: textarea
+  attributes:
+    label: OBSERVED RESULT | 观察到的效果
+    description: |
+      describe the observed result
+      在这里描述观察到的效果
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: EXPECTED RESULT | 期望的设计效果
+    description: |
+      describe the expected result
+      在这里描述你所期望的结果
+
+- type: textarea
+  attributes:
+    label: ADDITIONAL INFORMATION | 额外补充
+    description: |
+      any additional information you may want to provide so we can offer better help
+      有什么额外需要补充的信息的话，可以写到这里
+
+...
