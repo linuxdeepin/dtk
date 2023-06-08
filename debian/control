@@ -1,0 +1,31 @@
+Source: dtk
+Priority: optional
+Maintainer: Deepin Packages Builder <packages@deepin.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Section: libs
+Homepage: https://github.com/linuxdeepin/dtk
+Vcs-Browser: https://github.com/linuxdeepin/dtk
+Vcs-Git: https://github.com/linuxdeepin/dtk.git
+Rules-Requires-Root: no
+
+Package: dtk-dev
+Section: libdevel
+Architecture: any
+Depends: libdtkcommon-dev (= ${binary:Version}),
+    libdtkcore-dev (= ${binary:Version}),
+    libdtkgui-dev (= ${binary:Version}),
+    libdtkwidget-dev (= ${binary:Version}),
+    libdtkdeclarative-dev (= ${binary:Version})
+Description: dtk development files
+ Virtual package that provides dtk development files
+
+Package: dtk5-bin
+Section: devel
+Architecture: any
+Depends: libdtkcore5-bin (= ${binary:Version}),
+    libdtkgui5-bin (= ${binary:Version}),
+    libdtkwidget5-bin (= ${binary:Version}),
+    libdtkdeclarative5-bin (= ${binary:Version})
+Description: dtk binary tools
+ Virtual package that provides binary tools of dtk
