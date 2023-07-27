@@ -1,6 +1,6 @@
-approver:
+approvers:
   - linuxdeepin/dtk
   - asterwyx
-reviewer:
+reviewers:
   - linuxdeepin/dtk
   - asterwyx
