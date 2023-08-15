@@ -1,0 +1,71 @@
+name: synchronize to dtk6
+on:
+  workflow_call:
+    inputs:
+      dest_repo:
+        type: string
+        required: true
+      source_ref:
+        type: string
+        required: true
+      pull_number:
+        type: number
+        required: true
+    secrets:
+      CI_ROBOT_PAT:
+        required: true
+
+env:
+  GH_TOKEN: ${{ secrets.CI_ROBOT_PAT }}
+
+jobs:
+  sync-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repository ${{ github.repository }}
+        uses: actions/checkout@v3
+        with:
+          token: ${{ env.GH_TOKEN }}
+          ref: ${{ inputs.source_ref }}
+          path: 'source'
+          fetch-depth: 0
+
+      - name: Checkout dest repository ${{ inputs.dest_repo }}
+        uses: actions/checkout@v3
+        with:
+          token: ${{ env.GH_TOKEN }}
+          ref: 'master'
+          path: 'dest'
+          repository: ${{ inputs.dest_repo }}
+
+      - name: Synchronize files to ${{ inputs.dest_repo }}
+        id: rsync
+        run: |
+          git config --global user.name "deepin-ci-robot"
+          git config --global user.email "packages@deepin.org"
+          tbranch="sync-${{ inputs.pull_number }}"
+          set -x
+          cd ${{ github.workspace }}/dest
+          git checkout -B ${tbranch}
+          cd ${{ github.workspace }}/source
+          version=$(git describe)
+          if [[ -f ${{ github.workspace }}/source/.syncexclude ]]; then
+            rsync -avz --delete --exclude=.git --exclude=.obs --exclude=debian --exclude=archlinux --exclude=rpm --exclude-from=.syncexclude ${{ github.workspace }}/source ${{ github.workspace }}/dest
+          else
+            rsync -avz --delete --exclude=.git --exclude=.obs --exclude=debian --exclude=archlinux --exclude=rpm ${{ github.workspace }}/source/ ${{ github.workspace }}/dest/
+          fi
+          cd ${{ github.workspace }}/dest
+          git add :/
+          git commit \
+          -m "sync: from ${{ github.repository }}" \
+          -m "Synchronize source files from ${{ github.repository }}." \
+          -m "Source-version: ${version}
+          Source-pull-request: https://github.com/${{ github.repository }}/pull/${{ inputs.pull_number }}"
+          git push -f origin ${tbranch}
+          cd ${{ github.workspace }}/dest
+          gh repo set-default ${{ inputs.dest_repo }}
+          result=$(gh pr list --base master --head ${tbranch} --state open)
+          if [[ -z $result ]]; then
+            gh pr create -B master -H ${tbranch} --title "sync: from ${{ github.repository }}" --body "Synchronize source files from ${{ github.repository }}.
+            Source-pull-request: https://github.com/${{ github.repository }}/pull/${{ inputs.pull_number }}"
+          fi
