@@ -55,6 +55,17 @@ jobs:
             rsync -avz --delete --exclude=.git --exclude=.obs --exclude=debian --exclude=archlinux --exclude=rpm ${{ github.workspace }}/source/ ${{ github.workspace }}/dest/
           fi
           cd ${{ github.workspace }}/dest
+          difference=$(git diff)
+          if [[ ! -z ${difference} ]]; then
+            echo "has_diff=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_diff=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit changes to ${{ inputs.dest_repo }}
+        if: steps.rsync.outputs.has_diff
+        run: |
+          cd ${{ github.workspace }}/dest
           git add :/
           git commit \
           -m "sync: from ${{ github.repository }}" \
