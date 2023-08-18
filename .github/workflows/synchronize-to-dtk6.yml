@@ -50,9 +50,9 @@ jobs:
           cd ${{ github.workspace }}/source
           version=$(git describe)
           if [[ -f ${{ github.workspace }}/source/.syncexclude ]]; then
-            rsync -avz --delete --exclude=.git --exclude=.obs --exclude=debian --exclude=archlinux --exclude=rpm --exclude-from=.syncexclude ${{ github.workspace }}/source ${{ github.workspace }}/dest
+            rsync -avz --delete --exclude=.git --exclude=.github --exclude=.obs --exclude=debian --exclude=archlinux --exclude=rpm --exclude-from=.syncexclude ${{ github.workspace }}/source ${{ github.workspace }}/dest
           else
-            rsync -avz --delete --exclude=.git --exclude=.obs --exclude=debian --exclude=archlinux --exclude=rpm ${{ github.workspace }}/source/ ${{ github.workspace }}/dest/
+            rsync -avz --delete --exclude=.git --exclude=.github --exclude=.obs --exclude=debian --exclude=archlinux --exclude=rpm ${{ github.workspace }}/source/ ${{ github.workspace }}/dest/
           fi
           cd ${{ github.workspace }}/dest
           difference=$(git diff)
