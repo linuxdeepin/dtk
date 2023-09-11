@@ -1,3 +1,9 @@
+dtk (5.6.17) unstable; urgency=medium
+
+  * Release 5.6.17
+
+ -- Yixue Wang <wangyixue@deepin.org>  Mon, 11 Sep 2023 09:48:23 +0800
+
 dtk (5.6.16) unstable; urgency=medium
 
   * feat: add synchronization workflow
