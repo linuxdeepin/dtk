@@ -76,7 +76,7 @@ jobs:
           -m "Synchronize source files from ${{ github.repository }}." \
           -m "Source-version: ${version}
           Source-pull-request: https://github.com/${{ github.repository }}/pull/${{ inputs.pull_number }}"
-          git push -f origin ${tbranch}
+          git push -u -f origin ${tbranch}
           cd ${{ github.workspace }}/dest
           gh repo set-default ${{ inputs.dest_repo }}
           result=$(gh pr list --base master --head ${tbranch} --state open)
