@@ -52,7 +52,6 @@ jobs:
           cd ${{ github.workspace }}/dest
           git checkout -B ${tbranch}
           cd ${{ github.workspace }}/source
-          version=$(git describe)
           if [[ -f ${{ github.workspace }}/source/.syncexclude ]]; then
             rsync -avzp --delete --exclude=.git --exclude=.github --exclude=.obs --exclude=debian --exclude=archlinux --exclude=rpm --exclude-from=.syncexclude ${{ github.workspace }}/source ${{ github.workspace }}/dest
           else
@@ -69,6 +68,10 @@ jobs:
       - name: Commit changes to ${{ inputs.dest_repo }}
         if: steps.rsync.outputs.has_diff
         run: |
+          cd ${{ github.workspace }}/source
+          git remote add self-upstream ${{ github.event.repository.clone_url }}
+          git fetch --all
+          version=$(git describe)
           cd ${{ github.workspace }}/dest
           git add :/
           git commit \
