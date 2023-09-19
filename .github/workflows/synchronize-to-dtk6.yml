@@ -59,6 +59,7 @@ jobs:
           fi
           cd ${{ github.workspace }}/dest
           difference=$(git diff)
+          echo "tbranch=${tbranch}" >> $GITHUB_OUTPUT
           if [[ ! -z ${difference} ]]; then
             echo "has_diff=true" >> $GITHUB_OUTPUT
           else
@@ -72,6 +73,7 @@ jobs:
           git remote add self-upstream ${{ github.event.repository.clone_url }}
           git fetch --all
           version=$(git describe)
+          tbranch=${{ steps.rsync.outputs.tbranch }}
           cd ${{ github.workspace }}/dest
           git add :/
           git commit \
