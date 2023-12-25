@@ -16,7 +16,8 @@ Depends: libdtkcommon-dev (= ${binary:Version}),
     libdtkcore-dev (= ${binary:Version}),
     libdtkgui-dev (= ${binary:Version}),
     libdtkwidget-dev (= ${binary:Version}),
-    libdtkdeclarative-dev (= ${binary:Version})
+    libdtkdeclarative-dev (= ${binary:Version}),
+    libdtksystemsettings-dev (= ${binary:Version})
 Description: dtk development files
  Virtual package that provides dtk development files
 

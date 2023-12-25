@@ -18,3 +18,6 @@
 	path = dtkdeclarative
 	url = https://github.com/linuxdeepin/dtkdeclarative
 	branch = master
+[submodule "dtksystemsettings"]
+	path = dtksystemsettings
+	url = https://github.com/linuxdeepin/dtksystemsettings
