@@ -52,6 +52,9 @@ jobs:
           cd ${{ github.workspace }}/dest
           git checkout -B ${tbranch}
           cd ${{ github.workspace }}/source
+          git remote add upstream "${{ github.event.repository.clone_url }}"
+          git fetch --all
+          git rebase upstream/master
           if [[ -f ${{ github.workspace }}/source/.syncexclude ]]; then
             rsync -avzp --delete --exclude=.git --exclude=.github --exclude=.obs --exclude=debian --exclude=archlinux --exclude=rpm --exclude-from=.syncexclude ${{ github.workspace }}/source/ ${{ github.workspace }}/dest/
           else
