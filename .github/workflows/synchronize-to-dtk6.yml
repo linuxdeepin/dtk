@@ -47,7 +47,7 @@ jobs:
         run: |
           git config --global user.name "deepin-ci-robot"
           git config --global user.email "packages@deepin.org"
-          tbranch="sync-${{ inputs.pull_number }}"
+          tbranch="sync-pr-${{ inputs.pull_number }}-nosync"
           set -x
           cd ${{ github.workspace }}/dest
           git checkout -B ${tbranch}
