@@ -18,3 +18,9 @@
 	path = dtkdeclarative
 	url = https://github.com/linuxdeepin/dtkdeclarative
 	branch = master
+[submodule "qt5integration"]
+	path = qt5integration
+	url = https://github.com/linuxdeepin/qt5integration
+[submodule "qt5platform-plugins"]
+	path = qt5platform-plugins
+	url = https://github.com/linuxdeepin/qt5platform-plugins
