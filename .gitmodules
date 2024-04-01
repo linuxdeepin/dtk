@@ -1,28 +1,24 @@
-[submodule "dtkcommon"]
-	path = dtkcommon
-	url = https://github.com/linuxdeepin/dtkcommon
+[submodule "dtk6core"]
+	path = dtk6core
+	url = https://github.com/linuxdeepin/dtk6core
 	branch = master
-[submodule "dtkcore"]
-	path = dtkcore
-	url = https://github.com/linuxdeepin/dtkcore
+[submodule "dtk6gui"]
+	path = dtk6gui
+	url = https://github.com/linuxdeepin/dtk6gui
 	branch = master
-[submodule "dtkgui"]
-	path = dtkgui
-	url = https://github.com/linuxdeepin/dtkgui
+[submodule "dtk6widget"]
+	path = dtk6widget
+	url = https://github.com/linuxdeepin/dtk6widget
 	branch = master
-[submodule "dtkwidget"]
-	path = dtkwidget
-	url = https://github.com/linuxdeepin/dtkwidget
+[submodule "dtk6declarative"]
+	path = dtk6declarative
+	url = https://github.com/linuxdeepin/dtk6declarative
 	branch = master
-[submodule "dtkdeclarative"]
-	path = dtkdeclarative
-	url = https://github.com/linuxdeepin/dtkdeclarative
+[submodule "qt6integration"]
+	path = qt6integration
+	url = https://github.com/linuxdeepin/qt6integration
 	branch = master
-[submodule "qt5integration"]
-	path = qt5integration
-	url = https://github.com/linuxdeepin/qt5integration
-	branch = master
-[submodule "qt5platform-plugins"]
-	path = qt5platform-plugins
-	url = https://github.com/linuxdeepin/qt5platform-plugins
+[submodule "qt6platform-plugins"]
+	path = qt6platform-plugins
+	url = https://github.com/linuxdeepin/qt6platform-plugins
 	branch = master
