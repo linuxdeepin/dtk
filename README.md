@@ -33,12 +33,8 @@ dtkbluetooth      | [`master`](https://linuxdeepin.github.io/dtkbluetooth/)
 Since deepin v23, you can also get the documentation from the related `-doc` package. Once the documentation packages are installed, you can then view these documentations inside the QtCreator IDE.
 
 - [DTK documentation at deepin developer platform site](https://docs.deepin.org/)
-- [DTK documentation at UnionTech](http://docs.uniontech.com/) (site language: Chinese)
+- [DTK documentation at UnionTech](https://developer.chinauos.com/#document2?dirid=65698a4bbd766615b0b02d50) (site language: Chinese)
 
 ### Community-maintained Documentations
 
 - [DTK documentation at Codeberg Pages](https://linuxdeepin.codeberg.page/dtkcore/@docs~master/)
-
-### Historical Projects (not recommended)
-
-- [dtk-docs online documentation](https://linuxdeepin.github.io/dtk-docs/) (source repo: [dtk-docs](https://github.com/linuxdeepin/dtk-docs))

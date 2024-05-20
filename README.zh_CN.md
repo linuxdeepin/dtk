@@ -33,12 +33,9 @@ dtkbluetooth      | [`master`](https://linuxdeepin.github.io/dtkbluetooth/)
 自 deepin v23 后，您也可以通过安装对应的 `-doc` 软件包来获取这些文档。安装过后，即可通过 QtCreator IDE 自带的文档查询功能查看文档了。
 
 - [deepin 开发者平台中的在线文档](https://docs.deepin.org/)
-- [UnionTech 上的 DTK 文档](http://docs.uniontech.com/)
+- [UnionTech 上的 DTK 文档](https://developer.chinauos.com/#document2?dirid=65698a4bbd766615b0b02d50)
 
 ### 社区维护的文档渠道
 
 - [Codeberg 上的 DTK 在线文档](https://linuxdeepin.codeberg.page/dtkcore/@docs~master/)
 
-### 相关历史项目（不推荐）
-
-- [dtk-docs 在线文档](https://linuxdeepin.github.io/dtk-docs/) (来源仓库: [dtk-docs](https://github.com/linuxdeepin/dtk-docs))
