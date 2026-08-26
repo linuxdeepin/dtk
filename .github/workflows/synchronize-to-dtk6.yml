@@ -33,6 +33,7 @@ jobs:
           path: 'source'
           repository: ${{ inputs.source_repo }}
           fetch-depth: 0
+          allow-unsafe-pr-checkout: true
 
       - name: Checkout dest repository ${{ inputs.dest_repo }}
         uses: actions/checkout@v3
@@ -41,6 +42,7 @@ jobs:
           ref: 'master'
           path: 'dest'
           repository: ${{ inputs.dest_repo }}
+          allow-unsafe-pr-checkout: true
 
       - name: Synchronize files to ${{ inputs.dest_repo }}
         id: rsync
